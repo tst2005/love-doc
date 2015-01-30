@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+<link rel="self" type="application/atom+xml" href="http://love2d.org/forums/feed.php?mode=topics" />
+
+<title>LÖVE</title>
+<link href="http://love2d.org/forums/index.php" />
+<updated>2015-01-25T23:20:32+00:00</updated>
+
+<author><name><![CDATA[LÖVE]]></name></author>
+<id>http://love2d.org/forums/feed.php?mode=topics</id>
+<entry>
+<author><name><![CDATA[Bindie]]></name></author>
+<updated>2015-01-25T22:33:42+00:00</updated>
+<published>2015-01-25T22:33:42+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79551&amp;p=179405#p179405</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79551&amp;p=179405#p179405"/>
+<title type="html"><![CDATA[General • Returning table values]]></title>
+
+<category term="General" scheme="http://love2d.org/forums/viewforum.php?f=3" label="General"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79551&amp;p=179405#p179405"><![CDATA[
+Hey, trying to make an alternative map making system.<br /><br /><dl class="codebox"><dt>Code: </dt><dd><code>function Corridorx1North(a,b,length, t)<br /><br />      for i = 1, length do<br /><br />      t&#91;#t+1&#93; = {tile = 9, x = a-map.tilesize, y = b+map.tilesize*length}<br />      t&#91;#t+1&#93; = {tile = 1, x = a, y = b+map.tilesize*length}<br />      t&#91;#t+1&#93; = {tile = 11, x = a+map.tilesize, y = b+map.tilesize*length}<br /><br />      end<br /><br />      return t<br /><br />   end</code></dd></dl><br /><br />Is there someway to input the sub-table values back into the table t?<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136234">Bindie</a> — Sun Jan 25, 2015 10:33 pm — Replies 1 — Views 12</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Bindie]]></name></author>
+<updated>2015-01-25T16:05:32+00:00</updated>
+<published>2015-01-25T16:05:32+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79550&amp;p=179383#p179383</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79550&amp;p=179383#p179383"/>
+<title type="html"><![CDATA[Support and Development • Camera follow player and update world]]></title>
+
+<category term="Support and Development" scheme="http://love2d.org/forums/viewforum.php?f=4" label="Support and Development"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79550&amp;p=179383#p179383"><![CDATA[
+Hello, I'm trying to experiment with room collision. First I want to make the camera follow the player, and the world being updated at the same time. However as I set the map_x and map_y to the player.x and player.y the camera slides off while walking with my player.<br /><br />Where is the problem in the code? Is there a awesome tutorial I can read? I am new to Löve.<br /><br />Bindie<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136234">Bindie</a> — Sun Jan 25, 2015 4:05 pm — Replies 2 — Views 39</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Reef]]></name></author>
+<updated>2015-01-25T08:54:26+00:00</updated>
+<published>2015-01-25T08:54:26+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79549&amp;p=179369#p179369</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79549&amp;p=179369#p179369"/>
+<title type="html"><![CDATA[Support and Development • Tetris piece collision]]></title>
+
+<category term="Support and Development" scheme="http://love2d.org/forums/viewforum.php?f=4" label="Support and Development"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79549&amp;p=179369#p179369"><![CDATA[
+If any of you are pros at debugging, I would appreciate some help with what seems to be an off by one problem that I can't seem to solve.  I'm slowing building an implementation of Tetris but I'm having trouble with the rules with piece movement. <br /><br />Currently, the pieces fall to the bottom of the well but stop one space short of the bottom. Any attempt to fix this has just resulted in errors, such as nil values for tables I'm accessing.<br /><br />I've been using Zerobrane Studio for it's extremely helpful debug tools but I haven't solved the problem. I believe it's related to my isValidPosition() function. Not being having a way to Continue in lua gave me some trouble. <br /><br /><dl class="codebox"><dt>Code: </dt><dd><code>local function isValidPosition(board, piece, dX, dY)<br />  -- return true if piece is within board and not colliding<br />  local valid = true<br />  for x = 1, PIECE_TEMPLATE_SIZE do<br />    for y = 1, PIECE_TEMPLATE_SIZE do<br />      local isAboveBoard = piece.y + y + dY &lt; 1  -- pieces should be allowed to be above the board<br />      <br />      if not (isAboveBoard or piece.rotation&#91;y&#93;&#91;x&#93; == 0) then  <br />        if not isOnBoard(x + piece.x + dX, y + piece.y + dY) then<br />          valid = false<br />        elseif board&#91;y + piece.y + dY&#93;&#91;x + piece.x + dX&#93; ~= 0 then<br />          valid = false <br />        end<br />      end<br />    end<br />  end  <br />  return valid<br />end</code></dd></dl><br /><br />However, the problem could likely be elsewhere; I've made a bit of a mess trying to fix this problem and the code isn't very clear any more.<br /><br />Any help? Any other tips that would make my life easier or advice for implementing Tetris? This has proven much harder than I anticipated, I have trouble with grid based games.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=36559">Reef</a> — Sun Jan 25, 2015 8:54 am — Replies 4 — Views 66</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Azhukar]]></name></author>
+<updated>2015-01-25T08:34:49+00:00</updated>
+<published>2015-01-25T08:34:49+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79548&amp;p=179367#p179367</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79548&amp;p=179367#p179367"/>
+<title type="html"><![CDATA[Support and Development • [HELP] &lt;- PLEASE DON'T DO THIS]]></title>
+
+<category term="Support and Development" scheme="http://love2d.org/forums/viewforum.php?f=4" label="Support and Development"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79548&amp;p=179367#p179367"><![CDATA[
+Hello everyone, I understand that at this very subforum page one individual used a [help] tag for his thread which caused a chain reaction of new users also adopting this tag.<br /><br />This tag serves absolutely no purpose and in fact makes it harder to read through the topic subjects, every single thread in this subforum is asking for help by default. That's what the subforum is for, you don't need to restate your intent of getting [help] in the title.<br /><br />If you want to be helpful with your tags then use a [solved] thread subject tag once your question gets answered.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=71132">Azhukar</a> — Sun Jan 25, 2015 8:34 am — Replies 5 — Views 104</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[RaptrStudios]]></name></author>
+<updated>2015-01-25T06:14:22+00:00</updated>
+<published>2015-01-25T04:01:12+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179356#p179356</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179356#p179356"/>
+<title type="html"><![CDATA[Projects and Demos • [Adventure] Woo! My first game in Löve!]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179356#p179356"><![CDATA[
+Check out my first game in Löve! Please leave suggestions, and what you think of the game so far <img src="http://love2d.org/forums/images/smilies/ms-three.png" alt=":3" title="Awww" /><br />Source:<br /><!-- m --><a class="postlink" href="http://www.mediafire.com/download/6r3d2lkvm3q7qll/source_1.0.zip">http://www.mediafire.com/download/6r3d2 ... ce_1.0.zip</a><!-- m --><br /><br />Download:<br /><!-- m --><a class="postlink" href="http://www.mediafire.com/download/7gj7k29ky7rr5zi/Adventure.zip">http://www.mediafire.com/download/7gj7k ... enture.zip</a><!-- m --><br /><br />Website:<br /><!-- m --><a class="postlink" href="http://raptrstudios.weebly.com/">http://raptrstudios.weebly.com/</a><!-- m --><br /><br />Screenshot:<br /><img src="http://puu.sh/eZGed/16d160eb74.PNG" alt="Image" /><br />Note: This is an old screenshot!<br /><br />I am working very hard on this game, and i will hopefully be releasing a update soon.<br />Thanks <img src="http://love2d.org/forums/images/smilies/ms-three.png" alt=":3" title="Awww" /><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136226">RaptrStudios</a> — Sun Jan 25, 2015 4:01 am — Replies 2 — Views 87</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[efireman222]]></name></author>
+<updated>2015-01-25T02:01:02+00:00</updated>
+<published>2015-01-25T02:01:02+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179347#p179347</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179347#p179347"/>
+<title type="html"><![CDATA[Projects and Demos • Kilens]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179347#p179347"><![CDATA[
+Hello i,m efireman222 and i made this game called Kilens.<br />It's my first game <img src="http://love2d.org/forums/images/smilies/ms-glad.png" alt=":D" title="Very Happy" />.<br /><br />Here are some screenshots:<br />kilentitlescreen.png<br />kilengameplay.png<br /><br />Here's the Download, Source included:<br /><!-- m --><a class="postlink" href="http://www.mediafire.com/download/xf28ho8fi3gpyfe/Kilens.zip">http://www.mediafire.com/download/xf28h ... Kilens.zip</a><!-- m --><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136242">efireman222</a> — Sun Jan 25, 2015 2:01 am — Replies 3 — Views 83</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[kerperlo]]></name></author>
+<updated>2015-01-25T01:20:36+00:00</updated>
+<published>2015-01-25T01:20:36+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79544&amp;p=179341#p179341</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79544&amp;p=179341#p179341"/>
+<title type="html"><![CDATA[Support and Development • Switch Statement?]]></title>
+
+<category term="Support and Development" scheme="http://love2d.org/forums/viewforum.php?f=4" label="Support and Development"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79544&amp;p=179341#p179341"><![CDATA[
+I am trying to figure out how to implement a switch statement.<br /><br />I read this forum, but it still doesn't help me on how to make one.<br /><a href="https://love2d.org/forums/viewtopic.php?t=9711" class="postlink">https://love2d.org/forums/viewtopic.php?t=9711</a><br /><br />If anyone has any recommendations, please let me know.<br /><br />Thank you.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136091">kerperlo</a> — Sun Jan 25, 2015 1:20 am — Replies 5 — Views 84</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[BOT-Brad]]></name></author>
+<updated>2015-01-25T23:20:32+00:00</updated>
+<published>2015-01-24T22:34:39+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79543&amp;p=179338#p179338</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79543&amp;p=179338#p179338"/>
+<title type="html"><![CDATA[General • [SOLVED] Love2D &amp; Lua with a local database?]]></title>
+
+<category term="General" scheme="http://love2d.org/forums/viewforum.php?f=3" label="General"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79543&amp;p=179338#p179338"><![CDATA[
+Hi folks,<br /><br />Just a quick question. I'm working on a project where I need to pull in and process a fair whack of data. This data is simply a locally stored file  with a lot of config and setup data for some geographical mapping and plotting systems. While testing and developing the project, I have been storing a small amount of the data as native lua table objects, but maintaining the large amount of data this way is virtually impossible. It was no issue when there were only 50 or so entries, but the full database has over 40,000 entries and it becomes a pain to manage such a large lua table easily.<br /><br />Basically, is there any lightweight and platform-independent way to read some form of local database (Be it SQLite or similar) in Love/Lua without much hassle? Alternatively if there isn't, then is there a better way to manage a 40,000 line .txt file to easily manage the data without major headaches?<br /><br />Cheers.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135985">BOT-Brad</a> — Sat Jan 24, 2015 10:34 pm — Replies 8 — Views 119</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Joe Black]]></name></author>
+<updated>2015-01-24T21:49:03+00:00</updated>
+<published>2015-01-24T21:49:03+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79542&amp;p=179336#p179336</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79542&amp;p=179336#p179336"/>
+<title type="html"><![CDATA[Projects and Demos • Tiölved - use Tiled in Löve]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79542&amp;p=179336#p179336"><![CDATA[
+<a href="http://www.hostingpics.net/viewer.php?id=766931tiolved.png" class="postlink"><img src="http://img15.hostingpics.net/thumbs/mini_766931tiolved.png" alt="Image" /></a><br /><a href="http://www.hostingpics.net/viewer.php?id=582984orthogonal.png" class="postlink"><img src="http://img15.hostingpics.net/thumbs/mini_582984orthogonal.png" alt="Image" /></a><br /><br /><span style="font-weight: bold">tiolved.lua<br />===========</span><br /><br />A framework to use tiled(<a href="http://www.mapeditor.org/" class="postlink">http://www.mapeditor.org/</a>) in LÖVE(<a href="http://love2d.org" class="postlink">http://love2d.org</a>).<br /><br /><span style="font-weight: bold">mapTable<br />-------- </span><br /><br />You can create a table that contain all the element in a .tmx file by using `map`:<br /><br />maptable=tiolved:map(&quot;map.tmx&quot;)<br /><br />the table is generated as below :<br /><br />* object :<br /><br />&lt;element attribute1=&quot;value1&quot; attribute2=&quot;value2&quot;/&gt; <br /><br /> create :<br /><br /> {je=&quot;element&quot;, attribute1=&quot;value1&quot;, attribute2=&quot;value2&quot;}<br /><br />*  object that contain objects :<br /><br />&lt;element1 attr1=&quot;value1&quot;&gt;<br />&lt;element1.1 attr1=&quot;value1&quot;/&gt;<br />&lt;element1.2 attr1=&quot;value1&quot;/&gt;<br />&lt;/element&gt;<br /><br />   create :<br /><br />{je=&quot;element&quot;, attr1=&quot;value1&quot;,<br />1={je=&quot;element1.1&quot;, attr1=&quot;value1&quot;}<br />2={je=&quot;element1.2&quot;, attr1=&quot;value1&quot;}<br />}<br /><br />* the first line `&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;` create nothing<br /><span style="font-weight: bold"><br />mapGid<br />------</span><br /><br />You can create a table that contain all the tile in canvas with the mapTable using :<br /><br />mapGid=tiolved:gid(mapTable)<br /><br />mapGid[1]=tile1<br />...<br />mapGid[lastTile]=lastTile<br /><br /><span style="font-weight: bold">layers<br />------</span><br /><br />You can  generate table that contain for each layer a table with the canvas of the layer and the attributes of the layer using :<br /><br />layers=tiolved:layers(mapTable,mapGid)<br /><br />layers[i]={ attr1=value1, property1=valueproperty1, canvas=canvas }<br /><br />trick: the layer that must be interpreted and not drawn must be removed from the mapTable or you can change the .je=layer for something else<br /><br /><span style="font-weight: bold">usefulfunc<br />----------<br /></span><br />Use :<br /><br />toMap,toRender=tiolved:usefulfunc(map)<br /><br />useful especially for isometric map, see in the exemple.<br /><br /><span style="font-weight: bold">exemple<br />-------</span><br /><br />the main love.load contain the basic way to use tiolved<br /><br /><span style="font-weight: bold">issue<br />-----</span><br /><br />for any inform me at my [github](<!-- m --><a class="postlink" href="https://github.com/thiolliere/tiolved">https://github.com/thiolliere/tiolved</a><!-- m -->) or here <br /><br />thanks <br />Joe<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136219">Joe Black</a> — Sat Jan 24, 2015 9:49 pm — Replies 0 — Views 64</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[X888X]]></name></author>
+<updated>2015-01-24T20:45:13+00:00</updated>
+<published>2015-01-24T20:45:13+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79541&amp;p=179332#p179332</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79541&amp;p=179332#p179332"/>
+<title type="html"><![CDATA[Support and Development • Fading Not Working]]></title>
+
+<category term="Support and Development" scheme="http://love2d.org/forums/viewforum.php?f=4" label="Support and Development"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79541&amp;p=179332#p179332"><![CDATA[
+All I get is a blank screen, I want to have a fade in and fade out thing for my game intro, but it isn't working, please help.<br /><br /><dl class="codebox"><dt>Code: </dt><dd><code>alpha = 255<br />seconds = 2<br /><br />function love.update(delayTime)<br />   if alpha == 255 then<br />      alpha = alpha-(255/seconds*delayTime)<br />   elseif alpha == 0 then<br />      alpha = alpha+(255/seconds*delayTime)<br />   end<br />end<br /><br />function love.draw()<br />   if alpha == 255 then<br />      love.graphics.printf(&quot;CodeX Studios Presents...&quot;, 0, 250, 800, &quot;center&quot;)<br />      love.graphics.setColor(255, 255, 255, alpha)<br />      love.graphics.setNewFont(48)<br />   elseif alpha == 0 then<br />      love.graphics.reset()<br />      love.graphics.printf(&quot;A Game&quot;, 0, 250, 800, &quot;center&quot;)<br />      love.graphics.setColor(255, 255, 255, alpha)<br />      love.graphics.setNewFont(48)<br />   end<br />end<br /></code></dd></dl><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136241">X888X</a> — Sat Jan 24, 2015 8:45 pm — Replies 2 — Views 48</p><hr />
+]]></content>
+</entry>
+</feed>

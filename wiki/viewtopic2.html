@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<link rel="shortcut icon" type="image/png" href="favicon5.png" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2002-2006 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>LÖVE &bull; View topic - Benignly Designed Sound Manager</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - LÖVE" href="feed3.php" /><link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="feed3.php_mode_forums" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed3.php_mode_topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Projects and Demos" href="feed.php_f_5" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Benignly Designed Sound Manager" href="" />
+
+<!--
+	phpBB style name: love
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      rude
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=5&amp;t=3804&amp;sid=b8531a1849d455195dee1c6c52919179';
+	var style_cookie = 'phpBBstyle';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (i = 0; i <= onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (i = 0; i <= onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="styleswitcher3.js"></script>
+<script type="text/javascript" src="forum_fn3.js"></script>
+<script type="text/javascript" src="mathjax.js">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["\\(","\\)"]]}
+  });
+</script>
+
+<link href="print3.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="normal3.css" rel="stylesheet" type="text/css" title="A" />
+<link href="medium3.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="large3.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+<link rel="stylesheet" href="docco.css"/>
+<script type="text/javascript" src="highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.configure({useBR: true});
+function hljs_init() {
+	var elements = document.getElementsByTagName("code");
+	for (var i = 0; i < elements.length; i++) {
+		hljs.highlightBlock(elements[i]);
+	}
+};
+onload_functions.push("hljs_init()");
+</script>
+<style>
+dl.codebox {
+	background-color: rgb(248, 248, 255); /* Match the highlighting background */
+}
+</style>
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<!-- CUSTOM STUFF GO HERE -->
+
+<header id="love_header">
+</header>
+
+<div id="love_wrap">
+
+	<nav>
+		<a href="love2d1.html">Home</a>
+		<a href="wiki.html">Wiki</a>
+		<a href="forums.html">Forums</a>
+		<a href="http://bitbucket.org/rude/love/issues">Issue tracker</a>
+	</nav>
+
+<div id="love_content">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+	
+
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="forums9.html" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="">Projects and Demos</a></li>
+
+				<li class="rightside"><a href="" onclick="fontsizeup(); return false;" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+                                <!-- <li class="icon-rss"><a href="" title="{ RSS_EXPLAIN }">RSS</a></li> -->
+				<!-- <li><a href="" title="{ RSS_EXPLAIN }"><img src="icon_rss3.gif"/></a></li> -->
+        <li class="icon-search"><a href="search9.html" title="{ SEARCH_EXPLAIN }">Search</a></li>
+        <li class="icon-faq"><a href="faq7.html" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-members"><a href="memberlist7.html" title="View complete list of members">Members</a></li><li class="icon-register"><a href="">Register</a></li>
+					<li class="icon-logout"><a href="" title="Login" accesskey="l">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	
+		<a name="start_here"></a>
+		<div id="page-body">
+			
+			 
+<h2><a href="">Benignly Designed Sound Manager</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><span style="display: none">Showcase your games and demos, and discuss ongoing projects.<br /></span>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="post" id="topic-search" action="search9.html">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" value="3804" name="t" />
+				<input type="hidden" value="msgonly" name="sf" />
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			14 posts
+			 &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>2</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="">2</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p38500" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p38500">Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="" style="color: #CC6600;" class="username-coloured">vrld</a></strong> on Wed Oct 19, 2011 2:46 pm </p>
+
+			
+
+			<div class="content">Because the one thing I like about Flash/ActionScript3 is how they handle audio playback and seeing new lovers often have trouble understanding love's audio architecture, I sat down and tried to emulate the AS3 behavior. The result is the<br /><span style="font-size: 150%; line-height: 116%;"><span style="font-weight: bold">Benignly Designed Sound Manager</span></span><br /><br />BDSM overwrites love.audio.newSource, love.audio.play and love.audio.stop, so that <span style="font-style: italic">one source can be played multiple times</span>.<br /><br /><span style="font-weight: bold">love.audio.newSource(what, how)</span><br />Returns a new bdsm source. The parameters are the same as for the old love.audio.newSource().<br /><br /><span style="font-weight: bold">love.audio.play(source)</span> and <span style="font-weight: bold">source:play()</span><br />Plays the source and returns a <span style="font-style: italic">handle</span> to the player. The player is the same as love.audio's <a href="source.html">Source</a> object. In contrast to love.audio, you can safely ignore the handles.<br /><br /><span style="font-weight: bold">love.audio.stop(source)</span> and <span style="font-weight: bold">source:stop()</span><br />Stops all instances of <span style="font-style: italic">source</span>. If <span style="font-style: italic">source</span> is omitted, it will stop <span style="font-style: italic">all</span> the sources.<br /><br />The source code is rather short: <span style="font-weight: bold">Warning: OLD CODE</span><br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>local newSource = love.audio.newSource<br />local stop = love.audio.stop<br /><br />local function remove_stopped(sources)<br />&nbsp; &nbsp;local remove = {}<br />&nbsp; &nbsp;for _, s in pairs(sources) do<br />&nbsp; &nbsp;&nbsp; &nbsp;remove&#91;s&#93; = true<br />&nbsp; &nbsp;end<br />&nbsp; &nbsp;for s, _ in pairs(remove) do<br />&nbsp; &nbsp;&nbsp; &nbsp;sources&#91;s&#93; = nil<br />&nbsp; &nbsp;end<br />end<br /><br />function love.audio.newSource(what, how)<br />&nbsp; &nbsp;return {<br />&nbsp; &nbsp;&nbsp; &nbsp;play = function(self)<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;remove_stopped(self.handles)<br /><br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;local s = newSource(what, how)<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;s:setLooping(self.looping)<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;s:setPitch(self.pitch)<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;s:setVolume(self.volume)<br /><br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;self.handles&#91;s&#93; = s<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;s:play()<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;return s<br />&nbsp; &nbsp;&nbsp; &nbsp;end,<br /><br />&nbsp; &nbsp;&nbsp; &nbsp;stop = function(self)<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;for _, s in pairs(self.handles) do<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;s:stop()<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;end<br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;self.handles = {}<br />&nbsp; &nbsp;&nbsp; &nbsp;end,<br /><br />&nbsp; &nbsp;&nbsp; &nbsp;setLooping = function(self, v) self.looping = not not v&nbsp; &nbsp;end,<br />&nbsp; &nbsp;&nbsp; &nbsp;setPitch&nbsp; &nbsp;= function(self, v) self.pitch&nbsp; &nbsp;= tonumber(v) end,<br />&nbsp; &nbsp;&nbsp; &nbsp;setVolume&nbsp; = function(self, v) self.volume&nbsp; = tonumber(v) end,<br /><br />&nbsp; &nbsp;&nbsp; &nbsp;looping = false,<br />&nbsp; &nbsp;&nbsp; &nbsp;pitch = 1,<br />&nbsp; &nbsp;&nbsp; &nbsp;volume = 1,<br />&nbsp; &nbsp;&nbsp; &nbsp;handles = {},<br />&nbsp; &nbsp;}<br />end<br /><br />function love.audio.play(what)<br />&nbsp; &nbsp;assert(what.handles, &quot;Can only play source objects.&quot;)<br />&nbsp; &nbsp;return what:play()<br />end<br /><br />function love.audio.stop(what)<br />&nbsp; &nbsp;if what and what.stop then return what:stop() end<br />&nbsp; &nbsp;stop()<br />end</code></dd></dl><br /><br />Example code:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>require 'bdsm'<br /><br />function love.load()<br />&nbsp; &nbsp;music = love.audio.newSource('music.ogg', 'stream')<br />&nbsp; &nbsp;music:setLooping(true) -- set default value for all players<br />&nbsp; &nbsp;music:setVolume(.3)<br />&nbsp; &nbsp;love.audio.play(music) -- the handle can be ignored<br /><br />&nbsp; &nbsp;woosh = love.audio.newSource('woosh.ogg', 'static')<br /><br />&nbsp; &nbsp;love.graphics.setFont(30)<br />end<br /><br />function love.draw()<br />&nbsp; &nbsp;love.graphics.print('Press a key!', 20,20)<br />end<br /><br />function love.keypressed()<br />&nbsp; &nbsp;local h = woosh:play() -- same as love.audio.play(woosh)<br />&nbsp; &nbsp;h:setPitch(.5 + math.random() * 3) -- set pitch for individual players<br />end</code></dd></dl><br /><br />Can you see yourself using this?<br />If not: why?<br />What can be improved?<br /><br /><span style="font-weight: bold">Edit:</span><br />This is now on github: <!-- m --><a class="postlink" href="https://github.com/vrld/Stuff/tree/master/bdsm">https://github.com/vrld/Stuff/tree/master/bdsm</a><!-- m --></div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="love.png" alt="" /> <a class="postlink" href="">example.love</a></dt>
+			<dd><em>Simple example. Old version.</em></dd>
+			<dd>(2.09 MiB) Downloaded 110 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+				<div class="notice">Last edited by <a href="" style="color: #CC6600;" class="username-coloured">vrld</a> on Mon Oct 24, 2011 4:48 pm, edited 1 time in total.
+					
+				</div>
+			<div id="sig38500" class="signature">When I was a kid I used to pray every night for a new bicycle. Then I realised God doesn’t work that way, so I stole one and prayed for forgiveness.<br /><a href="http://vrld.github.com/hump/" class="postlink">hump</a> <span style="color: #808080">Helper Utilities for Massive Productivity</span> | <a href="http://vrld.github.com/HardonCollider/" class="postlink">HardonCollider</a> <span style="color: #808080">Collision detection</span> | <a href="http://github.com/vrld/Quickie" class="postlink">Quickie</a> <span style="color: #808080">Easy GUI Library</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38500">
+			<dt>
+				<a href=""><img src="file.php_avatar_1087_1349875914.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="" style="color: #CC6600;" class="username-coloured">vrld</a>
+			</dt>
+
+			<dd>Party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 848</dd><dd><strong>Joined:</strong> Sun Apr 04, 2010 9:14 pm</dd><dd><strong>Location:</strong> Germany</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://vrld.org" title="WWW: http://vrld.org"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38504" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38504">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Taehl</a></strong> on Wed Oct 19, 2011 3:05 pm </p>
+
+			
+
+			<div class="content">I like it (I'm assuming it works fully, rather than testing it). About the only reason I could see myself using TEsound instead of this is for two features: Sound tags (so you can set the volume or pitch of many different sounds together, thus enabling things like a &quot;sound effect volume&quot; option) and being able to pass it a table of sounds and it'll choose one at random. Also, lovely name.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38504">
+			<dt>
+				<a href=""><img src="file.php_avatar_874_1276377128.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Taehl</a>
+			</dt>
+
+			<dd>Dreaming in associative arrays</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1000</dd><dd><strong>Joined:</strong> Mon Jan 11, 2010 5:07 am</dd><dd><strong>Location:</strong> FL, USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://sites.google.com/site/pixelperfectsite/" title="WWW: http://sites.google.com/site/pixelperfectsite/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38506" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38506">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">adnzzzzZ</a></strong> on Wed Oct 19, 2011 3:19 pm </p>
+
+			
+
+			<div class="content">I have been playing with sound synthesis using LÖVE and I have designed something very similar to what you have here (I think, maybe: <!-- m --><a class="postlink" href="https://github.com/adonaac/love/tree/master/ss">https://github.com/adonaac/love/tree/master/ss</a><!-- m -->). But for what I'm doing I still have some problems with emulating a buffer and/or pop/click noises at the end and start of sources (although I think this has to do with the way I'm handling the samples)... <br /><br />Regardless, your solution to my problems look a lot better. I will use this soon and report on what I think of it. Thanks!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38506">
+			<dt>
+				<a href=""><img src="file.php_avatar_1715_1365817825.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">adnzzzzZ</a>
+			</dt>
+
+			<dd>Party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 224</dd><dd><strong>Joined:</strong> Sun Dec 26, 2010 11:04 pm</dd><dd><strong>Location:</strong> Porto Alegre, Brazil</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://notmagi.me" title="WWW: http://notmagi.me"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38527" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38527">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Robin</a></strong> on Wed Oct 19, 2011 9:31 pm </p>
+
+			
+
+			<div class="content">Very interesting, I might want to use that (seems perfect for Jams, for example). The only thing is that I might want to distinguish between BDSM Sources and regular old Sources.</div>
+
+			<div id="sig38527" class="signature"><a href="" class="postlink">Help us help you</a>: attach a .love.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38527">
+			<dt>
+				<a href=""><img src="file.php_avatar_436_1359407191.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Robin</a>
+			</dt>
+
+			<dd>The Omniscient</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 6242</dd><dd><strong>Joined:</strong> Fri Feb 20, 2009 4:29 pm</dd><dd><strong>Location:</strong> The Netherlands</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://gvxdev.wordpress.com/" title="WWW: http://gvxdev.wordpress.com/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38528" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38528">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">headchant</a></strong> on Wed Oct 19, 2011 9:36 pm </p>
+
+			
+
+			<div class="content">In combination with your proxy stuff this could extremely simplify the whole sound managing business.</div>
+
+			<div id="sig38528" class="signature">Write Games.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38528">
+			<dt>
+				<a href=""><img src="file.php_avatar_1428_1417437671.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">headchant</a>
+			</dt>
+
+			<dd>Party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 103</dd><dd><strong>Joined:</strong> Fri Sep 03, 2010 12:39 pm</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://www.headchant.com/" title="WWW: http://www.headchant.com/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38540" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38540">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">T-Bone</a></strong> on Thu Oct 20, 2011 6:07 am </p>
+
+			
+
+			<div class="content">Great name. Will check it out.</div>
+
+			<div id="sig38540" class="signature">My game called <a href="http://tboneiss.itch.io/hatcat" class="postlink">Hat Cat and the Obvious Crimes Against the Fundamental Laws of Physics</a> is out now!</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38540">
+			<dt>
+				<a href=""><img src="file.php_avatar_3355_1397401654.png" width="64" height="80" alt="User avatar" /></a><br />
+				<a href="">T-Bone</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1210</dd><dd><strong>Joined:</strong> Thu Jun 09, 2011 9:03 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38547" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38547">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">kikito</a></strong> on Thu Oct 20, 2011 1:41 pm </p>
+
+			
+
+			<div class="content">I like this very much! (IMHO this is how LÖVE should handle all sound, I've already talked about this)<br /><br /><blockquote><div><cite>vrld wrote:</cite>What can be improved?</div></blockquote><br /><br />Only two things:<br /><ul><li>Put it on github (or some other public repo). Or put a link on the forum, if it's already there.</li><li>newSource creates a lot of functions nearly identical. Wouldn't it be possible to extract them to a metatable?</li></ul></div>
+
+			<div id="sig38547" class="signature">When I write <span style="font-weight: bold">def</span> I mean <span style="font-weight: bold">function</span>.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38547">
+			<dt>
+				<a href=""><img src="file.php_avatar_710_1275310726.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">kikito</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2789</dd><dd><strong>Joined:</strong> Sat Oct 03, 2009 5:22 pm</dd><dd><strong>Location:</strong> Madrid, Spain</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://github.com/kikito" title="WWW: http://github.com/kikito"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38668" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38668">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="" style="color: #CC6600;" class="username-coloured">vrld</a></strong> on Mon Oct 24, 2011 4:46 pm </p>
+
+			
+
+			<div class="content">Late reply, but better late than never. Thanks for the feedback <img src="ms_smile.png" alt=":)" title="Smile" /><br /><br /><blockquote><div><cite>Taehl wrote:</cite>two features: Sound tags (so you can set the volume or pitch of many different sounds together, thus enabling things like a &quot;sound effect volume&quot; option)</div></blockquote>That is a great idea! Tags can be played/stopped/pitched/whatevered by using <span style="font-style: italic">love.audio.tags.tagname.foo</span>, e.g. <span style="font-style: italic">love.audio.tags.effects.setPitch(0.6)</span>. Doing stuff on tags will act upon all sources and their playing instances in that tag. By default, all sources are members of the 'all' tag, so you can act on all sources via <span style="font-style: italic">love.audio.tags.all</span>.<br /><br />Likewise, modifying a source's pitch, volume or looping behavior will effect all playing instances of that source. So be careful with that.<br /><br /><blockquote><div><cite>Taehl wrote:</cite>and being able to pass it a table of sounds and it'll choose one at random.</div></blockquote>Not quite sure what that means: Playing a shuffled playlist, or just choosing a sound to play, i.e.:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>sounds = table.shuffle{'foo.ogg', 'bar.ogg', 'baz.ogg'} -- doesn't exist<br />source = love.audio.newSource(sounds&#91;1&#93;)<br />souce:play()</code></dd></dl><br /><br /><br /><blockquote><div><cite>adnzzzzZ wrote:</cite> But for what I'm doing I still have some problems with emulating a buffer and/or pop/click noises at the end and start of sources </div></blockquote>Just to clarify: This lib has nothing to do with sound synthesis, and it will not remove the clicking sounds. These are caused by your sound not having zero crossings at the beginning and end. To get rid of them, make sure the last sample you write is 0.0, either by using an envelope, or by making the sound duration a multiple of the wavelength of your wave function. On a side note (haha, get it? <img src="ms_ehem.png" alt=":ehem:" title="Ehem ..." />), you might be interested in <a href="https://github.com/vrld/Moan" class="postlink">Moan</a>.<br /><br /><br /><blockquote><div><cite>Robin wrote:</cite>The only thing is that I might want to distinguish between BDSM Sources and regular old Sources.</div></blockquote>Doable, but hackish:<br /><ul><li>function isLoveSource(s) return type(s) == &quot;userdata&quot; and s:typeOf(&quot;Source&quot;) end</li><li>function isLoveSource(s) return s.instances ~= nil end</li><li>function isLoveSource(s) return love.tags.all[s] ~= nil end</li></ul><br /><br /><blockquote><div><cite>Kikito wrote:</cite>Put it on github</div></blockquote>Done: <!-- m --><a class="postlink" href="https://github.com/vrld/Stuff/">https://github.com/vrld/Stuff/</a><!-- m --><br />The name will probably change in the future, since there already is <a href="https://github.com/bartbes/DSM" class="postlink">bdsm</a> for LÖVE.<br /><br /><blockquote><div><cite>Kikito wrote:</cite>newSource creates a lot of functions nearly identical. Wouldn't it be possible to extract them to a metatable?</div></blockquote>Good point. Also done.<br /><blockquote><div><cite>Kikito wrote:</cite>Put it on github</div></blockquote></div>
+
+			<div id="sig38668" class="signature">When I was a kid I used to pray every night for a new bicycle. Then I realised God doesn’t work that way, so I stole one and prayed for forgiveness.<br /><a href="http://vrld.github.com/hump/" class="postlink">hump</a> <span style="color: #808080">Helper Utilities for Massive Productivity</span> | <a href="http://vrld.github.com/HardonCollider/" class="postlink">HardonCollider</a> <span style="color: #808080">Collision detection</span> | <a href="http://github.com/vrld/Quickie" class="postlink">Quickie</a> <span style="color: #808080">Easy GUI Library</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38668">
+			<dt>
+				<a href=""><img src="file.php_avatar_1087_1349875914.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="" style="color: #CC6600;" class="username-coloured">vrld</a>
+			</dt>
+
+			<dd>Party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 848</dd><dd><strong>Joined:</strong> Sun Apr 04, 2010 9:14 pm</dd><dd><strong>Location:</strong> Germany</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://vrld.org" title="WWW: http://vrld.org"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38671" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38671">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Taehl</a></strong> on Mon Oct 24, 2011 5:09 pm </p>
+
+			
+
+			<div class="content">Sounds tags are in? Awesome.<br /><br /><blockquote><div><cite>vrld wrote:</cite><blockquote><div><cite>Taehl wrote:</cite>and being able to pass it a table of sounds and it'll choose one at random.</div></blockquote>Not quite sure what that means: Playing a shuffled playlist, or just choosing a sound to play, i.e.:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>sounds = table.shuffle{'foo.ogg', 'bar.ogg', 'baz.ogg'} -- doesn't exist<br />source = love.audio.newSource(sounds&#91;1&#93;)<br />souce:play()</code></dd></dl></div></blockquote><br /><br />Choosing a sound to play. What I enjoy doing are things like:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>-- in love.load or content.lua<br />sounds = {<br />&nbsp; &nbsp;growl = {<br />&nbsp; &nbsp;&nbsp; &nbsp;&quot;sounds/growl01.ogg&quot;, &quot;sounds/growl02.ogg&quot;, &quot;sounds/growl03.ogg&quot;, &quot;sounds/growl04.ogg&quot;, &quot;sounds/growl05.ogg&quot;, &quot;sounds/growl06.ogg&quot;, &quot;sounds/growl07.ogg&quot;, &quot;sounds/growl08.ogg&quot;,<br />&nbsp; &nbsp;},<br />}<br /><br /><br />-- somewhere in my game's code<br />-- This plays one growl sound at random<br />TEsound.play(sounds.growl)<br /><br />-- That's functionally equivalent to, but much nicer to type, than<br />TEsound.play(sounds.growl&#91;math.random(#sounds.growl)&#93;)<br />-- or in this case,<br />love.audio.play(love.audio.newSource(sounds.growl&#91;math.random(#sounds.growl)&#93;, &quot;stream&quot;))<br /></code></dd></dl>Also worth mentioning is that if you loop a random sound like this in TEsound, it'll choose a different sound each time. So you could very easily play a random list of music, for example. Would that be possible in BDSM?<br /><br />... I don't think you mentioned how to add tags to sounds in BDSM...</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38671">
+			<dt>
+				<a href=""><img src="file.php_avatar_874_1276377128.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Taehl</a>
+			</dt>
+
+			<dd>Dreaming in associative arrays</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1000</dd><dd><strong>Joined:</strong> Mon Jan 11, 2010 5:07 am</dd><dd><strong>Location:</strong> FL, USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://sites.google.com/site/pixelperfectsite/" title="WWW: http://sites.google.com/site/pixelperfectsite/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p38674" class="post bg1 online">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p38674">Re: Benignly Designed Sound Manager</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="" style="color: #CC6600;" class="username-coloured">slime</a></strong> on Mon Oct 24, 2011 5:23 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Taehl wrote:</cite>Sounds tags are in? Awesome.<br /><br /><blockquote><div><cite>vrld wrote:</cite><blockquote><div><cite>Taehl wrote:</cite>and being able to pass it a table of sounds and it'll choose one at random.</div></blockquote>Not quite sure what that means: Playing a shuffled playlist, or just choosing a sound to play, i.e.:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>sounds = table.shuffle{'foo.ogg', 'bar.ogg', 'baz.ogg'} -- doesn't exist<br />source = love.audio.newSource(sounds&#91;1&#93;)<br />souce:play()</code></dd></dl></div></blockquote><br /><br />Choosing a sound to play. What I enjoy doing are things like:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>-- in love.load or content.lua<br />sounds = {<br />&nbsp; &nbsp;growl = {<br />&nbsp; &nbsp;&nbsp; &nbsp;&quot;sounds/growl01.ogg&quot;, &quot;sounds/growl02.ogg&quot;, &quot;sounds/growl03.ogg&quot;, &quot;sounds/growl04.ogg&quot;, &quot;sounds/growl05.ogg&quot;, &quot;sounds/growl06.ogg&quot;, &quot;sounds/growl07.ogg&quot;, &quot;sounds/growl08.ogg&quot;,<br />&nbsp; &nbsp;},<br />}<br /><br /><br />-- somewhere in my game's code<br />-- This plays one growl sound at random<br />TEsound.play(sounds.growl)<br /><br />-- That's functionally equivalent to, but much nicer to type, than<br />TEsound.play(sounds.growl&#91;math.random(#sounds.growl)&#93;)<br />-- or in this case,<br />love.audio.play(love.audio.newSource(sounds.growl&#91;math.random(#sounds.growl)&#93;, &quot;stream&quot;))<br /></code></dd></dl>Also worth mentioning is that if you loop a random sound like this in TEsound, it'll choose a different sound each time. So you could very easily play a random list of music, for example. Would that be possible in BDSM?<br /><br />... I don't think you mentioned how to add tags to sounds in BDSM...</div></blockquote><br />Is it really that hard to do the random stuff yourself? I don't see it being an essential part of a sound library. <img src="ms_razz.png" alt=":P" title="Razz" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile38674">
+			<dt>
+				<a href=""><img src="file.php_avatar_1399_1410055103.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="" style="color: #CC6600;" class="username-coloured">slime</a>
+			</dt>
+
+			<dd>Solid Snayke</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1930</dd><dd><strong>Joined:</strong> Mon Aug 23, 2010 6:45 am</dd><dd><strong>Location:</strong> Canada</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			14 posts
+			 &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>2</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="">2</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="" class="left-box left" accesskey="r">Return to Projects and Demos</a></p>
+
+	<form method="post" id="jumpbox" action="viewforum.php_sid_b8531a1849d455195dee1c6c52919179" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="3">General</option>
+			
+				<option value="4">Support and Development</option>
+			
+				<option value="5" selected="selected">Projects and Demos</option>
+			
+				<option value="7">Community</option>
+			
+				<option value="12">&nbsp; &nbsp;Ports</option>
+			
+				<option value="10">&nbsp; &nbsp;&nbsp; &nbsp;nLÖVE</option>
+			
+				<option value="11">&nbsp; &nbsp;&nbsp; &nbsp;LÖVE-Android</option>
+			
+				<option value="13">&nbsp; &nbsp;Archives</option>
+			
+				<option value="8">&nbsp; &nbsp;&nbsp; &nbsp;A Whiff of Steam</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="viewonline5.html">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 7 guests</p>
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="forums9.html" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="">The team</a> &bull; <a href="">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br />Karma functions powered by Karma MOD &copy; 2007, 2009 m157y
+
+		<br />Protected by <a href="http://www.lithiumstudios.org" target="_blank">Anti-Spam ACP</a>
+		
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+		</div> <!-- page-body -->
+	</div> <!-- love_content -->
+	</div> <!-- love_wrap --><!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+
+</body>
+</html>

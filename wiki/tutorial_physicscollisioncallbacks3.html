@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="favicon1.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc1.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>Tutorial:PhysicsCollisionCallbacks (Русский) - LOVE</title>
+		<link rel="stylesheet" href="shared1.css" media="screen" />
+<link rel="stylesheet" href="commonprint1.css" media="print" />
+<link rel="stylesheet" href="main1.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes1.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="https://www.love2d.org",
+wgCanonicalNamespace="Tutorial",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=500,
+wgPageName="Tutorial:PhysicsCollisionCallbacks_(Русский)",
+wgTitle="PhysicsCollisionCallbacks (Русский)",
+wgAction="view",
+wgArticleId=3608,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=13456,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=["Tutorials"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits1.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax1.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Tutorial:PhysicsCollisionCallbacks (Русский)" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg1.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-500 ns-subject page-Tutorial_PhysicsCollisionCallbacks_Русский skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-tutorial" class="selected"><a href="">Tutorial</a></li>
+					 <li id="ca-talk" class="new"><a href="" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">Tutorial:PhysicsCollisionCallbacks (Русский)</h1>
+		<div id="bodyContent">
+			<div id="contentSub"></div>
+									<!-- start content -->
+			<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9F.D1.80.D0.B5.D0.B4.D0.B8.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5"><span class="tocnumber">1</span> <span class="toctext">Предисловие</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A0.D1.83.D0.BA.D0.BE.D0.B2.D0.BE.D0.B4.D1.81.D1.82.D0.B2.D0.BE"><span class="tocnumber">2</span> <span class="toctext">Руководство</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_main.lua"><span class="tocnumber">2.1</span> <span class="toctext">Создание main.lua</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0_.D0.BC.D0.B8.D1.80.D0.B0"><span class="tocnumber">2.2</span> <span class="toctext">Настройка мира</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#World_Callbacks"><span class="tocnumber">2.3</span> <span class="toctext">World Callbacks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.97.D0.B0.D0.B2.D0.B5.D1.80.D1.88.D0.B5.D0.BD.D0.B8.D0.B5"><span class="tocnumber">3</span> <span class="toctext">Завершение</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.A1.D0.BA.D1.80.D0.B8.D0.BD.D1.88.D0.BE.D1.82.D1.8B"><span class="tocnumber">3.1</span> <span class="toctext">Скриншоты</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#main.lua"><span class="tocnumber">3.2</span> <span class="toctext">main.lua</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D1.8F.D0.B7.D1.8B.D0.BA.D0.B8"><span class="tocnumber">4</span> <span class="toctext">Другие языки</span></a></li>
+</ul>
+</td></tr></table><script>if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id=".D0.9F.D1.80.D0.B5.D0.B4.D0.B8.D1.81.D0.BB.D0.BE.D0.B2.D0.B8.D0.B5"> Предисловие </span></h2>
+<p>Если у вас слабое представление о <a href="love282.html" title="love.physics">love.physics</a>, вам нужно сначала ознакомиться с вводным руководством <a href="tutorial_physics4.html" title="Tutorial:Physics (Русский)">по использованию физики</a>.
+</p><p>В этом руководстве мы создадим столкновение между двумя объектами, которое вызывается определенной callback-функцией (колбеком), заданной в <a href="world_setcallbacks1.html" title="World:setCallbacks">World:setCallbacks</a>.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id=".D0.A0.D1.83.D0.BA.D0.BE.D0.B2.D0.BE.D0.B4.D1.81.D1.82.D0.B2.D0.BE"> Руководство </span></h2>
+<h3> <span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_main.lua"> Создание main.lua </span></h3>
+<p>Начнем с создания main.lua с тремя функциями: <a href="love312.html" title="love.load">love.load</a>, <a href="love316.html" title="love.update">love.update</a>, and <a href="love317.html" title="love.draw">love.draw</a>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span><br /><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span><br /><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span></div></div>
+<h3> <span class="mw-headline" id=".D0.9D.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B0_.D0.BC.D0.B8.D1.80.D0.B0"> Настройка мира </span></h3>
+<p>Сейчас, когда фреймворк уже настроен, настроим <a href="world2.html" title="World">физический мир</a> в <a href="love312.html" title="love.load">love.load</a> с <a href="love.physics49.html" title="love.physics.newWorld">newWorld</a>.
+Мы также будем использовать <a href="world_update1.html" title="World:update">World:update</a>.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="co1">-- Помещаем новый &quot;мир&quot; в переменную &quot;world&quot;</span><br />&nbsp; &nbsp; world <span class="sy0">=</span> love.physics.newWorld<span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">200</span>, <span class="kw1">true</span><span class="br0">&#41;</span> &nbsp;<span class="co1">-- Гравитация установлена равной 0 по оси X и 200 по оси Y</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="co1">-- Никогда не забывайте обновлять мир каждый кадр</span><br />&nbsp; &nbsp; world:update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p>Теперь нам нужно создать мяс и землю. Чтобы это сделать нам потребуются  <a href="love.physics65.html" title="love.physics.newBody">newBody</a>, <a href="love.physics66.html" title="love.physics.newCircleShape">newCircleShape</a> и <a href="love.physics71.html" title="love.physics.newRectangleShape">newRectangleShape</a>.  Тела к формам мы будем прикреплять с поощью <a href="love.physics75.html" title="love.physics.newFixture">newFixture</a>.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; ... <span class="co1">-- не пишите это, это просто обозначение, в какой функции, в каком месте должен быть этот код</span><br /><br />&nbsp; &nbsp; ball <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />&nbsp; &nbsp; ball.b <span class="sy0">=</span> love.physics.newBody<span class="br0">&#40;</span>world, <span class="nu0">400</span>,<span class="nu0">200</span>, <span class="st0">&quot;dynamic&quot;</span><span class="br0">&#41;</span> &nbsp;<span class="co1">-- устанавливаем x,y координаты (400,200) и позволяем двигаться и задевать другие объекты (&quot;dynamic&quot;)</span><br />&nbsp; &nbsp; ball.b:setMass<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">-- делаем довольно легким</span><br />&nbsp; &nbsp; ball.s <span class="sy0">=</span> love.physics.newCircleShape<span class="br0">&#40;</span><span class="nu0">50</span><span class="br0">&#41;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">-- устанвливаем радиус 50</span><br />&nbsp; &nbsp; ball.f <span class="sy0">=</span> love.physics.newFixture<span class="br0">&#40;</span>ball.b, ball.s<span class="br0">&#41;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">-- прикрепляем тело к форме</span><br />&nbsp; &nbsp; ball.f:setRestitution<span class="br0">&#40;</span><span class="nu0">0.4</span><span class="br0">&#41;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">-- делаем упругим</span><br />&nbsp; &nbsp; ball.f:setUserData<span class="br0">&#40;</span><span class="st0">&quot;Ball&quot;</span><span class="br0">&#41;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="co1">-- устанавливаем имя, которое будем использовать для достпуа к объекту позже</span><br />&nbsp; &nbsp; &nbsp; <br />&nbsp; &nbsp; static <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />&nbsp; &nbsp; static.b <span class="sy0">=</span> love.physics.newBody<span class="br0">&#40;</span>world, <span class="nu0">400</span>,<span class="nu0">400</span>, <span class="st0">&quot;static&quot;</span><span class="br0">&#41;</span> <span class="co1">-- &quot;static&quot; делает объект неподвижным</span><br />&nbsp; &nbsp; static.s <span class="sy0">=</span> love.physics.newRectangleShape<span class="br0">&#40;</span><span class="nu0">200</span>,<span class="nu0">50</span><span class="br0">&#41;</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">-- устанавливаем размер 200,50 (x,y)</span><br />&nbsp; &nbsp; static.f <span class="sy0">=</span> love.physics.newFixture<span class="br0">&#40;</span>static.b, static.s<span class="br0">&#41;</span><br />&nbsp; &nbsp; static.f:setUserData<span class="br0">&#40;</span><span class="st0">&quot;Block&quot;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p>Объекты уже созданы, но вы все еще не видите их. Давайте нарисуем их.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; love.graphics.circle<span class="br0">&#40;</span><span class="st0">&quot;line&quot;</span>, ball.b:getX<span class="br0">&#40;</span><span class="br0">&#41;</span>,ball.b:getY<span class="br0">&#40;</span><span class="br0">&#41;</span>, ball.s:getRadius<span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">20</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; love.graphics.polygon<span class="br0">&#40;</span><span class="st0">&quot;line&quot;</span>, static.b:getWorldPoints<span class="br0">&#40;</span>static.s:getPoints<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p>Теперь мы можем увидеть мяч, падающий вниз на прямоугольник
+</p>
+<h3> <span class="mw-headline" id="World_Callbacks"> World Callbacks</span></h3>
+<p>Но что если нам нужно больше информации о сталкновении этих объектов? Теперь мы будем использовать <a href="world_setcallbacks1.html" title="World:setCallbacks">World:setCallbacks</a> для дальнейшего анализа их столкновений.
+</p><p>Первое, что мы сделаем, это установим колбеки для нашего мира с <a href="world_setcallbacks1.html" title="World:setCallbacks">World:setCallbacks</a>.
+Есть четыре колбека для столкновения: beginContact, endContact, preSolve и postSolve.
+</p>
+<dl><dd> <b>beginContact</b> вызывается когда две привязки (fixtures) начинают перекрывать друг друга (два объекта сталкиваются). 
+</dd><dd> <b>endContact</b> вызывается когда две привязки (fixtures) перестаются перекрывать друг друга (два объекта разъединяются).
+</dd><dd> <b>preSolve</b> вызывается непосредственно перед завершение кадра для текущего столкновения
+</dd><dd> <b>postSolve</b> вызывается непосредственно после завершения кадра для текущего столкновения
+</dd></dl>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; ... &nbsp;<span class="co1">-- добавить к остальному love.load</span><br /><br />&nbsp; &nbsp; world <span class="sy0">=</span> love.physics.newWorld<span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">200</span>, <span class="kw1">true</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">-- Названия этих колбеков могут быть такими, как вы захотите:</span><br />&nbsp; &nbsp; &nbsp; &nbsp; world:setCallbacks<span class="br0">&#40;</span>beginContact, endContact, preSolve, postSolve<span class="br0">&#41;</span><br /><br />&nbsp; &nbsp; text &nbsp; &nbsp; &nbsp; <span class="sy0">=</span> <span class="st0">&quot;&quot;</span> &nbsp; <span class="co1">-- мы будем испольовать позже эту переменную для размещения информации на экране</span><br />&nbsp; &nbsp; persisting <span class="sy0">=</span> <span class="nu0">0</span> &nbsp; &nbsp;<span class="co1">-- мы будем использовать это, чтобы сохранить состояние неоднократных вызовов колбека</span></div></div>
+<p>Теперь объявим эти функции.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> beginContact<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> endContact<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> preSolve<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> postSolve<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; <br /><span class="kw1">end</span></div></div>
+<p>Эти функции происходят каждрый раз, когда происходит какое-то из действий при столкновении. Они принимают две привязки (fixtures) и объект столкновения (collision object). Эти параметры так же могут быть названы как вам захочется. В этом руководстве мы назовем их a, b и coll.
+</p>
+<ul><li> <b>a</b> - первая <a href="fixture2.html" title="Fixture"> привязкка (fixture)</a> в столкновении (привязка от первого объекта между его телом и формой).
+</li><li> <b>b</b> - вторая привязка в столкновении.
+</li><li> <b>coll</b> - создаваемый <a href="contact2.html" title="Contact">контакт-объект (контакт)</a>.
+</li></ul>
+<p>Допустим, мы хотим напечатать информацию на экран каждый раз, когда колбек вызван. Нам всего лишь нужно изменить переменную <b>text</b>, которую мы добавили в love.load() ранее, добавляя строку каждый раз, когда происходит столкновение.  Нам также нужно немного кода, чтобы поддерживать вывод (лог) чистым. 
+</p><p>Список функций, которые вы можете использовать с контактами может быть найден на странице <a href="contact2.html" title="Contact">Contact</a>.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp; ... <span class="co1">-- добавить к остальному love.update</span><br /><br />&nbsp; &nbsp; <span class="kw1">if</span> <span class="kw1">string.len</span><span class="br0">&#40;</span>text<span class="br0">&#41;</span> <span class="sy0">&gt;</span> <span class="nu0">768</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- очистка, когда 'text' становится слишком длинным</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> <span class="st0">&quot;&quot;</span> <br />&nbsp; &nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; ... <span class="co1">-- добавить к остальному love.draw</span><br /><br />&nbsp; &nbsp; love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span>text, <span class="nu0">10</span>, <span class="nu0">10</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> beginContact<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; x,y <span class="sy0">=</span> coll:getNormal<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot;<span class="es0">\n</span>&quot;</span>..a:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; colliding with &quot;</span>..b:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; with a vector normal of: &quot;</span>..x..<span class="st0">&quot;, &quot;</span>..y<br /><span class="kw1">end</span><br /><br /><br /><span class="kw1">function</span> endContact<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; persisting <span class="sy0">=</span> <span class="nu0">0</span> &nbsp; &nbsp;<span class="co1">-- сбрасываем, когда они перестают соприкасаться</span><br />&nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot;<span class="es0">\n</span>&quot;</span>..a:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; uncolliding with &quot;</span>..b:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> preSolve<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">if</span> persisting <span class="sy0">==</span> <span class="nu0">0</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- только говорит, когда они впервые начинают касаться</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text..<span class="st0">&quot;<span class="es0">\n</span>&quot;</span>..a:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; touching &quot;</span>..b:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> persisting <span class="sy0">&lt;</span> <span class="nu0">20</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- затем просто начинается вести отсчет</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot; &quot;</span>..persisting<br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; persisting <span class="sy0">=</span> persisting + <span class="nu0">1</span> &nbsp; &nbsp;<span class="co1">-- отслеживает как много обновлений они соприкасались</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> postSolve<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br /><span class="co1">-- мы не будем ничего делать с этой функцией</span><br /><span class="kw1">end</span></div></div>
+<p>Теперь вы знаете как использовать колбеки физического мира (world callbacks)!
+</p><p>Чтобы лучше понять как мир себя ведет и видеть когда колбеки вызываются, добавим элементы управления, позволяющие подкидывать, толкать мяч:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp; world:update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br /><br />&nbsp; &nbsp; <span class="kw1">if</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;right&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span><span class="nu0">1000</span>, <span class="nu0">0</span><span class="br0">&#41;</span> <br />&nbsp; &nbsp; <span class="kw1">elseif</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;left&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span>-<span class="nu0">1000</span>, <span class="nu0">0</span><span class="br0">&#41;</span> <br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; <span class="kw1">if</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;up&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span><span class="nu0">0</span>, -<span class="nu0">5000</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;down&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">1000</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br /><br />&nbsp; &nbsp; <span class="kw1">if</span> <span class="kw1">string.len</span><span class="br0">&#40;</span>text<span class="br0">&#41;</span> <span class="sy0">&gt;</span> <span class="nu0">768</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- очищаем когда 'text' станет слишком длинным</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> <span class="st0">&quot;&quot;</span> <br />&nbsp; &nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id=".D0.97.D0.B0.D0.B2.D0.B5.D1.80.D1.88.D0.B5.D0.BD.D0.B8.D0.B5"> Завершение </span></h2>
+<h3> <span class="mw-headline" id=".D0.A1.D0.BA.D1.80.D0.B8.D0.BD.D1.88.D0.BE.D1.82.D1.8B"> Скриншоты </span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="file_box2d_love_physics_callbacks_demo1.html" class="image"><img alt="" src="400px_box2d_love_physics_callbacks_demo1.png" width="400" height="320" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="file_box2d_love_physics_callbacks_demo1.html" class="internal" title="Enlarge"><img src="magnify_clip1.png" width="15" height="11" alt="" /></a></div>Скриншот результата.</div></div></div>
+<h3> <span class="mw-headline" id="main.lua"> main.lua </span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; world <span class="sy0">=</span> love.physics.newWorld<span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">200</span>, <span class="kw1">true</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; world:setCallbacks<span class="br0">&#40;</span>beginContact, endContact, preSolve, postSolve<span class="br0">&#41;</span><br /><br />&nbsp; &nbsp; ball <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b <span class="sy0">=</span> love.physics.newBody<span class="br0">&#40;</span>world, <span class="nu0">400</span>,<span class="nu0">200</span>, <span class="st0">&quot;dynamic&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:setMass<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.s <span class="sy0">=</span> love.physics.newCircleShape<span class="br0">&#40;</span><span class="nu0">50</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.f <span class="sy0">=</span> love.physics.newFixture<span class="br0">&#40;</span>ball.b, ball.s<span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.f:setRestitution<span class="br0">&#40;</span><span class="nu0">0.4</span><span class="br0">&#41;</span> &nbsp; &nbsp;<span class="co1">-- делаем упругим</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.f:setUserData<span class="br0">&#40;</span><span class="st0">&quot;Ball&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; static <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; static.b <span class="sy0">=</span> love.physics.newBody<span class="br0">&#40;</span>world, <span class="nu0">400</span>,<span class="nu0">400</span>, <span class="st0">&quot;static&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; static.s <span class="sy0">=</span> love.physics.newRectangleShape<span class="br0">&#40;</span><span class="nu0">200</span>,<span class="nu0">50</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; static.f <span class="sy0">=</span> love.physics.newFixture<span class="br0">&#40;</span>static.b, static.s<span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; static.f:setUserData<span class="br0">&#40;</span><span class="st0">&quot;Block&quot;</span><span class="br0">&#41;</span><br /><br />&nbsp; &nbsp; text &nbsp; &nbsp; &nbsp; <span class="sy0">=</span> <span class="st0">&quot;&quot;</span> &nbsp; <span class="co1">-- будем использовать эту переменную для вывода на экран</span><br />&nbsp; &nbsp; persisting <span class="sy0">=</span> <span class="nu0">0</span> &nbsp; &nbsp;<span class="co1">-- будем использовать, чтобы сохранить состояние неоднократных вызовов колбека</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp; world:update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br /><br />&nbsp; &nbsp; <span class="kw1">if</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;right&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span><span class="nu0">1000</span>, <span class="nu0">0</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;left&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span>-<span class="nu0">1000</span>, <span class="nu0">0</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; <span class="kw1">if</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;up&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span><span class="nu0">0</span>, -<span class="nu0">5000</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;down&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; &nbsp; ball.b:applyForce<span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">1000</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br /><br />&nbsp; &nbsp; <span class="kw1">if</span> <span class="kw1">string.len</span><span class="br0">&#40;</span>text<span class="br0">&#41;</span> <span class="sy0">&gt;</span> <span class="nu0">768</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- очищаем 'text' становится слишком длинным</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> <span class="st0">&quot;&quot;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; love.graphics.circle<span class="br0">&#40;</span><span class="st0">&quot;line&quot;</span>, ball.b:getX<span class="br0">&#40;</span><span class="br0">&#41;</span>,ball.b:getY<span class="br0">&#40;</span><span class="br0">&#41;</span>, ball.s:getRadius<span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">20</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; love.graphics.polygon<span class="br0">&#40;</span><span class="st0">&quot;line&quot;</span>, static.b:getWorldPoints<span class="br0">&#40;</span>static.s:getPoints<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><br /><br />&nbsp; &nbsp; love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span>text, <span class="nu0">10</span>, <span class="nu0">10</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> beginContact<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; x,y <span class="sy0">=</span> coll:getNormal<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot;<span class="es0">\n</span>&quot;</span>..a:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; colliding with &quot;</span>..b:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; with a vector normal of: &quot;</span>..x..<span class="st0">&quot;, &quot;</span>..y<br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> endContact<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; persisting <span class="sy0">=</span> <span class="nu0">0</span><br />&nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot;<span class="es0">\n</span>&quot;</span>..a:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; uncolliding with &quot;</span>..b:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> preSolve<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">if</span> persisting <span class="sy0">==</span> <span class="nu0">0</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- только говорит, когда они впервые начинают касаться</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot;<span class="es0">\n</span>&quot;</span>..a:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span>..<span class="st0">&quot; touching &quot;</span>..b:getUserData<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> persisting <span class="sy0">&lt;</span> <span class="nu0">20</span> <span class="kw1">then</span> &nbsp; &nbsp;<span class="co1">-- затем просто начинается вести отсчет</span><br />&nbsp; &nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> text..<span class="st0">&quot; &quot;</span>..persisting<br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; persisting <span class="sy0">=</span> persisting + <span class="nu0">1</span> &nbsp; &nbsp;<span class="co1">-- отслеживает как много обновлений они соприкасались</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> postSolve<span class="br0">&#40;</span>a, b, coll<span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id=".D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D1.8F.D0.B7.D1.8B.D0.BA.D0.B8"> Другие языки </span></h2>
+<div class="i18n">
+<p><a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Dansk) (page does not exist)">Dansk</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Deutsch) (page does not exist)">Deutsch</a>&nbsp;&ndash;
+<a href="tutorial_physicscollisioncallbacks2.html" title="Tutorial:PhysicsCollisionCallbacks">English</a>&nbsp;&ndash; 
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Español) (page does not exist)">Español</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Français) (page does not exist)">Français</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Indonesia) (page does not exist)">Indonesia</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Italiano) (page does not exist)">Italiano</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Lietuviškai) (page does not exist)">Lietuviškai</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Magyar) (page does not exist)">Magyar</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Nederlands) (page does not exist)">Nederlands</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Polski) (page does not exist)">Polski</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Português) (page does not exist)">Português</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Română) (page does not exist)">Română</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Slovenský) (page does not exist)">Slovenský</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Suomi) (page does not exist)">Suomi</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Svenska) (page does not exist)">Svenska</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Türkçe) (page does not exist)">Türkçe</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Česky) (page does not exist)">Česky</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Ελληνικά) (page does not exist)">Ελληνικά</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Български) (page does not exist)">Български</a>&nbsp;&ndash;
+<strong class="selflink">Русский</strong>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Српски) (page does not exist)">Српски</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Українська) (page does not exist)">Українська</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (עברית) (page does not exist)">עברית</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (ไทย) (page does not exist)">ไทย</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (日本語) (page does not exist)">日本語</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (正體中文) (page does not exist)">正體中文</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (简体中文) (page does not exist)">简体中文</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (Tiếng Việt) (page does not exist)">Tiếng Việt</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:PhysicsCollisionCallbacks (한국어) (page does not exist)">한국어</a> 
+<br />
+<span style="text-align:right;"><i><a href="help_i18n1.html" title="Help:i18n">More info</a></i></span>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 360/1000000
+Post-expand include size: 4449/2097152 bytes
+Template argument size: 2532/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:3608-0!1!0!!en!2!edit=0 and timestamp 20150125014413 -->
+<div class="printfooter">
+Retrieved from "<a href="https://www.love2d.org/wiki/Tutorial:PhysicsCollisionCallbacks_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)">https://www.love2d.org/wiki/Tutorial:PhysicsCollisionCallbacks_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="" title="Special:Categories">Category</a>: <span dir='ltr'><a href="category_tutorials4.html" title="Category:Tutorials">Tutorials</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki1.png);" href="index9.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love272.html">love</a></li>
+				<li><a href="love273.html">love.audio</a></li>
+				<li><a href="love274.html">love.event</a></li>
+				<li><a href="love275.html">love.filesystem</a></li>
+				<li><a href="love276.html">love.graphics</a></li>
+				<li><a href="love277.html">love.image</a></li>
+				<li><a href="love278.html">love.joystick</a></li>
+				<li><a href="love279.html">love.keyboard</a></li>
+				<li><a href="love280.html">love.math</a></li>
+				<li><a href="love281.html">love.mouse</a></li>
+				<li><a href="love282.html">love.physics</a></li>
+				<li><a href="love283.html">love.sound</a></li>
+				<li><a href="love284.html">love.system</a></li>
+				<li><a href="love285.html">love.timer</a></li>
+				<li><a href="love286.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love272.html">love</a></li>
+				<li id="n-love.audio"><a href="love273.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love274.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love275.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love287.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love276.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love277.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love278.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love279.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love280.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love281.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love282.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love283.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love284.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love288.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love285.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love286.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index9.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w1.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/Tutorial:PhysicsCollisionCallbacks (Русский)">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x311.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl1.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 26 April 2014, at 15:44.</li>
+					<li id="viewcount">This page has been accessed 716 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy1.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about1.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer1.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.266 secs. --></body></html>

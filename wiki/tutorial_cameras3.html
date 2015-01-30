@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="favicon1.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc1.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>Tutorial:Cameras (简体中文) - LOVE</title>
+		<link rel="stylesheet" href="shared1.css" media="screen" />
+<link rel="stylesheet" href="commonprint1.css" media="print" />
+<link rel="stylesheet" href="main1.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes1.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="https://www.love2d.org",
+wgCanonicalNamespace="Tutorial",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=500,
+wgPageName="Tutorial:Cameras_(简体中文)",
+wgTitle="Cameras (简体中文)",
+wgAction="view",
+wgArticleId=3092,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=12001,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=["Tutorials (简体中文)"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits1.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax1.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Tutorial:Cameras (简体中文)" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg1.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-500 ns-subject page-Tutorial_Cameras_简体中文 skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-tutorial" class="selected"><a href="">Tutorial</a></li>
+					 <li id="ca-talk" class="new"><a href="" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">Tutorial:Cameras (简体中文)</h1>
+		<div id="bodyContent">
+			<div id="contentSub"></div>
+									<!-- start content -->
+			<p>BlackBulletIV写了个"Cameras in Love2D"教程，分成了三块，你可以在下面点击相应链接。也可以看我的在此页的翻译。
+</p><p>原链接：
+</p>
+<ul><li> <a href="http://nova-fusion.com/2011/04/19/cameras-in-love2d-part-1-the-basics/" class="external text" rel="nofollow">Part 1: The Basics</a>
+</li><li> <a href="http://nova-fusion.com/2011/04/22/cameras-in-love2d-part-2-parallax-scrolling/" class="external text" rel="nofollow">Part 2: Parallax Scrolling</a>
+</li><li> <a href="http://nova-fusion.com/2011/05/09/cameras-in-love2d-part-3-movement-bounds/" class="external text" rel="nofollow">Part 3: Movement Bounds</a>
+</li></ul>
+<h1> <span class="mw-headline" id=".E7.AC.AC.E4.B8.80.E9.83.A8.E5.88.86.EF.BC.9A.E5.9F.BA.E7.A1.80.E7.AF.87.7C.E5.88.9B.E5.BB.BA.E6.91.84.E5.83.8F.E5.A4.B4.E7.9A.84.E5.9F.BA.E6.9C.AC.E5.8E.9F.E7.90.86">第一部分：基础篇|创建摄像头的基本原理</span></h1>
+<p>我们将用到这些函数
+</p>
+<ul><li><a href="" class="new" title="love.graphics.pop (简体中文) (page does not exist)">love.graphics.pop (简体中文)</a>
+</li><li><a href="" class="new" title="love.graphics.push (简体中文) (page does not exist)">love.graphics.push (简体中文)</a>
+</li><li><a href="" class="new" title="love.graphics.translate (简体中文) (page does not exist)">love.graphics.translate (简体中文)</a>   -- 坐标转换
+</li><li><a href="" class="new" title="love.graphics.rotate (简体中文) (page does not exist)">love.graphics.rotate (简体中文)</a>   -- rotate旋转
+</li><li><a href="" class="new" title="love.graphics.scale (简体中文) (page does not exist)">love.graphics.scale (简体中文)</a>   -- scale比例
+</li></ul>
+<p>这是作者的原解释符号图.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c">Starting<span class="sy0">:</span><br /><span class="sy0">|-----------|</span><br /><span class="sy0">|</span> Default &nbsp; <span class="sy0">|</span><br /><span class="sy0">|-----------|</span><br /><br />love.<span class="me1">graphics</span>.<span class="me1">push</span><span class="sy0">:</span><br /><span class="sy0">|-----------|</span><br /><span class="sy0">|</span> Default &nbsp; <span class="sy0">|</span> &nbsp; &nbsp; &nbsp; <span class="sy0">^</span> pushed up<br /><span class="sy0">|-----------|</span><br /><span class="sy0">|-----------|</span><br /><span class="sy0">|</span> New &nbsp; &nbsp; &nbsp; <span class="sy0">|</span> &nbsp; &nbsp; &nbsp; <span class="sy0">&lt;-</span> pushed under<br /><span class="sy0">|-----------|</span><br /><br />love.<span class="me1">graphics</span>.<span class="me1">pop</span><span class="sy0">:</span><br /><span class="sy0">|-----------|</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="sy0">|-----------|</span><br /><span class="sy0">|</span> Default &nbsp; <span class="sy0">|</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="sy0">|</span> New &nbsp; &nbsp; &nbsp; <span class="sy0">|</span> &nbsp;<span class="sy0">-&gt;</span> discarded<br /><span class="sy0">|-----------|</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="sy0">|-----------|</span></div></div>
+<p><br />
+看不明白? 我开始也看不懂,不过看看这2函数个解释你就懂了.
+</p>
+<ul><li><a href="" class="new" title="love.graphics.pop (简体中文) (page does not exist)">love.graphics.pop (简体中文)</a>
+</li><li><a href="" class="new" title="love.graphics.push (简体中文) (page does not exist)">love.graphics.push (简体中文)</a>
+</li></ul>
+<p>也许看了解释你也不会懂,你要是把例程在LOVE上运行再读一遍代码,一切的一切就迎刃而解了.
+</p><p>另外后面紧跟着的3个函数也要看懂了.用上叙同样的方法.
+</p>
+<h2> <span class="mw-headline" id="The_camera_Module">The camera Module</span></h2>
+<p>摄像机的模块具体是这样的.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">camera <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />camera.x <span class="sy0">=</span> <span class="nu0">0</span><br />camera.y <span class="sy0">=</span> <span class="nu0">0</span><br />camera.scaleX <span class="sy0">=</span> <span class="nu0">1</span> <span class="co1">--scale比例</span><br />camera.scaleY <span class="sy0">=</span> <span class="nu0">1</span><br />camera.rotation <span class="sy0">=</span> <span class="nu0">0</span> &nbsp;<span class="co1">--rotation旋转</span><br /><br /><span class="kw1">function</span> camera:set<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.push<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.rotate<span class="br0">&#40;</span>-self.rotation<span class="br0">&#41;</span><br />&nbsp; love.graphics.scale<span class="br0">&#40;</span><span class="nu0">1</span> <span class="sy0">/</span> self.scaleX, <span class="nu0">1</span> <span class="sy0">/</span> self.scaleY<span class="br0">&#41;</span><br />&nbsp; love.graphics.translate<span class="br0">&#40;</span>-self.x, -self.y<span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:unset<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.pop<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:move<span class="br0">&#40;</span>dx, dy<span class="br0">&#41;</span><br />&nbsp; self.x <span class="sy0">=</span> self.x + <span class="br0">&#40;</span>dx <span class="kw1">or</span> <span class="nu0">0</span><span class="br0">&#41;</span><br />&nbsp; self.y <span class="sy0">=</span> self.y + <span class="br0">&#40;</span>dy <span class="kw1">or</span> <span class="nu0">0</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:rotate<span class="br0">&#40;</span>dr<span class="br0">&#41;</span><br />&nbsp; self.rotation <span class="sy0">=</span> self.rotation + dr<br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:scale<span class="br0">&#40;</span>sx, sy<span class="br0">&#41;</span><br />&nbsp; sx <span class="sy0">=</span> sx <span class="kw1">or</span> <span class="nu0">1</span><br />&nbsp; self.scaleX <span class="sy0">=</span> self.scaleX <span class="sy0">*</span> sx<br />&nbsp; self.scaleY <span class="sy0">=</span> self.scaleY <span class="sy0">*</span> <span class="br0">&#40;</span>sy <span class="kw1">or</span> sx<span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:setPosition<span class="br0">&#40;</span>x, y<span class="br0">&#41;</span><br />&nbsp; self.x <span class="sy0">=</span> x <span class="kw1">or</span> self.x<br />&nbsp; self.y <span class="sy0">=</span> y <span class="kw1">or</span> self.y<br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:setScale<span class="br0">&#40;</span>sx, sy<span class="br0">&#41;</span><br />&nbsp; self.scaleX <span class="sy0">=</span> sx <span class="kw1">or</span> self.scaleX<br />&nbsp; self.scaleY <span class="sy0">=</span> sy <span class="kw1">or</span> self.scaleY<br /><span class="kw1">end</span></div></div>
+<p><br />
+<b>camera</b>模块的核心函数是<i>set</i>和<i>unset</i>，<i>set</i>可以简单的创建变换，<i>unset</i>移除最后一个变换（相当于pop）
+</p><p>我们可以在LOVE中这样写就可以用<b>camera</b>了.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; camera:set<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="co1">-- draw stuff</span><br />&nbsp; camera:unset<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p>这是2条改变<b>camera</b>的语句
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">camera.x <span class="sy0">=</span> <span class="nu0">50</span><br />camera:scale<span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span> <span class="co1">-- 放大3倍</span></div></div>
+<h2> <span class="mw-headline" id="The_Mouse">The Mouse</span></h2>
+<p>如果在游戏中需要和鼠标互动的话,可以加上这玩意
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> camera:mousePosition<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">return</span> love.mouse.getX<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> self.scaleX + self.x, love.mouse.getY<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> self.scaleY + self.y<br /><span class="kw1">end</span></div></div>
+<p><br />
+</p>
+<div class="i18n">
+<p><a href="" class="new" title="Tutorial:Cameras (Dansk) (page does not exist)">Dansk</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Deutsch) (page does not exist)">Deutsch</a>&nbsp;&ndash;
+<a href="tutorial_cameras2.html" title="Tutorial:Cameras">English</a>&nbsp;&ndash; 
+<a href="" class="new" title="Tutorial:Cameras (Español) (page does not exist)">Español</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Français) (page does not exist)">Français</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Indonesia) (page does not exist)">Indonesia</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Italiano) (page does not exist)">Italiano</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Lietuviškai) (page does not exist)">Lietuviškai</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Magyar) (page does not exist)">Magyar</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Nederlands) (page does not exist)">Nederlands</a>&nbsp;&ndash;
+<a href="tutorial_cameras_polski1.html" title="Tutorial:Cameras (Polski)">Polski</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Português) (page does not exist)">Português</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Română) (page does not exist)">Română</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Slovenský) (page does not exist)">Slovenský</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Suomi) (page does not exist)">Suomi</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Svenska) (page does not exist)">Svenska</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Türkçe) (page does not exist)">Türkçe</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Česky) (page does not exist)">Česky</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Ελληνικά) (page does not exist)">Ελληνικά</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Български) (page does not exist)">Български</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Русский) (page does not exist)">Русский</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Српски) (page does not exist)">Српски</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Українська) (page does not exist)">Українська</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (עברית) (page does not exist)">עברית</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (ไทย) (page does not exist)">ไทย</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (日本語) (page does not exist)">日本語</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (正體中文) (page does not exist)">正體中文</a>&nbsp;&ndash;
+<strong class="selflink">简体中文</strong>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Tiếng Việt) (page does not exist)">Tiếng Việt</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (한국어) (page does not exist)">한국어</a> 
+<br />
+<span style="text-align:right;"><i><a href="help_i18n1.html" title="Help:i18n">More info</a></i></span>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 284/1000000
+Post-expand include size: 3405/2097152 bytes
+Template argument size: 1488/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:3092-0!1!0!!en!2!edit=0 and timestamp 20150125232715 -->
+<div class="printfooter">
+Retrieved from "<a href="https://www.love2d.org/wiki/Tutorial:Cameras_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">https://www.love2d.org/wiki/Tutorial:Cameras_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="" title="Special:Categories">Category</a>: <span dir='ltr'><a href="category_tutorials5.html" title="Category:Tutorials (简体中文)">Tutorials (简体中文)</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki1.png);" href="index9.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love272.html">love</a></li>
+				<li><a href="love273.html">love.audio</a></li>
+				<li><a href="love274.html">love.event</a></li>
+				<li><a href="love275.html">love.filesystem</a></li>
+				<li><a href="love276.html">love.graphics</a></li>
+				<li><a href="love277.html">love.image</a></li>
+				<li><a href="love278.html">love.joystick</a></li>
+				<li><a href="love279.html">love.keyboard</a></li>
+				<li><a href="love280.html">love.math</a></li>
+				<li><a href="love281.html">love.mouse</a></li>
+				<li><a href="love282.html">love.physics</a></li>
+				<li><a href="love283.html">love.sound</a></li>
+				<li><a href="love284.html">love.system</a></li>
+				<li><a href="love285.html">love.timer</a></li>
+				<li><a href="love286.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love272.html">love</a></li>
+				<li id="n-love.audio"><a href="love273.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love274.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love275.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love287.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love276.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love277.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love278.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love279.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love280.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love281.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love282.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love283.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love284.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love288.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love285.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love286.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index9.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w1.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/Tutorial:Cameras (简体中文)">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x311.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl1.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 8 December 2013, at 07:51.</li>
+					<li id="viewcount">This page has been accessed 988 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy1.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about1.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer1.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.370 secs. --></body></html>

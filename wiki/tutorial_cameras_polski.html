@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>Tutorial:Cameras (Polski) - LOVE</title>
+		<link rel="stylesheet" href="shared.css" media="screen" />
+<link rel="stylesheet" href="commonprint.css" media="print" />
+<link rel="stylesheet" href="main.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.love2d.org",
+wgCanonicalNamespace="Tutorial",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=500,
+wgPageName="Tutorial:Cameras_(Polski)",
+wgTitle="Cameras (Polski)",
+wgAction="view",
+wgArticleId=3099,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=12066,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=["Tutorials (Polski)"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Tutorial:Cameras (Polski)" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-500 ns-subject page-Tutorial_Cameras_Polski skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-tutorial" class="selected"><a href="">Tutorial</a></li>
+					 <li id="ca-talk" class="new"><a href="" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">Tutorial:Cameras (Polski)</h1>
+		<div id="bodyContent">
+			<div id="contentSub"></div>
+									<!-- start content -->
+			<p>Ten poradnik jestłumaczeniem artykułów "Cameras in Love2D" napisanym przez BlackBulletIV.
+</p><p>Oryginalne artykuły (po angielsku)：
+</p>
+<ul><li> <a href="http://nova-fusion.com/2011/04/19/cameras-in-love2d-part-1-the-basics/" class="external text" rel="nofollow">Part 1: The Basics</a>
+</li><li> <a href="http://nova-fusion.com/2011/04/22/cameras-in-love2d-part-2-parallax-scrolling/" class="external text" rel="nofollow">Part 2: Parallax Scrolling</a>
+</li><li> <a href="http://nova-fusion.com/2011/05/09/cameras-in-love2d-part-3-movement-bounds/" class="external text" rel="nofollow">Part 3: Movement Bounds</a>
+</li></ul>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Cz.C4.99.C5.9B.C4.87_1._Podstawy"> Część 1. Podstawy </span></h2>
+<p>This part will deal with the fundamentals of creating a camera. Part two will deal with parallax scrolling and creating layers. So, let's get to it!
+</p><p>W pierwszej części zajmiemy się podstawami tworzenia kamer.
+</p><p>Funkcje z których będziemy korzystać
+</p>
+<ul><li><a href="" class="new" title="love.graphics.pop (Polski) (page does not exist)">love.graphics.pop</a>
+</li><li><a href="" class="new" title="love.graphics.push (Polski) (page does not exist)">love.graphics.push</a>
+</li><li><a href="" class="new" title="love.graphics.translate (Polski) (page does not exist)">love.graphics.translate</a> -- translacja/przesunięcie
+</li><li><a href="" class="new" title="love.graphics.rotate (Polski) (page does not exist)">love.graphics.rotate</a> -- obrót
+</li><li><a href="" class="new" title="love.graphics.scale (Polski) (page does not exist)">love.graphics.scale</a>  -- skalowanie
+</li></ul>
+<p>LÖVE posiada stos przekształceń (geometrycznych), a dokładniej stos [b]informacji o  danym przekształczeniu[/b]. <code><a href="" class="new" title="love.graphics.push (Polski) (page does not exist)">love.graphics.push</a></code> pozwala odłożyć aktualne przekształcenie na stos (pozwala to <i>zapamiętać</i> przekształcenie <i>na później</i>), natomiast <a href="" class="new" title="love.graphics.pop (Polski) (page does not exist)">love.graphics.pop</a> zdejmuje przekształcenie ze stosu (nadpisując tym samym aktualne przewształceni, tym zdjętym przed chwilą ze stosu).
+</p><p>Na [b]informację o przekształceniu[/b], składają się trzy elementy: przesunięcie, skalowanie i obrót. W trakcie każdej operacji rysowania:
+</p>
+<ul><li> argumenty x i y przekazywane do funkcji <a href="" class="new" title="love.graphics.translate (Polski) (page does not exist)">love.graphics.translates</a>ą dodawane do współrzędnych x i y, 
+</li><li> obie współrzędne są mnożone przez argument funkcji <a href="" class="new" title="love.graphics.scale (Polski) (page does not exist)">love.graphics.scale</a>
+</li><li> każdy punkt jest obracany względem lewego górnego rogu o kąt podany jako argument do funkcji <a href="" class="new" title="love.graphics.rotate (Polski) (page does not exist)">love.graphics.rotate</a>(w radianach).
+</li></ul>
+<p>Mając te wiedzę możemy stworzyć naszą pierwszą kamerę
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.translate<span class="br0">&#40;</span>-x, -y<span class="br0">&#41;</span><br />&nbsp; <span class="co1">-- właściwe rysowanie poniżej</span><br /><span class="kw1">end</span></div></div>
+<p>Tutaj funkcja translate modyfikuje <i>aktualne przekształcenie</i>.
+Stos intormacji o przekształceniach (jak również <i>aktualne przekształcenie</i>) jest resetowany z każdą ramką, więc w każdej ramce, będziemy ustawiać kamerę.
+</p><p>Bardziej kompletna implementacja kamery wygląda następująco:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.rotate<span class="br0">&#40;</span>-obrot<span class="br0">&#41;</span> <span class="co1">-- w radianach</span><br />&nbsp; love.graphics.scale<span class="br0">&#40;</span><span class="nu0">1</span> <span class="sy0">/</span> skala, <span class="nu0">1</span> <span class="sy0">/</span> skala<span class="br0">&#41;</span><br />&nbsp; love.graphics.translate<span class="br0">&#40;</span>-x, -y<span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p>zmienne <code>-obrot</code> i <code>-x</code> oraz <code>-y</code>, będą mieć takie wartości, że obiekty, które nie poruszają się wraz z kamerą, <i>zostaną w tyle</i>.
+(Najczęściej kamera będzie podążać za graczem).
+Wartości zmiennej skala powyżej 1 będą oddalały kamerę, podczas gdy mniejsze od 1, będą ją przybliżały.
+</p>
+<h3> <span class="mw-headline" id="modu.C5.82_kamery"> moduł kamery </span></h3>
+<p>Uporządkujmy kod do obsługi kamery w moduł
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">local</span> camera <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />camera.x <span class="sy0">=</span> <span class="nu0">0</span><br />camera.y <span class="sy0">=</span> <span class="nu0">0</span><br />camera.scaleX <span class="sy0">=</span> <span class="nu0">1</span> <br />camera.scaleY <span class="sy0">=</span> <span class="nu0">1</span><br />camera.rotation <span class="sy0">=</span> <span class="nu0">0</span> <br /><br /><span class="kw1">function</span> camera:set<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.push<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.rotate<span class="br0">&#40;</span>-self.rotation<span class="br0">&#41;</span><br />&nbsp; love.graphics.scale<span class="br0">&#40;</span><span class="nu0">1</span> <span class="sy0">/</span> self.scaleX, <span class="nu0">1</span> <span class="sy0">/</span> self.scaleY<span class="br0">&#41;</span><br />&nbsp; love.graphics.translate<span class="br0">&#40;</span>-self.x, -self.y<span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:unset<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.pop<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:move<span class="br0">&#40;</span>dx, dy<span class="br0">&#41;</span> <span class="co1">-- przesuniecie kamery o deltę</span><br />&nbsp; self.x <span class="sy0">=</span> self.x + <span class="br0">&#40;</span>dx <span class="kw1">or</span> <span class="nu0">0</span><span class="br0">&#41;</span><br />&nbsp; self.y <span class="sy0">=</span> self.y + <span class="br0">&#40;</span>dy <span class="kw1">or</span> <span class="nu0">0</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:rotate<span class="br0">&#40;</span>dr<span class="br0">&#41;</span> <span class="co1">-- obrot kamery o deltę</span><br />&nbsp; self.rotation <span class="sy0">=</span> self.rotation + dr<br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:scale<span class="br0">&#40;</span>sx, sy<span class="br0">&#41;</span> <span class="co1">-- zmiana skali (względna)</span><br />&nbsp; sx <span class="sy0">=</span> sx <span class="kw1">or</span> <span class="nu0">1</span><br />&nbsp; self.scaleX <span class="sy0">=</span> self.scaleX <span class="sy0">*</span> sx<br />&nbsp; self.scaleY <span class="sy0">=</span> self.scaleY <span class="sy0">*</span> <span class="br0">&#40;</span>sy <span class="kw1">or</span> sx<span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:setPosition<span class="br0">&#40;</span>x, y<span class="br0">&#41;</span> <span class="co1">-- zmiana pozycji absolutnej kamery</span><br />&nbsp; self.x <span class="sy0">=</span> x <span class="kw1">or</span> self.x<br />&nbsp; self.y <span class="sy0">=</span> y <span class="kw1">or</span> self.y<br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:setScale<span class="br0">&#40;</span>sx, sy<span class="br0">&#41;</span> <span class="co1">-- zmiana skali (bezwzględnda)</span><br />&nbsp; self.scaleX <span class="sy0">=</span> sx <span class="kw1">or</span> self.scaleX<br />&nbsp; self.scaleY <span class="sy0">=</span> sy <span class="kw1">or</span> self.scaleY<br /><span class="kw1">end</span><br /><br /><span class="kw1">return</span> camera</div></div>
+<p>Moduł kamery  jest tablicą, która zawiera informację gdzie ma być umiejscowiona kamera. Kluczowe są funkcje <code>set</code> i <code>unset</code>. <code>set</code> zmienia <i>aktualne przekształcenie</i>, na informacje zawarte w module kamery (ale wcześniej zapisuje bieżący stan, dzięki czemu moduł kamery będzie w stanie obsługiwać kilka <i>widokow</i> w jednej ramce. <code>unset</code> po prostu przywraca poprzednie ustawienie, korzystając z wspomnianej funkcji pop. Pozostałe funkcje stanowią pomoc przy przemieszczaniu kamery.
+</p><p>Kamery można użyć poprzez następujący kod w callbacku <a href="love241.html" title="love.draw (Polski)">love.draw (Polski)</a>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; camera:set<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="co1">-- zaapliwowanie ustawień kamery</span><br /><br />&nbsp; <span class="co1">-- właściwe rysowanie</span><br /><br />&nbsp; camera:unset<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p>Natomiast w callbacku <a href="love226.html" title="love.update (Polski)">love.update (Polski)</a>, można zmieniać położenie kamery.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">camera.x <span class="sy0">=</span> <span class="nu0">50</span><br />camera:scale<span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span></div></div>
+<h3> <span class="mw-headline" id="mysz"> mysz </span></h3>
+<p>Jeśli chcesz znać pozycję myszy w świecie (czyli względem kamery), będzie trzeba odpowiednio przekształcić współrzędne zwracane przez <a href="love.mouse22.html" title="love.mouse.getX">love.mouse.getX</a>/<a href="love.mouse23.html" title="love.mouse.getY">love.mouse.getY</a>. Mając gotowy moduł kamery, można to prosto zrobić dodając do niego następującą funkcję.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> camera:mousePosition<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="co1">-- przelicza pozycję myszy na ekranie, na współrzędne 'w świecie gry'</span><br />&nbsp; <span class="kw1">return</span> love.mouse.getX<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> self.scaleX + self.x, love.mouse.getY<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> self.scaleY + self.y<br /><span class="kw1">end</span></div></div>
+<p>Funkcja ta koryguje pozycję myszy <b>tylko</b> względem przesunięcia i skalowania kamery. W przypadku obrotu, należy uwzględnić przemnożenie przez odpowiedni vector. Zobacz implementacje wektora bibliotece <a href="http://vrld.github.io/hump/" class="external text" rel="nofollow">HUMP</a>, by zobaczyć jak to zrobić.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Cz.C4.99.C5.9B.C4.87_2._Wielowarstwowe_przewijanie_.28parallax_scrolling.29"> Część 2. Wielowarstwowe przewijanie (parallax scrolling) </span></h2>
+<blockquote>"W szczególności paralaksa odnosi się do jednoczesnego obserwowania obiektów leżących w różnych odległościach od obserwatora lub urządzenia obserwującego," - Wikipedia, paralaksa</blockquote>
+<p>W efekcie czego, przy poruszaniu się, odnosi się wrażenie, że obiekty położone dalej, poruszają się wolniej.
+</p><p>W tej części zajmiemy się <b>przewijaniem paralakatycznym</b>. Użyta metoda, nie jest najpiękniejsza, ma jedynie stanowić podstawę, dla prób na własną rękę.
+</p><p>Czym jest <i>przewijanie paralakatyczne</i>? To sposób na uzyskanie efektu pseudo-3d, podczas gay cała gra i grafiki są oparet na 2d. To popularna metoda w grach 2d, na dodanie wrażenia głębi, chociaż de facto jej tam nie ma.
+</p><p>Technika którą wykorzystamy by osiągnąć ten efekt nazywana jest <i>metodą warstwową</i> (tłum: stąd bardziej właściwy tytuł części: Przewijanie wielowarstwowe). To co musimy zrobić, to wyrenderować kilka warstw grafik, na które ruch kamery ma wpływ w różnym stopniu. Normalnie na <i>pole gry</i> (tam gdzie znajduje się gracz i gdzie będzie odbywać się cała rozgrywka) ruch kamery będzie miał wpływ w stosunku 1:1 (czyli teren PO którym gracz chodzi i sam gracz będzie się poruszać z taką prędkością z jaką porusza się kamera). Warstwy <i>bliżej</i> kamery niż <i>pola gracza</i>, będą poruszać się szybciej niż kamera, natomias warstwy <i>dalej</i> niż kamera, będą poruszać się welniej (góry w tle, chmury itp.)
+</p>
+<h3> <span class="mw-headline" id="Implementacja"> Implementacja </span></h3>
+<p>Dosyć gadania, czas przystąpić do dzieła. By zaimplementować przewijanie stworzymy dość surowy system warstw, który będzie zarządzany przez kamerę. Oto modyfikacje oryginalnego modułu kamery, jakie musimy zrobić. Na początek, musimy dodać tablicę, która będzie przechowywać warstwy.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">camera.layers <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span></div></div>
+<p>Następnie musimy dodać metodę, która pozwoli na dodawanie nowych warstw:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> camera:newLayer<span class="br0">&#40;</span>skala, funkcjaRysujaca<span class="br0">&#41;</span><br />&nbsp; <span class="kw1">table.insert</span><span class="br0">&#40;</span>self.layers, <span class="br0">&#123;</span> draw <span class="sy0">=</span> funkcjaRysujaca, scale <span class="sy0">=</span> skala <span class="br0">&#125;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">table.sort</span><span class="br0">&#40;</span>self.layers, <span class="kw1">function</span><span class="br0">&#40;</span>a, b<span class="br0">&#41;</span> <span class="kw1">return</span> a.scale <span class="sy0">&lt;</span> b.scale <span class="kw1">end</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> camera:resetLayers<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; camera.layers <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br /><span class="kw1">end</span></div></div>
+<p><code>skala</code> to wartość przez którą zostaną przemnożone współrzędne kamery przed narysowaniem warstwy. <code>funkcjaRysujaca</code> to funkcja, która będzie odpowiedzialna za rysowanie  obiektów w danej warstwie. Musimy również trzymać warstwy posortowane względem skali, tak by te położone dalej (w tle) rysować zanim narysujemy te położone bliżej.
+</p><p>(tłum: niektóre frameworki obsługują 'układanie', w jakiej kolejności ma następować rysowanie, w LÖVE istotna jest kolejność rysowania)
+</p><p>Następnie dodamy taką metodę:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> camera:draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">local</span> bx, by <span class="sy0">=</span> self.x, self.y<br />&nbsp; <br />&nbsp; <span class="kw1">for</span> _, v <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span>self.layers<span class="br0">&#41;</span> <span class="kw1">do</span><br />&nbsp; &nbsp; self.x <span class="sy0">=</span> bx <span class="sy0">*</span> v.scale<br />&nbsp; &nbsp; self.y <span class="sy0">=</span> by <span class="sy0">*</span> v.scale<br />&nbsp; &nbsp; camera:set<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; v.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; camera:unset<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p>Funkcja ta zajmuje się rysowaniem wszystkich warstw. <code>bx</code>,<code>by</code> to "bazowe" współrzędne oryginalnej pozycji kamery. Zwróć uwagę, że przed każdym wywołaniem <code>camera:set</code> i funkcji rysującej (<code>v.draw()</code>), mnożymy bazowe współrzędne kamery przez skalę danej warstwy, dopiero potem przystępujemy do rysowania.
+</p><p>Nasz kod w callbacku LÖVE  odpowiedzialnym za rysowanie, będzie bardzo prosty:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; camera:draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<h3> <span class="mw-headline" id="Szybki_przyk.C5.82ad"> Szybki przykład </span></h3>
+<p>Przygotowałem szybki przykład, by zaprezentować działanie <b>przewijania paralektycznego</b> w praktyce.
+</p><p>Pełny kod modułu kamery znajdziesz <a href="tutorial_cameras_camera_polski.html" title="Tutorial:Cameras:camera (Polski)">tutaj</a>.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">local</span> camera <span class="sy0">=</span> <span class="kw1">require</span><span class="br0">&#40;</span><span class="st0">'camera'</span><span class="br0">&#41;</span><br /><br /><span class="kw1">math.randomseed</span><span class="br0">&#40;</span><span class="kw1">os.time</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><br /><span class="kw1">math.random</span><span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">math.random</span><span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">math.random</span><span class="br0">&#40;</span><span class="br0">&#41;</span><br /><br /><span class="kw1">function</span> love.load<span class="br0">&#40;</span>args<span class="br0">&#41;</span><br />&nbsp; <span class="co1">-- stworzymy 6 warstw</span><br />&nbsp; <span class="co1">-- indeks i, będzie użyty jako skala warstwy</span><br />&nbsp; <span class="kw1">for</span> i <span class="sy0">=</span> .5, <span class="nu0">3</span>, .5 <span class="kw1">do</span><br />&nbsp; &nbsp; <span class="kw1">local</span> prostokaty <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />&nbsp; &nbsp; <br />&nbsp; &nbsp; <span class="co1">-- w każdej warstwie będą prostokąty o losowym położeniu</span><br />&nbsp; &nbsp; <span class="co1">-- i losowym kolorze</span><br />&nbsp; &nbsp; <span class="kw1">for</span> j <span class="sy0">=</span> <span class="nu0">1</span>, <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">2</span>, <span class="nu0">15</span><span class="br0">&#41;</span> <span class="kw1">do</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">table.insert</span><span class="br0">&#40;</span>prostokaty, <span class="br0">&#123;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">1600</span><span class="br0">&#41;</span>,<br />&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">1600</span><span class="br0">&#41;</span>,<br />&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">50</span>, <span class="nu0">400</span><span class="br0">&#41;</span>,<br />&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">50</span>, <span class="nu0">400</span><span class="br0">&#41;</span>,<br />&nbsp; &nbsp; &nbsp; &nbsp; color <span class="sy0">=</span> <span class="br0">&#123;</span> <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">255</span><span class="br0">&#41;</span>, <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">255</span><span class="br0">&#41;</span>, <span class="kw1">math.random</span><span class="br0">&#40;</span><span class="nu0">0</span>, <span class="nu0">255</span><span class="br0">&#41;</span> <span class="br0">&#125;</span><br />&nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; <br />&nbsp; &nbsp; <span class="co1">-- dodajemy warstwę</span><br />&nbsp; &nbsp; camera:newLayer<span class="br0">&#40;</span>i, <span class="kw1">function</span><span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; <span class="co1">-- funkcja rysująca warstwę jest bardzo prosta</span><br />&nbsp; &nbsp; &nbsp; <span class="co1">-- rysuje ona wszystkie prostokąty należące do danej warstwy</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">for</span> _, v <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span>prostokaty<span class="br0">&#41;</span> <span class="kw1">do</span><br />&nbsp; &nbsp; &nbsp; &nbsp; love.graphics.setColor<span class="br0">&#40;</span>v.color<span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; love.graphics.rectangle<span class="br0">&#40;</span><span class="st0">'fill'</span>, <span class="kw1">unpack</span><span class="br0">&#40;</span>v<span class="br0">&#41;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; love.graphics.setColor<span class="br0">&#40;</span><span class="nu0">255</span>, <span class="nu0">255</span>, <span class="nu0">255</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; <span class="kw1">end</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; camera:setPosition<span class="br0">&#40;</span>love.mouse.getX<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> <span class="nu0">2</span>, love.mouse.getY<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> <span class="nu0">2</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; camera:draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;FPS: &quot;</span> .. love.timer.getFPS<span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">2</span>, <span class="nu0">2</span><span class="br0">&#41;</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.keypressed<span class="br0">&#40;</span>klawisz, unicode<span class="br0">&#41;</span><br />&nbsp; <span class="kw1">if</span> klawisz <span class="sy0">==</span> <span class="st0">&quot; &quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; camera:resetLayers<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">elseif</span> klawisz <span class="sy0">==</span> <span class="st0">'escape'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; love.event.push<span class="br0">&#40;</span><span class="st0">'q'</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p>Powyższy kod tworzy 6 warstw, zaczynając od skali 0.5 do 3. Tablica <code>prostokaty</code> zawiera informacje o losowych prostokątach należących do danej warstwy. Nie potrzebujemy zmiennej glogalnej, ponieważ funkcja korzystająca z tej tablicy jest w tym samym bloku. Funkcja rysująca daną warstwę, po prostu rysuje prostokąty należące do niej.
+</p><p>Poruszanie myszą będzie zmieniać pozycję kamery. Możesz zresetować wszystko naciskając spację. (dlatego wywołujemy <code>camera:resetLayers</code> przed ręcznym wywołaniem <code>love.load</code>. Wciśnięcie Escape, zakończy aplikację.
+</p><p>Uwaga na koniec, na samym początku, wołamy <code>math.random</code> trzy razy, ponieważ w pierwszych wywołaniach, math.random, może zwracać nie do końca losowe liczby. Sam tego nigdy nie doświadczyłem, ale te dodatkowe wywołania, nic w tym przypadku nie kosztują.
+</p>
+<h2> <span class="mw-headline" id="Cz.C4.99.C5.9B.C4.87_3._Ograniczenia_ruchu"> Część 3. Ograniczenia ruchu </span></h2>
+<div class="i18n">
+<p><a href="" class="new" title="Tutorial:Cameras (Dansk) (page does not exist)">Dansk</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Deutsch) (page does not exist)">Deutsch</a>&nbsp;&ndash;
+<a href="tutorial_cameras.html" title="Tutorial:Cameras">English</a>&nbsp;&ndash; 
+<a href="" class="new" title="Tutorial:Cameras (Español) (page does not exist)">Español</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Français) (page does not exist)">Français</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Indonesia) (page does not exist)">Indonesia</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Italiano) (page does not exist)">Italiano</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Lietuviškai) (page does not exist)">Lietuviškai</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Magyar) (page does not exist)">Magyar</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Nederlands) (page does not exist)">Nederlands</a>&nbsp;&ndash;
+<strong class="selflink">Polski</strong>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Português) (page does not exist)">Português</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Română) (page does not exist)">Română</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Slovenský) (page does not exist)">Slovenský</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Suomi) (page does not exist)">Suomi</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Svenska) (page does not exist)">Svenska</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Türkçe) (page does not exist)">Türkçe</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Česky) (page does not exist)">Česky</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Ελληνικά) (page does not exist)">Ελληνικά</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Български) (page does not exist)">Български</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Русский) (page does not exist)">Русский</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Српски) (page does not exist)">Српски</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Українська) (page does not exist)">Українська</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (עברית) (page does not exist)">עברית</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (ไทย) (page does not exist)">ไทย</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (日本語) (page does not exist)">日本語</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (正體中文) (page does not exist)">正體中文</a>&nbsp;&ndash;
+<a href="tutorial_cameras1.html" title="Tutorial:Cameras (简体中文)">简体中文</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (Tiếng Việt) (page does not exist)">Tiếng Việt</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Cameras (한국어) (page does not exist)">한국어</a> 
+<br />
+<span style="text-align:right;"><i><a href="help_i18n.html" title="Help:i18n">More info</a></i></span>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 360/1000000
+Post-expand include size: 3405/2097152 bytes
+Template argument size: 1488/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:3099-0!1!0!!en!2!edit=0 and timestamp 20150125064910 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.love2d.org/wiki/Tutorial:Cameras_(Polski)">http://www.love2d.org/wiki/Tutorial:Cameras_(Polski)</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="" title="Special:Categories">Category</a>: <span dir='ltr'><a href="category_tutorials_polski.html" title="Category:Tutorials (Polski)">Tutorials (Polski)</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki.png);" href="index.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love.html">love</a></li>
+				<li><a href="love1.html">love.audio</a></li>
+				<li><a href="love2.html">love.event</a></li>
+				<li><a href="love3.html">love.filesystem</a></li>
+				<li><a href="love4.html">love.graphics</a></li>
+				<li><a href="love5.html">love.image</a></li>
+				<li><a href="love6.html">love.joystick</a></li>
+				<li><a href="love7.html">love.keyboard</a></li>
+				<li><a href="love8.html">love.math</a></li>
+				<li><a href="love9.html">love.mouse</a></li>
+				<li><a href="love10.html">love.physics</a></li>
+				<li><a href="love11.html">love.sound</a></li>
+				<li><a href="love12.html">love.system</a></li>
+				<li><a href="love13.html">love.timer</a></li>
+				<li><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love.html">love</a></li>
+				<li id="n-love.audio"><a href="love1.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love2.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love3.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love15.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love4.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love5.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love6.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love7.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love8.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love9.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love10.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love11.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love12.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love16.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love13.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/Tutorial:Cameras (Polski)">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 9 December 2013, at 19:01.</li>
+					<li id="viewcount">This page has been accessed 1,081 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.253 secs. --></body></html>

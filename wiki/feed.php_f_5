@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+<link rel="self" type="application/atom+xml" href="http://love2d.org/forums/feed.php?f=5" />
+
+<title>LÖVE</title>
+<link href="http://love2d.org/forums/index.php" />
+<updated>2015-01-25T22:37:12+00:00</updated>
+
+<author><name><![CDATA[LÖVE]]></name></author>
+<id>http://love2d.org/forums/feed.php?f=5</id>
+<entry>
+<author><name><![CDATA[ArchAngel075]]></name></author>
+<updated>2015-01-25T22:37:12+00:00</updated>
+<published>2015-01-25T22:37:12+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179406#p179406</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179406#p179406"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Loveballs, A love2d Softbody lib]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179406#p179406"><![CDATA[
+updated my fork, no more buggy canvas or love.graphics.translate :<br /><br />Changes of note to fork : (from your original master)<br /><br />#1 : Added a Sbody:update() function, it calls the tessellate bit in your original [Sbody:draw], meant to be called in love.update()<br />#2 : Added a Sbody:getPoints() function, returns the <span style="font-style: italic">self.tess[#self.tess]</span> table of a softBody<br />#3 : Added my requested getFrequency() function - used to lerp frequency in my game.<br />#4 : Modified the draw() function to reset line-width to 1 to avoid leaking line-width changes (preferably one would fetch what the line width is and then reset back to what it is since it wont allways be 1 prior to calling draw())<br /><br /><a href="https://github.com/ArchAngel075/loveballs/blob/master/loveballs/init.lua" class="postlink">Link</a> to repo I forked. changes in init.lua<br /><br />Hope this would be better for you to deal with.<br /><br />Also question :<br /><br />I really want to avoid needing to take a series of points for love.graphics.line() and scaling etc them to draw a smaller circle, any more optimized method other than using many loops to scale points ?<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=124513">ArchAngel075</a> — Sun Jan 25, 2015 10:37 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[S0lll0s]]></name></author>
+<updated>2015-01-25T16:47:32+00:00</updated>
+<published>2015-01-25T16:47:32+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179384#p179384</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179384#p179384"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Loveballs, A love2d Softbody lib]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179384#p179384"><![CDATA[
+<blockquote><div><cite>IndieRetro wrote:</cite><br />Thanks!  Here is my project with it <img src="http://love2d.org/forums/images/smilies/ms-glee.png" alt="^^" title="Glee" /><br /></div></blockquote><br />Hey! that's the teeworlds sun in the background!<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135654">S0lll0s</a> — Sun Jan 25, 2015 4:47 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[IndieRetro]]></name></author>
+<updated>2015-01-25T14:16:11+00:00</updated>
+<published>2015-01-25T14:16:11+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179380#p179380</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179380#p179380"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Loveballs, A love2d Softbody lib]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179380#p179380"><![CDATA[
+<blockquote><div><cite>Jasoco wrote:</cite><br />First off, that's Loco Roco and it's awesome. It's been so long since I had the demo on my PSP.<br /><br />Secondly, change the video title. &quot;ASD&quot; gives me some really really strange and sometimes horrible looking related videos.<br /></div></blockquote><br /><br />Hehe, loco roco inspired me to create this lib and game ^<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=113862">IndieRetro</a> — Sun Jan 25, 2015 2:16 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[S0lll0s]]></name></author>
+<updated>2015-01-25T13:37:19+00:00</updated>
+<published>2015-01-25T13:37:19+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=7811&amp;p=179379#p179379</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=7811&amp;p=179379#p179379"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Quickie [was: Immediate Mode Gui]]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=7811&amp;p=179379#p179379"><![CDATA[
+<blockquote><div><cite>Lolocks wrote:</cite><br />I like this and I'd love to use it.<br /><br />But can you provide instructions on how to add it to one's current project?<br /></div></blockquote><br />Just look at the github README, it's relatively well documented there (at least well enough that I got along perfectly)<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135654">S0lll0s</a> — Sun Jan 25, 2015 1:37 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Murii]]></name></author>
+<updated>2015-01-25T13:29:55+00:00</updated>
+<published>2015-01-25T13:29:55+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179378#p179378</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179378#p179378"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Prospora]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179378#p179378"><![CDATA[
+Nice looking game,also cool gameplay!<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=125746">Murii</a> — Sun Jan 25, 2015 1:29 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Karai17]]></name></author>
+<updated>2015-01-25T10:48:14+00:00</updated>
+<published>2015-01-25T10:48:14+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79432&amp;p=179374#p179374</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79432&amp;p=179374#p179374"/>
+<title type="html"><![CDATA[Projects and Demos • Re: [Request] Input on design spec of new GUI library]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79432&amp;p=179374#p179374"><![CDATA[
+A quick update! I've implemented a fair amount of the main building blocks for this library, mainly the family hierarchy system. I'm working on setting up the box model right now and I figured since I now have things drawing to screen, I'd start showing off screenshots.<br /><br />It goes without saying that this is still all very early days and everything is subject to change, nothing is optimized, and it is completely unusable, but here is a pretty picture to show progress anyway!<br /><br /><img src="http://puu.sh/f06lN/6f08512350.png" alt="Image" /><br /><br />It is worth noting that DOMinatrix will be using the border-box model, NOT the CSS default content-box model. This means that when you set the size of an element, it will shrink the content area to fit the padding and border into that size.<br /><br />If you have an element with the size 100x100 and you set the padding to 5 on all sides, the element will remain 100x100 but the usable area will shrink to 90x90. This is far more intuitive than the CSS default where the element's size grows when you add padding and border.<br /><br />Finally, DOMinatrix has moved to the following address, so feel free to star, open issues, etc. <!-- m --><a class="postlink" href="https://github.com/excessive/DOMinatrix">https://github.com/excessive/DOMinatrix</a><!-- m --><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=65219">Karai17</a> — Sun Jan 25, 2015 10:48 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Jasoco]]></name></author>
+<updated>2015-01-25T09:12:25+00:00</updated>
+<published>2015-01-25T09:12:25+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179371#p179371</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179371#p179371"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Loveballs, A love2d Softbody lib]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179371#p179371"><![CDATA[
+<blockquote><div><cite>IndieRetro wrote:</cite><br /><blockquote><div><cite>nfey wrote:</cite>I have no idea how to use this for an actual game mechanic that will not feel gimmicky (I will however take the challenge of coming up with something) and I don't have anything meaningful to contribute to the discussion. But I just wanted to say that this looks awesome <img src="http://love2d.org/forums/images/smilies/ms-smile.png" alt=":)" title="Smile" /> Well done.<br /></div></blockquote><br /><br /><br />Thanks!  Here is my project with it <img src="http://love2d.org/forums/images/smilies/ms-glee.png" alt="^^" title="Glee" /><br /><br /> <strong>iframe</strong> </div></blockquote><br />First off, that's Loco Roco and it's awesome. It's been so long since I had the demo on my PSP.<br /><br />Secondly, change the video title. &quot;ASD&quot; gives me some really really strange and sometimes horrible looking related videos.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=594">Jasoco</a> — Sun Jan 25, 2015 9:12 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[RaptrStudios]]></name></author>
+<updated>2015-01-25T06:11:28+00:00</updated>
+<published>2015-01-25T06:11:28+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179364#p179364</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179364#p179364"/>
+<title type="html"><![CDATA[Projects and Demos • Re: ^]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179364#p179364"><![CDATA[
+Thanks!<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136226">RaptrStudios</a> — Sun Jan 25, 2015 6:11 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Positive07]]></name></author>
+<updated>2015-01-25T04:27:04+00:00</updated>
+<published>2015-01-25T04:27:04+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179360#p179360</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179360#p179360"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Kilens]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179360#p179360"><![CDATA[
+Can you use the attachments to upload the .love file?<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=61024">Positive07</a> — Sun Jan 25, 2015 4:27 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Positive07]]></name></author>
+<updated>2015-01-25T04:26:26+00:00</updated>
+<published>2015-01-25T04:26:26+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179359#p179359</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179359#p179359"/>
+<title type="html"><![CDATA[Projects and Demos • Re: [Adventure] Woo! My first game in Löve!]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179359#p179359"><![CDATA[
+<span style="text-decoration: underline">Recomendations:</span><br /><br />.love files are preferred<br /><br />And most people wont download from file servers like mediafire, try using the posts attachments. They are under save preview and submit buttons, next to optios, it says upload attachment<br /><br />An image is always nice but not really needed<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=61024">Positive07</a> — Sun Jan 25, 2015 4:26 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[RaptrStudios]]></name></author>
+<updated>2015-01-25T06:14:22+00:00</updated>
+<published>2015-01-25T04:01:12+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179356#p179356</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179356#p179356"/>
+<title type="html"><![CDATA[Projects and Demos • [Adventure] Woo! My first game in Löve!]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79546&amp;p=179356#p179356"><![CDATA[
+Check out my first game in Löve! Please leave suggestions, and what you think of the game so far <img src="http://love2d.org/forums/images/smilies/ms-three.png" alt=":3" title="Awww" /><br />Source:<br /><!-- m --><a class="postlink" href="http://www.mediafire.com/download/6r3d2lkvm3q7qll/source_1.0.zip">http://www.mediafire.com/download/6r3d2 ... ce_1.0.zip</a><!-- m --><br /><br />Download:<br /><!-- m --><a class="postlink" href="http://www.mediafire.com/download/7gj7k29ky7rr5zi/Adventure.zip">http://www.mediafire.com/download/7gj7k ... enture.zip</a><!-- m --><br /><br />Website:<br /><!-- m --><a class="postlink" href="http://raptrstudios.weebly.com/">http://raptrstudios.weebly.com/</a><!-- m --><br /><br />Screenshot:<br /><img src="http://puu.sh/eZGed/16d160eb74.PNG" alt="Image" /><br />Note: This is an old screenshot!<br /><br />I am working very hard on this game, and i will hopefully be releasing a update soon.<br />Thanks <img src="http://love2d.org/forums/images/smilies/ms-three.png" alt=":3" title="Awww" /><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136226">RaptrStudios</a> — Sun Jan 25, 2015 4:01 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[efireman222]]></name></author>
+<updated>2015-01-25T02:56:58+00:00</updated>
+<published>2015-01-25T02:56:58+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179352#p179352</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179352#p179352"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Kilens]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179352#p179352"><![CDATA[
+Thanks!<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136242">efireman222</a> — Sun Jan 25, 2015 2:56 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[davisdude]]></name></author>
+<updated>2015-01-25T02:53:00+00:00</updated>
+<published>2015-01-25T02:53:00+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179351#p179351</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179351#p179351"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Kilens]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179351#p179351"><![CDATA[
+Nice game! Good work!  <img src="http://love2d.org/forums/images/smilies/ms-smile.png" alt=":)" title="Smile" /><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=115573">davisdude</a> — Sun Jan 25, 2015 2:53 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Relazy]]></name></author>
+<updated>2015-01-25T02:13:11+00:00</updated>
+<published>2015-01-25T02:13:11+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78998&amp;p=179348#p179348</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78998&amp;p=179348#p179348"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Löve &quot;Light vs. Shadow&quot; Engine v2]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78998&amp;p=179348#p179348"><![CDATA[
+Just out of curiosity but why do you draw normal maps/shadow objects like this:<br /><dl class="codebox"><dt>Code: </dt><dd><code>love.graphics.draw(self.normalMesh, self.x - self.nx, self.y - self.ny)</code></dd></dl><br />And not this:<br /><dl class="codebox"><dt>Code: </dt><dd><code>love.graphics.draw(self.normalMesh, self.x, self.y,self.rotation,1,1,self.nx,self.ny)</code></dd></dl><br /><br />The only downside that I can see so far is that this will require the user to change their drawable offset ordinates to equal that of the shadow object. This allows for rotation and perhaps scaling if we assume that vectors are updated.<br /><br /><span style="font-weight: bold">Note for rotation:</span><br />This doesn't quite work for rotation of the shadow(the one with self.ox and self.oy offsets) but it can be done by rotating the drawn polygon(by using love.graphics.rotate()). This is only a work-around as the vectors themselves need translating to update the tracking of the light source.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135353">Relazy</a> — Sun Jan 25, 2015 2:13 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[efireman222]]></name></author>
+<updated>2015-01-25T02:01:02+00:00</updated>
+<published>2015-01-25T02:01:02+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179347#p179347</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179347#p179347"/>
+<title type="html"><![CDATA[Projects and Demos • Kilens]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79545&amp;p=179347#p179347"><![CDATA[
+Hello i,m efireman222 and i made this game called Kilens.<br />It's my first game <img src="http://love2d.org/forums/images/smilies/ms-glad.png" alt=":D" title="Very Happy" />.<br /><br />Here are some screenshots:<br />kilentitlescreen.png<br />kilengameplay.png<br /><br />Here's the Download, Source included:<br /><!-- m --><a class="postlink" href="http://www.mediafire.com/download/xf28ho8fi3gpyfe/Kilens.zip">http://www.mediafire.com/download/xf28h ... Kilens.zip</a><!-- m --><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136242">efireman222</a> — Sun Jan 25, 2015 2:01 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[ki]]></name></author>
+<updated>2015-01-25T01:13:38+00:00</updated>
+<published>2015-01-25T01:13:38+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179339#p179339</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179339#p179339"/>
+<title type="html"><![CDATA[Projects and Demos • Re: BLUE REVOLVER]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179339#p179339"><![CDATA[
+<blockquote><div><cite>danbo wrote:</cite><br />yeah i'm very much against adding a shop or progression like that, though there'll be a lot of ship configurations to choose from (alternate special weapons, main gun, speed, bomb type etc) - i'm just simply not a fan of the design and would rather focus on core gameplay.<br /></div></blockquote><br />By all means design the game according to your own taste. Though I think that Arcade Shoot 'em ups and Bullet Hell Shooters are a smaller niche than they need to be because they elicit a single type of emotion (&quot;hard fun&quot;/&quot;fiero&quot;) during playing, like a meal that consists of only one flavour. I still love the basic gameplay of Shmups, but there's not much motivation for me to keep playing anymore.<br /><br />To clarify, it's not just the act of buying upgrades that I meant. It's also the additional motivation to play well, aside from increasing one's highscore, which is not sufficient motivation for lots of people. In Xenon 2, when an enemy formation swoops into the screen, the player ideally destroys the whole formation, because that results in a little cash bubble. So the game steers the player towards a playstyle that is fun and impressive. Also, sometimes the player will recklessly lose a life because he paid too much attention to collecting a cash bubble before it floats off the screen. Which is always fun. &quot;Why was I so greedy? Aargh!... Let's play again!!&quot; I wouldn't risk so much merely for a score increase.<br /><br />At least for me, this motivation would already be there even if the upgrades were small. For example, if each of the weapon types has 3 upgrades that slightly increase their damage from 10 to 11, 12 and 13. And lots of classic Arcade Shmups have power-ups, it's just that the act of picking them up isn't designed in such a way that it motivates the player towards consistently playing with an enjoyable, impressive playstyle. Or if there are games like that, I don't know them.<br /><br />Actually, will there be any power-ups in Blue Revolver?<br /><br /><blockquote><div><cite>danbo wrote:</cite><br />you say there are a lot of classic arcade shooters you can play anytime but i can think of a lot of upgrade/shop-based shooters that i can play anytime, too!<br /></div></blockquote><br />Off-topic, but could you recommend me good Shmups with shops? Xenon 2 has somewhat sluggish controls, I don't like Tyrian and Raptor, haven't tried Jets ‘n’ Guns but dislike its graphics. A game like Raiden, Strikers 1945, or maybe DoDonPachi (but slightly less extreme) plus a little shop would be nice.<br /><br />A completely different additional motivation would be: trying to find secrets. Like in Doom and Quake. For example, shooting at a certain section of a midboss breaks off its wing, and if the player times it just right that the wing crashes down into a specific spot on the landscape below, let's say a gas tank, the resulting explosion opens up a cave. The player can hover over the cave to enter it, which opens a short secret level. When he exits this level, he returns to the main level.<br />Regrettably, this is a lot more work per secret than in Doom or Quake. It would be easier if the level is not completely without obstacles, but has walls or buildings that the player ship collides with. Then some sections of these walls might be destructible, allowing the player to fly into a small room in the building to pick up a secret bonus item. Maybe you have a better idea.<br />This kind of feature might be very antithetic to a score attack Shmup. But that's what I'm getting at, the Shmup genre has been reduced to a too small palette. Well, I should try to make such a game myself rather than griping to you. <img src="http://love2d.org/forums/images/smilies/ms-smile.png" alt=":)" title="Smile" /><br /><br />Some more issues after playing a bit more:<br />- I have overlooked the ammo pickups for the special weapon until now. They should be more visible, and they should be presented in the &quot;How to play&quot; section.<br />- When the special weapon ammo is full, the ammo pickups can't be picked up. In the situation shortly before the boss battle where a ship drops lots of ammo, I thought at first that the ammo pickups fell down to the background and couldn't be picked up anymore. How about letting the player always pick them up, giving some bonus points when the ammo is full?<br />- The numbers font is difficult to read.<br />- The game should remember across sessions that the player chose &quot;No&quot; on the &quot;Post to Twitter?&quot; prompt and pre-select it.<br /><br /><blockquote><div><cite>danbo wrote:</cite><br />i do want to make a nuclear throne clone someday though...<br /></div></blockquote><br />I'd very much like to play that, and that genre is not as overrun yet...<br /><br />Edit: I've read your <a href="http://bluerevolverstg.tumblr.com/post/109045134267/daily-challenge" class="postlink">post</a> about the Daily Challenges. It's a promising feature, though I personally would maybe not be motivated by it, because it's still only a highscore-run. I don't care about unlocking cosmetic stuff like ship colours or art galleries either. But it might work very well for other players.<br />Suggestion: you could call them &quot;2-Minute Challenges&quot; and design them such that they can't last more than 2.5 minutes. By setting the player's expectations this way, he might be more eager to play the challenges, because each try is bite-sized, like a single level in Super Meat Boy, and the player already knows that he can give the challenge 5 tries in 15 minutes.<br /><br />After playing some more, trying to play in the way the scoring system intends, I notice that I have to constantly remind myself to switch to the special weapon after each 8-hit chain, and to collect special weapon ammo afterwards. It doesn't come natural.<br /><br /><blockquote><div><cite>danbo wrote:</cite><br />i do like the notion of having the special weapon look a little different at 8x though it might be misleading since it won't do any more damage... might have a play around with it<br /></div></blockquote><br />What if the special weapon actually is more powerful after an 8-hit chain? For example by adding splash damage. Then the playstyle that returns the most points is also the most powerful, and the player will try to play like that even if he doesn't care much about points.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=69009">ki</a> — Sun Jan 25, 2015 1:13 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Joe Black]]></name></author>
+<updated>2015-01-24T21:49:03+00:00</updated>
+<published>2015-01-24T21:49:03+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79542&amp;p=179336#p179336</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79542&amp;p=179336#p179336"/>
+<title type="html"><![CDATA[Projects and Demos • Tiölved - use Tiled in Löve]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79542&amp;p=179336#p179336"><![CDATA[
+<a href="http://www.hostingpics.net/viewer.php?id=766931tiolved.png" class="postlink"><img src="http://img15.hostingpics.net/thumbs/mini_766931tiolved.png" alt="Image" /></a><br /><a href="http://www.hostingpics.net/viewer.php?id=582984orthogonal.png" class="postlink"><img src="http://img15.hostingpics.net/thumbs/mini_582984orthogonal.png" alt="Image" /></a><br /><br /><span style="font-weight: bold">tiolved.lua<br />===========</span><br /><br />A framework to use tiled(<a href="http://www.mapeditor.org/" class="postlink">http://www.mapeditor.org/</a>) in LÖVE(<a href="http://love2d.org" class="postlink">http://love2d.org</a>).<br /><br /><span style="font-weight: bold">mapTable<br />-------- </span><br /><br />You can create a table that contain all the element in a .tmx file by using `map`:<br /><br />maptable=tiolved:map(&quot;map.tmx&quot;)<br /><br />the table is generated as below :<br /><br />* object :<br /><br />&lt;element attribute1=&quot;value1&quot; attribute2=&quot;value2&quot;/&gt; <br /><br /> create :<br /><br /> {je=&quot;element&quot;, attribute1=&quot;value1&quot;, attribute2=&quot;value2&quot;}<br /><br />*  object that contain objects :<br /><br />&lt;element1 attr1=&quot;value1&quot;&gt;<br />&lt;element1.1 attr1=&quot;value1&quot;/&gt;<br />&lt;element1.2 attr1=&quot;value1&quot;/&gt;<br />&lt;/element&gt;<br /><br />   create :<br /><br />{je=&quot;element&quot;, attr1=&quot;value1&quot;,<br />1={je=&quot;element1.1&quot;, attr1=&quot;value1&quot;}<br />2={je=&quot;element1.2&quot;, attr1=&quot;value1&quot;}<br />}<br /><br />* the first line `&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;` create nothing<br /><span style="font-weight: bold"><br />mapGid<br />------</span><br /><br />You can create a table that contain all the tile in canvas with the mapTable using :<br /><br />mapGid=tiolved:gid(mapTable)<br /><br />mapGid[1]=tile1<br />...<br />mapGid[lastTile]=lastTile<br /><br /><span style="font-weight: bold">layers<br />------</span><br /><br />You can  generate table that contain for each layer a table with the canvas of the layer and the attributes of the layer using :<br /><br />layers=tiolved:layers(mapTable,mapGid)<br /><br />layers[i]={ attr1=value1, property1=valueproperty1, canvas=canvas }<br /><br />trick: the layer that must be interpreted and not drawn must be removed from the mapTable or you can change the .je=layer for something else<br /><br /><span style="font-weight: bold">usefulfunc<br />----------<br /></span><br />Use :<br /><br />toMap,toRender=tiolved:usefulfunc(map)<br /><br />useful especially for isometric map, see in the exemple.<br /><br /><span style="font-weight: bold">exemple<br />-------</span><br /><br />the main love.load contain the basic way to use tiolved<br /><br /><span style="font-weight: bold">issue<br />-----</span><br /><br />for any inform me at my [github](<!-- m --><a class="postlink" href="https://github.com/thiolliere/tiolved">https://github.com/thiolliere/tiolved</a><!-- m -->) or here <br /><br />thanks <br />Joe<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136219">Joe Black</a> — Sat Jan 24, 2015 9:49 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[danbo]]></name></author>
+<updated>2015-01-24T21:37:02+00:00</updated>
+<published>2015-01-24T21:37:02+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179334#p179334</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179334#p179334"/>
+<title type="html"><![CDATA[Projects and Demos • Re: BLUE REVOLVER]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179334#p179334"><![CDATA[
+<blockquote><div><cite>undef wrote:</cite><br />Not very original gameplay, but I am stunned.<br />Very well excecuted, very polished, wonderful art, great music, and overall a very thrilling demo.<br />Can't wait to see more!<br /><br />Some minor bugs:<br />- Twitter prompt can't be responded to with gamepad (custom controls)<br />- Sometimes in transitions (beginning of the level, or before boss) the ship shoots other projectiles than the ones I intend<br /><br />Anyway, nicely done, you guys are awesome!<br /></div></blockquote><br /><br />both noted, glad to hear you like it!<br /><br /><blockquote><div><cite>CandyFace wrote:</cite><br />it feels really solid, and it was quite a lot of fun to play through. Completed after fifth try  <img src="http://love2d.org/forums/images/smilies/ms-awesome.png" alt=":awesome:" title="I'M SO HAPPY I COULD SHIT A RAINBOW RIGHT NOW" />  <br />I agree that the game needs a bit more *BANG* when there is impact, especially on tougher and bigger enemies.<br />Readability is important but a bit of screenshake when you destroy tougher enemies should not hurt, and after completing a boss battle could also IMO make the screen go crazy, till new enemies appear.<br /><br />I would also like to say that I was playing the mac build with a PS3 Controller and it worked flawlessly, though when i remapped the buttons (by mistake) the analog stick stopped working.<br /><br />Great work!<br /></div></blockquote><br /><br />the sound is probably the most WIP thing about this demo, i would like to implement something like &quot;side chaining&quot; where big explosions muffle other sounds or make them quiet - something subtle. i would rather beef up the sounds, particle effects etc than introduce screenshake in most scenarios still, though<br /><br /><blockquote><div><cite>ki wrote:</cite><br />Wow, this is great!<br /><br /><blockquote><div><cite>adnzzzzZ wrote:</cite>Anything that makes the game more than a shmup.<br /></div></blockquote><br /><br />Yes, there are already a lot of classic Arcade Shoot 'em ups one can play anytime (via MAME, and various ports). I'd also like some other motivation than the usual &lt;beat the challenge because &quot;it's there&quot;&gt;. I'm a bit drained of playing classic Arcade Shmups and now prefer to play Hydorah, which has a bit of a progression system and very diversified level design.<br /><br />I'd add the suggestion of a shop like in Xenon 2. I always liked to try to collect as much cash as possible during the levels (more motivating to me than scoring points for a highscore) and then decide which weapons and powerups to buy in the shop. Ideally, it should be interesting to find powerful configurations of weapons and powerups and maybe ship types too. They could enable slightly different playstyles, for example with a flamethrower you'd need to get close to the enemies.<br /><br />If you keep the pure Arcade gameplay, I'll still play it, though. <img src="http://love2d.org/forums/images/smilies/ms-smile.png" alt=":)" title="Smile" /><br /><br />By the way, when reading &quot;top-down shooter&quot; I expected a game where you can run and fire in all directions, like Nuclear Throne. I think the term is usually used for those kind of games, and using it for Shmups too makes things confusing.<br /><br />Edit: I've read some articles on your two blogs and I guess a shop, which is a kind of unlocking/progression system, is exactly opposite to your tastes. As an alternative suggestion, I wonder if it's possible to design a miniature progression system that plays out in the space of 2 minutes, similar to how a score-combo plays out in the space of 10 seconds.<br /><br />Regarding your <a href="http://bluerevolverstg.tumblr.com/post/108234186702/flourish" class="postlink">thoughts</a> about scoring systems, I'm afraid to say that the scoring system already made me go a bit &quot;oof, I'm checking out&quot;, even though it's not actually that complicated. I never liked the abstract scoring systems in bullet hell games. It might be possible to make it more appealing to players like me who are not completely hardcore Shmup fans by making it visually understandable (aside from the &quot;8-hit&quot; text in the HUD), for example like this: when 8 enemies are destroyed in quick succession, a little alarm clock item appears where the last enemy was destroyed, which, when shot with the special weapon, gives the special weapon projectiles a different and more powerful looking color, signifying that these projectiles now give higher scores. This suggestion isn't really thought out and has its problems, but something in that direction might work.<br /><br />Other stuff:<br />- It's currently possible to fire the standard weapon at the same time as the special weapon. It feels a bit messy to me. Are there situations in the game where this makes good sense? If not, it might be better to disable the standard weapon while firing the special weapon.<br /><br />- The operating system's mouse cursor should be hidden when playing in fullscreen mode.</div></blockquote><br /><br />yeah i'm very much against adding a shop or progression like that, though there'll be a lot of ship configurations to choose from (alternate special weapons, main gun, speed, bomb type etc) - i'm just simply not a fan of the design and would rather focus on core gameplay. you say there are a lot of classic arcade shooters you can play anytime but i can think of a lot of upgrade/shop-based shooters that i can play anytime, too! it's an &quot;oversubscribed&quot; genre that i don't feel has been properly done well in a very very long time and i want to drill right down to the core of that.<br /><br />(haha i don't really like the term &quot;shmup&quot; so much these days but yeah top down shooter is the wrong term. i do want to make a nuclear throne clone someday though...)<br /><br />one thing we'll have in v1.0 is a &quot;daily challenge&quot; system which might make the scoring system a bit more interesting for you. keep an eye on the blog for more info. i do like the notion of having the special weapon look a little different at 8x though it might be misleading since it won't do any more damage... might have a play around with it<br /><br />will fix both of those other issues too. standard weapon + special weapon is not intended, just something i forgot to fix!<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=82901">danbo</a> — Sat Jan 24, 2015 9:37 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[ArchAngel075]]></name></author>
+<updated>2015-01-25T22:25:12+00:00</updated>
+<published>2015-01-24T17:01:06+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179326#p179326</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179326#p179326"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Loveballs, A love2d Softbody lib]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179326#p179326"><![CDATA[
+EDIT *See Below for a question related to draw()*<br />EDIT #2 *semi-answered but...*<br />Edit #3 tried fixing my fork...<br />EDIT #4 REMOVED convoluted nonsense...<br /><br />interesting! Its close to what i would like to achieve, actually i want to *steal* the blobs look, those eyes....<br /><br />My project *will* be a mix of sorts of risk of rain and Binding of Isaac but using a gimmick where the players size and health is linked as well as its make-up. Also affecting its abilities etc <img src="http://love2d.org/forums/images/smilies/ms-glad.png" alt=":D" title="Very Happy" /> The blob/wobble-effect is just so perfect.<br /><br />[Removed all prev edits: see edit #4]<br /><br />Edit #4 :<br />I removed all the nonsense. Instead im working on a more simple modification. See next post &gt;&gt;<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=124513">ArchAngel075</a> — Sat Jan 24, 2015 5:01 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[IndieRetro]]></name></author>
+<updated>2015-01-24T16:32:28+00:00</updated>
+<published>2015-01-24T16:32:28+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179325#p179325</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179325#p179325"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Loveballs, A love2d Softbody lib]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=78882&amp;p=179325#p179325"><![CDATA[
+<blockquote><div><cite>nfey wrote:</cite><br />I have no idea how to use this for an actual game mechanic that will not feel gimmicky (I will however take the challenge of coming up with something) and I don't have anything meaningful to contribute to the discussion. But I just wanted to say that this looks awesome <img src="http://love2d.org/forums/images/smilies/ms-smile.png" alt=":)" title="Smile" /> Well done.<br /></div></blockquote><br /><br /><br />Thanks!  Here is my project with it <img src="http://love2d.org/forums/images/smilies/ms-glee.png" alt="^^" title="Glee" /><br /><br /> <strong>iframe</strong> <p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=113862">IndieRetro</a> — Sat Jan 24, 2015 4:32 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[zorg]]></name></author>
+<updated>2015-01-24T16:26:38+00:00</updated>
+<published>2015-01-24T16:26:38+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179324#p179324</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179324#p179324"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Prospora]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179324#p179324"><![CDATA[
+Different enough from Eufloria, and it plays really well; congrats on finishing it! (or do you intend to expand it perhaps?)<br /><br />My only peeve was that i usually use the right mouse button for moving the camera, and left for actions, so a control redefinition menu would be nice.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=80325">zorg</a> — Sat Jan 24, 2015 4:26 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[micha]]></name></author>
+<updated>2015-01-24T16:23:39+00:00</updated>
+<published>2015-01-24T16:23:39+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179323#p179323</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179323#p179323"/>
+<title type="html"><![CDATA[Projects and Demos • Re: Prospora]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179323#p179323"><![CDATA[
+Welcome to the forum and congratulations for finishing the game.<br /><br />The graphical design is really neat and the graphics are very polished. I like it. Also the controls feel smooth and easy.<br /><br />For the controls, I should differentiate between the different mouse buttons. Currently I can use all three mouse buttons for clicking. It should only be the first mouse button (initially I thought left button is for actions and right button for camera control, but that turned out to be wrong).<br /><br />Also you could give the player a more distinct color. I found it a bit difficult to find out which my own planets are. Why not make the players spores in the same blue as the GUI?<br /><br />Thumbs up for the &quot;how to play&quot;, but I still haven't completely understood what I am supposed to do. I managed to conquer some empty planet but I was unsure about how to successfully conquer planets. Should I increase &quot;travel&quot; so that more spores go to other planets or is that &quot;attack&quot;?<br />You should consider implementing some fixed &quot;missions&quot; that train the player how to play.<br /><br />By the way, if you draw circles in &quot;fill&quot; mode, their outline is not anti-aliased. To fix this, draw another circle in &quot;line&quot; mode on top and you get smooth filled circles.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=67839">micha</a> — Sat Jan 24, 2015 4:23 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[sarako]]></name></author>
+<updated>2015-01-24T15:19:23+00:00</updated>
+<published>2015-01-24T15:19:23+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179319#p179319</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179319#p179319"/>
+<title type="html"><![CDATA[Projects and Demos • Prospora]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79539&amp;p=179319#p179319"><![CDATA[
+Hi all! I've been a long-time user of LÖVE, but I finally pulled together a complete game: Prospora, wherein you control a colony of spores trying to take over the universe.<br /><br />prospora-screenshot.png<br /><br />You can find it on my website or GitHub:<br /><br /><a href="http://www.zenzoa.com/articles/2015/01/18/prospora/" class="postlink">http://www.zenzoa.com/articles/2015/01/18/prospora/</a><br /><br /><a href="https://github.com/sarahgould/prospora" class="postlink">https://github.com/sarahgould/prospora</a><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136240">sarako</a> — Sat Jan 24, 2015 3:19 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Nautical Mile]]></name></author>
+<updated>2015-01-24T01:47:51+00:00</updated>
+<published>2015-01-24T01:47:51+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79535&amp;p=179307#p179307</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79535&amp;p=179307#p179307"/>
+<title type="html"><![CDATA[Projects and Demos • Re: [Library] splashy - Easy Splash Screens]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79535&amp;p=179307#p179307"><![CDATA[
+Cool idea.<br /><br />I understand that most of the time the function of the splash screen is to communicate to the user that the program is indeed launching while it does whatever it needs to to get the program working. In love, the programs tend to be a little smaller and therefore quicker to load, so most projects (the ones that I've tried on this forum anyway) have not had need of them.<br /><br />That doesn't mean they can't be used though! I love splash screens as a graphical element, the same way that most games these days still have the title screen which invites you to press a button / key to advance to the main menu. It's a great way to theme your game.<br /><br />A couple of suggestions in order of increasing difficulty IMO (settings can be changed in <a href="https://www.love2d.org/wiki/conf.lua" class="postlink">conf.lua</a> and/or <a href="https://www.love2d.org/wiki/love.window.setMode" class="postlink">window.setmode</a>:<br /><ol style="list-style-type: decimal"><li>Turn off the console. -&gt; Having that come up first is like walking into a formal party with mustard on your face. It doesn't matter how you dressed or how good-looking you are, it's all anybody's going to look at until you get a serviette and wipe it off.</li><li>Make the window borderless -&gt; do you want to walk into that party with your ugly parka that does not go at all with your outfit underneath? Take it off outside the door and give it to your chauffeur before you go in. Also, remember that on windows (and ubuntu iirc) the user can change the desktop theme to anything they want, so while the border might not clash with your splash screen much, it could for another user that has a different colour scheme.</li><li>Make or acquire (legally of course) a cool graphic for your demo -&gt; So you're a fashion designer and you're trying to convince everyone that your clothes are the best, do you rent a basic black tuxedo? No, more like this:<br /> <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/1794676_852491984761045_1897401990261573232_n.jpg?oh=521355e3c59682202d85bc1c652f47a1&amp;oe=552130CC&amp;__gda__=1432349106_0dc380b258e9e7afaaa84cedf65c5abe" alt="Image" /> If you are going to demo a tool then use it with great content, don't just leave it to our imaginations to do the work.</li><li>Make it shimmer -&gt; Do you want your outfit to be static and flat or lustrous, rippling, and mesmorizing? Splash screens aren't highly animated (nor should they be IMO) but the best ones shimmer or pulse somehow (which has a functional purpose -&gt; continuing info that the game is still loading). I would suggest using some shaders for that. Might be a good idea to try out <a href="https://love2d.org/forums/viewtopic.php?f=5&amp;t=79443&amp;start=10" class="postlink">shine</a> if you are unfamiliar with shaders.</li><li>Get the transparent love window working. -&gt; Do you want to show up to every party you go to in square or rectangular outfits? Of course not! You show off your curves. Seriously, though if there were some hackish way to get the transparency working just for a splash screen, you could show images with an alpha layer so that your splash images don't even have to be rectangular. As a temporary fix you could take a screen shot, and then use a subregion of that screenshot as the background image. Then draw your fancy graphic with alpha layer on top of it.</li></ol><p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=131940">Nautical Mile</a> — Sat Jan 24, 2015 1:47 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[ki]]></name></author>
+<updated>2015-01-24T01:31:31+00:00</updated>
+<published>2015-01-24T01:31:31+00:00</published>
+<id>http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179306#p179306</id>
+<link href="http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179306#p179306"/>
+<title type="html"><![CDATA[Projects and Demos • Re: BLUE REVOLVER]]></title>
+
+<category term="Projects and Demos" scheme="http://love2d.org/forums/viewforum.php?f=5" label="Projects and Demos"/>
+<content type="html" xml:base="http://love2d.org/forums/viewtopic.php?t=79504&amp;p=179306#p179306"><![CDATA[
+Wow, this is great!<br /><br /><blockquote><div><cite>adnzzzzZ wrote:</cite><br />Anything that makes the game more than a shmup.<br /></div></blockquote><br /><br />Yes, there are already a lot of classic Arcade Shoot 'em ups one can play anytime (via MAME, and various ports). I'd also like some other motivation than the usual &lt;beat the challenge because &quot;it's there&quot;&gt;. I'm a bit drained of playing classic Arcade Shmups and now prefer to play Hydorah, which has a bit of a progression system and very diversified level design.<br /><br />I'd add the suggestion of a shop like in Xenon 2. I always liked to try to collect as much cash as possible during the levels (more motivating to me than scoring points for a highscore) and then decide which weapons and powerups to buy in the shop. Ideally, it should be interesting to find powerful configurations of weapons and powerups and maybe ship types too. They could enable slightly different playstyles, for example with a flamethrower you'd need to get close to the enemies.<br /><br />If you keep the pure Arcade gameplay, I'll still play it, though. <img src="http://love2d.org/forums/images/smilies/ms-smile.png" alt=":)" title="Smile" /><br /><br />By the way, when reading &quot;top-down shooter&quot; I expected a game where you can run and fire in all directions, like Nuclear Throne. I think the term is usually used for those kind of games, and using it for Shmups too makes things confusing.<br /><br />Edit: I've read some articles on your two blogs and I guess a shop, which is a kind of unlocking/progression system, is exactly opposite to your tastes. As an alternative suggestion, I wonder if it's possible to design a miniature progression system that plays out in the space of 2 minutes, similar to how a score-combo plays out in the space of 10 seconds.<br /><br />Regarding your <a href="http://bluerevolverstg.tumblr.com/post/108234186702/flourish" class="postlink">thoughts</a> about scoring systems, I'm afraid to say that the scoring system already made me go a bit &quot;oof, I'm checking out&quot;, even though it's not actually that complicated. I never liked the abstract scoring systems in bullet hell games. It might be possible to make it more appealing to players like me who are not completely hardcore Shmup fans by making it visually understandable (aside from the &quot;8-hit&quot; text in the HUD), for example like this: when 8 enemies are destroyed in quick succession, a little alarm clock item appears where the last enemy was destroyed, which, when shot with the special weapon, gives the special weapon projectiles a different and more powerful looking color, signifying that these projectiles now give higher scores. This suggestion isn't really thought out and has its problems, but something in that direction might work.<br /><br />Other stuff:<br />- It's currently possible to fire the standard weapon at the same time as the special weapon. It feels a bit messy to me. Are there situations in the game where this makes good sense? If not, it might be better to disable the standard weapon while firing the special weapon.<br /><br />- The operating system's mouse cursor should be hidden when playing in fullscreen mode.<p>Statistics: Posted by <a href="http://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=69009">ki</a> — Sat Jan 24, 2015 1:31 am</p><hr />
+]]></content>
+</entry>
+</feed>

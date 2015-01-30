@@ -1,0 +1,182 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="google-site-verification" content="4iaGijFkJrguCh_bbo_iJBsXh-z67uK5I4-jU7x9fuQ">
+
+		<title>LÖVE - Free 2D Game Engine</title>
+
+		<link rel="icon" href="favicon1.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="alternate" type="application/rss+xml" title="Release announcements" href="releases.xml">
+
+		<!-- highlight.js -->
+		<script src="highlight.pack1.js"></script>
+		<script>
+			hljs.configure({tabReplace: '<span class="hljs-indent">\t</span>', useBR: true});
+			onload = function() {
+				var elms = document.querySelectorAll("code");
+				for (var i = 0; i < elms.length; ++i)
+					hljs.highlightBlock(elms[i]);
+			}
+		</script>
+	</head>
+	<body id="germanunkol">
+		<span id="debug"></span>
+		<main>
+			<h1>LÖVE</h1>
+			<nav>
+				<ul>
+					<li><a href="wiki.html"><img src="wiki_button.png" alt="Wiki"></a></li>
+					<li><a href="forums.html"><img src="forum_button.png" alt="Forum"></a></li>
+					<li><a href="http://bitbucket.org/rude/love/issues"><img src="bugs_button.png" alt="Bugs"></a></li>
+				</ul>
+			</nav>
+			<section id="intro">
+				<p>Hi there! LÖVE is an *awesome* framework you can use to make
+					2D games in Lua. It's free, open-source, and works on
+					Windows, Mac OS X and Linux.</p>
+			</section>
+
+			<section id="download">
+				<h2>Download LÖVE 0.9.1</h2>
+				<div>
+					<dl id="windows">
+						<dt>Windows XP+</dt>
+						<dd><a href="https://bitbucket.org/rude/love/downloads/love-0.9.1-win32.exe">32-bit installer</a></dd>
+						<dd><a href="https://bitbucket.org/rude/love/downloads/love-0.9.1-win32.zip">32-bit zipped</a></dd>
+						<dd><a href="https://bitbucket.org/rude/love/downloads/love-0.9.1-win64.exe">64-bit installer</a></dd>
+						<dd><a href="https://bitbucket.org/rude/love/downloads/love-0.9.1-win64.zip">64-bit zipped</a></dd>
+					</dl>
+					<dl id="osx">
+						<dt>Mac OS X 10.6+</dt>
+						<dd><a href="https://bitbucket.org/rude/love/downloads/love-0.9.1-macosx-x64.zip">64-bit zipped</a></dd>
+					</dl>
+					<dl id="ubuntu">
+						<dt>Ubuntu 12.04&ndash;13.10</dt>
+						<dd><a href="https://launchpad.net/~bartbes/+archive/love-stable">PPA (also for Ubuntu 14.04)</a></dd>
+						<dd>32-bit: <a href="https://bitbucket.org/rude/love/downloads/liblove_0.9.1_i386.deb">liblove</a> · <a href="https://bitbucket.org/rude/love/downloads/love_0.9.1_i386.deb">love</a> · <a href="https://bitbucket.org/rude/love/downloads/love-dbg_0.9.1_i386.deb">dbg</a></dd>
+						<dd>64-bit: <a href="https://bitbucket.org/rude/love/downloads/liblove_0.9.1_amd64.deb">liblove</a> · <a href="https://bitbucket.org/rude/love/downloads/love_0.9.1_amd64.deb">love</a> · <a href="https://bitbucket.org/rude/love/downloads/love-dbg_0.9.1_amd64.deb">dbg</a></dd>
+					</dl>
+					<dl id="other">
+						<dt>Other downloads</dt>
+						<dd><a href="https://bitbucket.org/rude/love/downloads/love-0.9.1-linux-src.tar.gz">LÖVE source</a></dd>
+						<dd><a href="https://bitbucket.org/rude/love/downloads">Older versions</a></dd>
+					</dl>
+				</div>
+			</section>
+
+			<section id="features">
+				<section>
+					<h2>Open Source</h2>
+					<p>LÖVE is licensed under the liberal zlib/libpng license. This means that:</p>
+					<ul>
+						<li>It costs nothing.</li>
+						<li>You can use it freely for commercial purposes with no limitations.</li>
+					</ul>
+					<p>The source can be found on <a href="https://bitbucket.org/rude/love">Bitbucket</a>.</p>
+				</section>
+
+				<section>
+					<h2>Community</h2>
+					<p>If you get stuck, many friendly people are ready to help you at <a href="forums.html">the forums</a>. Be warned, however, that it sometimes gets too friendly.</p>
+					<p>People also post their games and projects on the forums, so it's a nice way of exploring what LÖVE can do. Or at least what people choose to use it for.</p>
+					<p>There is also an IRC channel: #love@irc.oftc.net.</p>
+				</section>
+			</section>
+
+			<section id="examples">
+				<h2>Examples</h2>
+				<p>It’s pretty easy to get started with LÖVE, just check out these code snippets.</p>
+				<section>
+				<dl>
+					<dt>Drawing text</dt>
+					<dd><code>function love.draw()<br>	love.graphics.print("Hello World!", 400, 300)<br>end</code></dd>
+					<dt>Drawing an image</dt>
+					<dd><code>function love.load()<br>	whale = love.graphics.newImage("whale.png")<br>end<br>function love.draw()<br>	love.graphics.draw(whale, 300, 200)<br>end</code></dd>
+					<dt>Playing a sound</dt>
+					<dd><code>function love.load()<br>	sound = love.audio.newSource("music.ogg")<br>	love.audio.play(sound)<br>end</code></dd>
+				</dl>
+				</section>
+
+				<p>Check out some more tutorials on <a href="wiki.html">the wiki.</a></p>
+			</section>
+
+			<section id="games">
+				<h2>Games</h2>
+				<p>LÖVE has been used for commercial projects, game jams, prototyping, and everything in between. Here are a few examples.</p>
+				<ul>
+					<li><a href="http://tangramgames.dk/games/mrrescue/"><img src="mr_rescue.png" alt="Mr. Rescue" title="Mr. Rescue"></a></li>
+					<li><a href="http://stabyourself.net/mari0/"><img src="mari0.png" alt="Mari0" title="Mari0"></a></li>
+					<li><a href="http://concernedjoe.com/"><img src="concerned_joe.png" alt="Concerned Joe" title="Concerned Joe"></a></li>
+					<li><a href="http://hdfgame.com/"><img src="hexapod_defense_force.png" alt="Hexapod Defense Force" title="Hexapod Defense Force"></a></li>
+					<li><a href="http://snayke.net/"><img src="snayke.png" alt="Snayke" title="Snayke"></a></li>
+					<li><a href="http://projecthawkthorne.com/"><img src="hawkthorne.png" alt="Journey to the Center of Hawkthorne" title="Journey to the Center of Hawkthorne"></a></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<div id="stuff">
+					<h3>Stuff</h3>
+					<ul>
+						<li><a href="https://twitter.com/obey_love">@obey_love on Twitter</a></li>
+						<li><a href="https://plus.google.com/108553500970002863436/">LÖVE on Google+</a></li>
+						<li><a href="http://nekogear.com/">LÖVE T-shirts, etc</a></li>
+						<li><a href="#germanunkol">Special effects edition</a></li>
+					</ul>
+				</div>
+				<div id="donate">
+					<h3>Donate</h2>
+					<p>World domination is ensured with your donation. Thank you!</p>
+					<ul>
+						<li><a id="paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QL2HYAA6RXFDL&lc=NO&item_name=LOVE&item_number=love&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="paypal.png" alt="PayPal"></a></li>
+						<li><a id="flattr" href="http://flattr.com/thing/283821/LVE"><img src="flattr.png" alt="Flattr"></a></li>
+					</ul>
+				</div>
+				<div id="moon"></div>
+				<div id="contact">
+					<h3>Contact</h3>
+					<p>
+						You can <a href="http://bitbucket.org/rude/love/issues">file a bug</a>, ask a question in <a href="forums.html">the forums</a>, or <a href="mailto:andruud@gmail.com">contact rude</a> for other stuff.
+					</p>
+				</div>
+				<div id="documentation">
+					<h3>Documentation</h3>
+					<ul>
+						<li><a href="love.html">love</a></li>
+						<li><a href="love1.html">audio</a></li>
+						<li><a href="love2.html">event</a></li>
+						<li><a href="love3.html">filesystem</a></li>
+						<li><a href="love15.html">font</a></li>
+						<li><a href="love4.html">graphics</a></li>
+						<li><a href="love5.html">image</a></li>
+						<li><a href="love6.html">joystick</a></li>
+						<li><a href="love7.html">keyboard</a></li>
+						<li><a href="love8.html">math</a></li>
+						<li><a href="love9.html">mouse</a></li>
+						<li><a href="love10.html">physics</a></li>
+						<li><a href="love11.html">sound</a></li>
+						<li><a href="love12.html">system</a></li>
+						<li><a href="love16.html">thread</a></li>
+						<li><a href="love13.html">timer</a></li>
+						<li><a href="love14.html">window</a></li>
+					</ul>
+				</div>
+			</section>
+		</footer>
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6143729-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script src="egg.js"></script>
+	</body>
+</html>

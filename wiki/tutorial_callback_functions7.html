@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="favicon1.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc1.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>Tutorial:Callback Functions (日本語) - LOVE</title>
+		<link rel="stylesheet" href="shared1.css" media="screen" />
+<link rel="stylesheet" href="commonprint1.css" media="print" />
+<link rel="stylesheet" href="main1.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes1.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="https://www.love2d.org",
+wgCanonicalNamespace="Tutorial",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=500,
+wgPageName="Tutorial:Callback_Functions_(日本語)",
+wgTitle="Callback Functions (日本語)",
+wgAction="view",
+wgArticleId=2461,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=12038,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=["Tutorials (日本語)"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits1.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax1.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Tutorial:Callback Functions (日本語)" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg1.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-500 ns-subject page-Tutorial_Callback_Functions_日本語 skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-tutorial" class="selected"><a href="">Tutorial</a></li>
+					 <li id="ca-talk" class="new"><a href="" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">Tutorial:Callback Functions (日本語)</h1>
+		<div id="bodyContent">
+			<div id="contentSub"></div>
+									<!-- start content -->
+			<p>LÖVEの<a href="category_callbacks1.html" title="Category:Callbacks">コールバック関数</a>は、<a href="love313.html" title="love.run">love.run</a>から様々なタスクを実行するために呼ばれる、オプショナルな関数です。しかし、フル機能のゲーム体験のために、おそらくほとんどすべてのコールバック関数を利用するので、それが何であるかを知っておくのが賢明でしょう。
+</p><p>プログラミング初心者や、コールバックをご存じない方の為に申し上げれば、コールバックは、ある意味で逆方向に動作する関数です。一般的な関数、たとえば<a href="love.graphics324.html" title="love.graphics.draw">love.graphics.draw</a>やmath.floorといった関数は、プログラムの中であなたが関数を呼び出すと、LÖVEやLuaが何か作業を行います。一方、コールバックは自分で中身を書く関数で、ある決められた場面で、LÖVEがその関数を呼び出します。これによって簡単に、あなたのコードを整理された最適な状態に保っておくことができるようになります。一例を挙げれば、love.loadというコールバック関数は、ゲームが開始された直後、他のコールバック関数が呼び出される前に一度だけ呼び出されるので、ゲームコンテンツをロードしたり、何かの準備をするコードを書くのにちょうどいい関数です。
+</p>
+<h2> <span class="mw-headline" id="love.load"><a href="love312.html" title="love.load">love.load</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;image <span class="sy0">=</span> love.graphics.newImage<span class="br0">&#40;</span><span class="st0">&quot;cake.jpg&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;<span class="kw1">local</span> f <span class="sy0">=</span> love.graphics.newFont<span class="br0">&#40;</span><span class="nu0">12</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.setFont<span class="br0">&#40;</span>f<span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.setColor<span class="br0">&#40;</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">255</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.setBackgroundColor<span class="br0">&#40;</span><span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">255</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.load</code>は、ゲームが開始されたときに、一度だけ呼ばれます。通常はこの関数でリソースをロードしたり、変数を初期化したり、特定の設定を行います。これらの作業は他の場所に書いても同様に実行されますが、<code>love.load</code>に書けば、その作業が一度だけ行われることを意味するので、多くのシステムリソースを節約することができます。
+</p>
+<h2> <span class="mw-headline" id="love.update"><a href="love316.html" title="love.update">love.update</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp;<span class="kw1">if</span> love.keyboard.isDown<span class="br0">&#40;</span><span class="st0">&quot;up&quot;</span><span class="br0">&#41;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; num <span class="sy0">=</span> num + <span class="nu0">100</span> <span class="sy0">*</span> dt <span class="co1">-- 1秒あたり100ずつnumをインクリメントする</span><br />&nbsp; &nbsp;<span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.update</code>は、ゲーム中ずっと呼び出されつづけます。ゲームのための計算のほとんどはこの関数で行われるでしょう。'dt'は<a href="love.timer43.html" title="love.timer.getDelta">デルタ・タイム</a>の略で、<code>love.update</code>が前回呼び出された時間からの経過秒数を表しています。（通常、デルタ・タイムは0.025714のような小さな値です）
+</p>
+<h2> <span class="mw-headline" id="love.draw"><a href="love317.html" title="love.draw">love.draw</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.draw<span class="br0">&#40;</span>image, imgx, imgy<span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;Click and drag the cake around or use the arrow keys&quot;</span>, <span class="nu0">10</span>, <span class="nu0">10</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.draw</code>は（名前から既に十分明々白々でしょうが）すべての描画（ドロー）を行う関数です。<code><a href="love.graphics324.html" title="love.graphics.draw">love.graphics.draw</a></code>などの描画を行う関数はすべて<code>love.draw</code>の中から呼び出す必要があり、<code>love.draw</code>以外から呼び出しても何も描画されません。この関数も<code>love.update</code>と同様ゲーム中ずっと呼び出されつづけるので、関数の末尾でfont・color・modeなどを変更した場合、それは関数の先頭に影響を与えることに留意してください。次のコードはその一例です。
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.load<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.setColor<span class="br0">&#40;</span><span class="nu0">0</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">&#41;</span> <span class="co1">-- テキストの色を黒に変えます</span><br /><span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.draw<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp;love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;This text is not black because of the line below&quot;</span>, <span class="nu0">100</span>, <span class="nu0">100</span><span class="br0">&#41;</span> <span class="co1">-- 下の行の影響で、このテキストは黒ではなく赤くなります</span><br />&nbsp; &nbsp;love.graphics.setColor<span class="br0">&#40;</span><span class="nu0">255</span>,<span class="nu0">0</span>,<span class="nu0">0</span><span class="br0">&#41;</span> <span class="co1">-- テキストの色を赤に変えます</span><br />&nbsp; &nbsp;love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;This text is red&quot;</span>, <span class="nu0">100</span>, <span class="nu0">200</span><span class="br0">&#41;</span> <span class="co1">-- このテキストは（もちろん）赤くなります</span><br /><span class="kw1">end</span></div></div>
+<h2> <span class="mw-headline" id="love.mousepressed"><a href="love318.html" title="love.mousepressed">love.mousepressed</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.mousepressed<span class="br0">&#40;</span>x, y, button<span class="br0">&#41;</span><br />&nbsp; &nbsp;<span class="kw1">if</span> button <span class="sy0">==</span> <span class="st0">'l'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; imgx <span class="sy0">=</span> x <span class="co1">-- クリックされた位置にイメージを動かす</span><br />&nbsp; &nbsp; &nbsp; imgy <span class="sy0">=</span> y<br />&nbsp; &nbsp;<span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.mousepressed</code>はマウスボタンが押されたときに呼び出され、マウスカーソルの位置と押されたボタンが関数に受け渡されます。<code>button</code>変数の値は<a href="mouseconstant4.html" title="MouseConstant">マウスボタン定数</a>の中のいずれかです。This function goes very well along with <code>love.mousereleased</code>.
+</p>
+<h2> <span class="mw-headline" id="love.mousereleased"><a href="love319.html" title="love.mousereleased">love.mousereleased</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.mousereleased<span class="br0">&#40;</span>x, y, button<span class="br0">&#41;</span><br />&nbsp; &nbsp;<span class="kw1">if</span> button <span class="sy0">==</span> <span class="st0">'l'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; fireSlingshot<span class="br0">&#40;</span>x,y<span class="br0">&#41;</span> <span class="co1">-- this totally awesome custom function is defined elsewhere</span><br />&nbsp; &nbsp;<span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.mousereleased</code>はマウスボタンが離されたときに呼び出され、マウスカーソルの位置と離されたボタンが関数に受け渡されます。You can have this function together with <code>love.mousepressed</code> or separate, they aren't connected in any way.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="love.keypressed"><a href="love311.html" title="love.keypressed">love.keypressed</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.keypressed<span class="br0">&#40;</span>key, unicode<span class="br0">&#41;</span><br />&nbsp; &nbsp;<span class="kw1">if</span> key <span class="sy0">==</span> <span class="st0">'b'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> <span class="st0">&quot;The B key was pressed.&quot;</span><br />&nbsp; &nbsp;<span class="kw1">elseif</span> key <span class="sy0">==</span> <span class="st0">'a'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; a_down <span class="sy0">=</span> <span class="kw1">true</span><br />&nbsp; &nbsp;<span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.keypressed</code>はキーボードのキーが押されたときに呼び出され、押されたキーが関数に受け渡されます。<code>key</code>変数の値は<a href="mouseconstant4.html" title="MouseConstant">キー定数</a>の中のいずれかです。This functions goes very well along with <code>love.keyreleased</code>.
+</p>
+<h2> <span class="mw-headline" id="love.keyreleased"><a href="love320.html" title="love.keyreleased">love.keyreleased</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.keyreleased<span class="br0">&#40;</span>key, unicode<span class="br0">&#41;</span><br />&nbsp; &nbsp;<span class="kw1">if</span> key <span class="sy0">==</span> <span class="st0">'b'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; text <span class="sy0">=</span> <span class="st0">&quot;The B key was released.&quot;</span><br />&nbsp; &nbsp;<span class="kw1">elseif</span> key <span class="sy0">==</span> <span class="st0">'a'</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; a_down <span class="sy0">=</span> <span class="kw1">false</span><br />&nbsp; &nbsp;<span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.keyreleased</code>はキーボードのキーが離されたときに呼び出され、離されたキーが関数に受け渡されます。You can have this function together with <code>love.keypressed</code> or separate, they aren't connected in any way.
+</p>
+<h2> <span class="mw-headline" id="love.focus"><a href="love321.html" title="love.focus">love.focus</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.focus<span class="br0">&#40;</span>f<span class="br0">&#41;</span><br />&nbsp; <span class="kw1">if</span> <span class="kw1">not</span> f <span class="kw1">then</span><br />&nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;LOST FOCUS&quot;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">else</span><br />&nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;GAINED FOCUS&quot;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.focus</code>はLÖVEのウィンドウの外や中がクリックされて、フォーカスが移動したときに呼び出されます。例えば、ゲームをプレイ中にプレイヤーがインターネットブラウザーをクリックしたときにはこの関数が呼び出されるので、ゲームを自動的にポーズすることができます。
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.focus<span class="br0">&#40;</span>f<span class="br0">&#41;</span> gameIsPaused <span class="sy0">=</span> <span class="kw1">not</span> f <span class="kw1">end</span><br /><br /><span class="kw1">function</span> love.update<span class="br0">&#40;</span>dt<span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">if</span> gameIsPaused <span class="kw1">then</span> <span class="kw1">return</span> <span class="kw1">end</span><br />&nbsp; &nbsp; <span class="co1">-- 以下に自分で残りのコードを書く</span><br /><span class="kw1">end</span></div></div>
+<h2> <span class="mw-headline" id="love.quit"><a href="love322.html" title="love.quit">love.quit</a></span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="kw1">function</span> love.quit<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;Thanks for playing! Come back soon!&quot;</span><span class="br0">&#41;</span><br /><span class="kw1">end</span></div></div>
+<p><code>love.quit</code>はウィンドウのクローズボタン（大抵×印が付いているボタン）がクリックされたときに呼び出されます。たとえば、プレイヤーがゲームをやめようとしてクローズボタンを押すと、ウィンドウが閉じる前にこの関数が呼び出されるので、ゲームの状態をセーブしておくことができます。
+</p><p>以上がコールバック関数とその基本的な使い方です。
+</p><p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Other_languages"> Other languages </span></h2>
+<div class="i18n">
+<p><a href="" class="new" title="Tutorial:Callback Functions (Dansk) (page does not exist)">Dansk</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_deutsch1.html" title="Tutorial:Callback Functions (Deutsch)">Deutsch</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions5.html" title="Tutorial:Callback Functions">English</a>&nbsp;&ndash; 
+<a href="tutorial_callback_functions_espa_ol1.html" title="Tutorial:Callback Functions (Español)">Español</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_fran_ais1.html" title="Tutorial:Callback Functions (Français)">Français</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Indonesia) (page does not exist)">Indonesia</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_italiano1.html" title="Tutorial:Callback Functions (Italiano)">Italiano</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Lietuviškai) (page does not exist)">Lietuviškai</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Magyar) (page does not exist)">Magyar</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Nederlands) (page does not exist)">Nederlands</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_polski1.html" title="Tutorial:Callback Functions (Polski)">Polski</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_portugu_s1.html" title="Tutorial:Callback Functions (Português)">Português</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Română) (page does not exist)">Română</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Slovenský) (page does not exist)">Slovenský</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Suomi) (page does not exist)">Suomi</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_svenska1.html" title="Tutorial:Callback Functions (Svenska)">Svenska</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Türkçe) (page does not exist)">Türkçe</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Česky) (page does not exist)">Česky</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Ελληνικά) (page does not exist)">Ελληνικά</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Български) (page does not exist)">Български</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions6.html" title="Tutorial:Callback Functions (Русский)">Русский</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Српски) (page does not exist)">Српски</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (Українська) (page does not exist)">Українська</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (עברית) (page does not exist)">עברית</a>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (ไทย) (page does not exist)">ไทย</a>&nbsp;&ndash;
+<strong class="selflink">日本語</strong>&nbsp;&ndash;
+<a href="" class="new" title="Tutorial:Callback Functions (正體中文) (page does not exist)">正體中文</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions8.html" title="Tutorial:Callback Functions (简体中文)">简体中文</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions_ti_ng_vi_t1.html" title="Tutorial:Callback Functions (Tiếng Việt)">Tiếng Việt</a>&nbsp;&ndash;
+<a href="tutorial_callback_functions9.html" title="Tutorial:Callback Functions (한국어)">한국어</a> 
+<br />
+<span style="text-align:right;"><i><a href="help_i18n1.html" title="Help:i18n">More info</a></i></span>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 376/1000000
+Post-expand include size: 4043/2097152 bytes
+Template argument size: 2126/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:2461-0!1!0!!en!2!edit=0 and timestamp 20150125230128 -->
+<div class="printfooter">
+Retrieved from "<a href="https://www.love2d.org/wiki/Tutorial:Callback_Functions_(%E6%97%A5%E6%9C%AC%E8%AA%9E)">https://www.love2d.org/wiki/Tutorial:Callback_Functions_(%E6%97%A5%E6%9C%AC%E8%AA%9E)</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="" title="Special:Categories">Category</a>: <span dir='ltr'><a href="" class="new" title="Category:Tutorials (日本語) (page does not exist)">Tutorials (日本語)</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki1.png);" href="index9.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love272.html">love</a></li>
+				<li><a href="love273.html">love.audio</a></li>
+				<li><a href="love274.html">love.event</a></li>
+				<li><a href="love275.html">love.filesystem</a></li>
+				<li><a href="love276.html">love.graphics</a></li>
+				<li><a href="love277.html">love.image</a></li>
+				<li><a href="love278.html">love.joystick</a></li>
+				<li><a href="love279.html">love.keyboard</a></li>
+				<li><a href="love280.html">love.math</a></li>
+				<li><a href="love281.html">love.mouse</a></li>
+				<li><a href="love282.html">love.physics</a></li>
+				<li><a href="love283.html">love.sound</a></li>
+				<li><a href="love284.html">love.system</a></li>
+				<li><a href="love285.html">love.timer</a></li>
+				<li><a href="love286.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love272.html">love</a></li>
+				<li id="n-love.audio"><a href="love273.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love274.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love275.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love287.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love276.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love277.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love278.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love279.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love280.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love281.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love282.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love283.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love284.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love288.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love285.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love286.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index9.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w1.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/Tutorial:Callback Functions (日本語)">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x311.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl1.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 9 December 2013, at 12:28.</li>
+					<li id="viewcount">This page has been accessed 2,733 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy1.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about1.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer1.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.262 secs. --></body></html>

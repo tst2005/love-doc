@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-gb">
+<link rel="self" type="application/atom+xml" href="https://love2d.org/forums/feed.php?f=11" />
+
+<title>LÖVE</title>
+<link href="https://love2d.org/forums/index.php" />
+<updated>2015-01-17T19:11:10+00:00</updated>
+
+<author><name><![CDATA[LÖVE]]></name></author>
+<id>https://love2d.org/forums/feed.php?f=11</id>
+<entry>
+<author><name><![CDATA[gianmichele]]></name></author>
+<updated>2015-01-17T19:11:10+00:00</updated>
+<published>2015-01-17T19:11:10+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178985#p178985</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178985#p178985"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: IAP(In App Purchase)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178985#p178985"><![CDATA[
+Hi everyone,<br /><br />first of all thanks for both the iOS and Android ports, those are really awesome!!!<br /><br />I think the proposed solution of creating the hook to be able to call native API is  a great idea.<br />I love how not bloated the ports are and I would prefer for them to stay that way.<br /><br />Having said that if such hooks are not possible, I'd like to know if someone can write a small guide on how to integrate those native functions for people that want to for example to integrate the native microphone or camera, or enable leaderboards.<br />I don't really know where to put my hands with that and a small guide would probably help startup these modules by the community.<br /><br />Thanks,<br />Gianmichele<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=134541">gianmichele</a> — Sat Jan 17, 2015 7:11 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[fysx]]></name></author>
+<updated>2015-01-13T20:10:29+00:00</updated>
+<published>2015-01-13T20:10:29+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178762#p178762</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178762#p178762"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: love-android-sdl2 (native, 0.9.0)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178762#p178762"><![CDATA[
+<blockquote><div><cite>atos93 wrote:</cite><br />i have this error<br /><dl class="codebox"><dt>Code: </dt><dd><code>atos@atos-1011PX ~/love-android-sdl2 $ ant debug<br />&#91;...&#93;<br />-build-setup:<br />&#91;getbuildtools&#93; Using latest Build Tools: 21.1.2<br />     &#91;echo&#93; Resolving Build Target for love_android_sdl2...<br /><br />BUILD FAILED<br />/home/atos/Android/Sdk/tools/ant/build.xml:542: Unable to resolve project target 'android-19'<br /></code></dd></dl><br /></div></blockquote><br />Either set android:targetSdkVersion in AndroidManifest.xml to 21 or install the Android SDK Build-tools Rev. 19.<br /><br /><blockquote><div><cite>atos93 wrote:</cite><br />i have this errorand <br /><dl class="codebox"><dt>Code: </dt><dd><code>atos@atos-1011PX ~/love-android-sdl2 $ ant debug<br />Buildfile: /home/atos/love-android-sdl2/build.xml<br /><br />BUILD FAILED<br />/home/atos/love-android-sdl2/build.xml:56: sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable.<br /><br />Total time: 2 seconds<br /></code></dd></dl><br /></div></blockquote><br />Running the suggested 'android update project' fixes this.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=27701">fysx</a> — Tue Jan 13, 2015 8:10 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[atos93]]></name></author>
+<updated>2015-01-13T15:10:38+00:00</updated>
+<published>2015-01-13T15:10:38+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178738#p178738</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178738#p178738"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: love-android-sdl2 (native, 0.9.0)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178738#p178738"><![CDATA[
+i have this error<br /><br /><br /><dl class="codebox"><dt>Code: </dt><dd><code>atos@atos-1011PX ~/love-android-sdl2 $ ant debug<br />Buildfile: /home/atos/love-android-sdl2/build.xml<br /><br />-set-mode-check:<br /><br />-set-debug-files:<br /><br />-check-env:<br /> &#91;checkenv&#93; Android SDK Tools Revision 24.0.2<br /> &#91;checkenv&#93; Installed at /home/atos/Android/Sdk<br /><br />-setup:<br />     &#91;echo&#93; Project Name: love_android_sdl2<br />  &#91;gettype&#93; Project Type: Application<br /><br />-set-debug-mode:<br /><br />-debug-obfuscation-check:<br /><br />-pre-build:<br /><br />-build-setup:<br />&#91;getbuildtools&#93; Using latest Build Tools: 21.1.2<br />     &#91;echo&#93; Resolving Build Target for love_android_sdl2...<br /><br />BUILD FAILED<br />/home/atos/Android/Sdk/tools/ant/build.xml:542: Unable to resolve project target 'android-19'<br /><br />Total time: 6 seconds<br /></code></dd></dl><br /><br />and <br /><br /><dl class="codebox"><dt>Code: </dt><dd><code>atos@atos-1011PX ~/love-android-sdl2 $ ant debug<br />Buildfile: /home/atos/love-android-sdl2/build.xml<br /><br />BUILD FAILED<br />/home/atos/love-android-sdl2/build.xml:56: sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable.<br /><br />Total time: 2 seconds<br /></code></dd></dl><p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136182">atos93</a> — Tue Jan 13, 2015 3:10 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Muris]]></name></author>
+<updated>2015-01-13T11:06:43+00:00</updated>
+<published>2015-01-13T11:06:43+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178725#p178725</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178725#p178725"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: love-android-sdl2 (native, 0.9.0)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178725#p178725"><![CDATA[
+<blockquote><div><cite>fysx wrote:</cite><br /><blockquote><div><cite>Muris wrote:</cite>So I was wondering if there is an easy way to completely remove the vibration support from the löve?<br /></div></blockquote><br />The easiest would be to adjust the function vibrate() in GameActivity.java to do nothing.</div></blockquote><br /><br />Oh, umm I mean it crashes on pause because of:<br /><dl class="codebox"><dt>Code: </dt><dd><code>          vibrator.cancel();<br /></code></dd></dl><br /><br />I was lucky to catch the point of where vibration is set from one of the commit texts. Then I tried modifying the code as following, and it seems that I can then remove the permission without crashing the application:<br /><br /><dl class="codebox"><dt>Code: </dt><dd><code>in begin of gameactivity.java<br />    private static Vibrator vibrator = null;<br /><br /><br />in oncreate:<br />      context = this.getApplicationContext();<br />      if( context.checkCallingOrSelfPermission(&quot;android.permission.VIBRATE&quot;) ==<br />          context.getPackageManager().PERMISSION_GRANTED )  {<br />        Log.d(&quot;GameActivity&quot;, &quot;Permission for vibrator granted.&quot;);<br />        vibrator = (Vibrator) this.context.getSystemService(Context.VIBRATOR_SERVICE);<br />      }<br /><br />and on destroy / pause<br />      if( vibrator != null ) {<br />          Log.d(&quot;GameActivity&quot;, &quot;Cancelling vibration&quot;);<br />          vibrator.cancel();<br />      }<br /><br /><br />and then in vibrate function<br />      if( vibrator != null ) {<br />        vibrator.vibrate((long) (seconds * 1000.));<br />      }<br /><br /><br /><br /></code></dd></dl><br /><br />With this it seems that the android application can be run without giving any permission at all. Maybe you cannot use all the features like internet etc. from love-application but from user point of perspective the application should be safer to use.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135126">Muris</a> — Tue Jan 13, 2015 11:06 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[fysx]]></name></author>
+<updated>2015-01-13T10:13:39+00:00</updated>
+<published>2015-01-13T10:13:39+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178720#p178720</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178720#p178720"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: love-android-sdl2 (native, 0.9.0)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178720#p178720"><![CDATA[
+<blockquote><div><cite>Muris wrote:</cite><br />So I was wondering if there is an easy way to completely remove the vibration support from the löve?<br /></div></blockquote><br />The easiest would be to adjust the function vibrate() in GameActivity.java to do nothing.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=27701">fysx</a> — Tue Jan 13, 2015 10:13 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Muris]]></name></author>
+<updated>2015-01-13T00:42:07+00:00</updated>
+<published>2015-01-13T00:42:07+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178711#p178711</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178711#p178711"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: love-android-sdl2 (native, 0.9.0)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178711#p178711"><![CDATA[
+I was playing around with this, and managed to compile the sources. I've been mostly using the precompiled version for app testing, but today I decided to try and see if what I for the game that I have now works on compiled version.<br /><br />I was happy to notice that it does work, and I even managed to remove some of the activities from the game (I personally do not want to give a random application license to use internet, but rather just not use the app at all), but I noticed that vibrate thing is the only one that cannot be removed without actually making the game crash when pausing(switching app). So I was wondering if there is an easy way to completely remove the vibration support from the löve?<br /><br />Also I was happy to notice that it is possible to save and load files without the need to give permission for external storage.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135126">Muris</a> — Tue Jan 13, 2015 12:42 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Jasoco]]></name></author>
+<updated>2015-01-12T23:10:58+00:00</updated>
+<published>2015-01-12T23:10:58+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178709#p178709</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178709#p178709"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: IAP(In App Purchase)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178709#p178709"><![CDATA[
+Mmmmm... PAI....<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=594">Jasoco</a> — Mon Jan 12, 2015 11:10 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Robin]]></name></author>
+<updated>2015-01-12T14:13:46+00:00</updated>
+<published>2015-01-12T14:13:46+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178684#p178684</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178684#p178684"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: IAP(In App Purchase)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178684#p178684"><![CDATA[
+That IAP API should be called PAI. <img src="https://love2d.org/forums/images/smilies/ms-razz.png" alt=":P" title="Razz" /><p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=436">Robin</a> — Mon Jan 12, 2015 2:13 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[fysx]]></name></author>
+<updated>2015-01-12T09:54:27+00:00</updated>
+<published>2015-01-12T09:54:27+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79157&amp;p=178677#p178677</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79157&amp;p=178677#p178677"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: appt.exe stopped]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79157&amp;p=178677#p178677"><![CDATA[
+Can you provide logs? I.e.: <!-- m --><a class="postlink" href="https://bitbucket.org/MartinFelis/love-android-sdl2/wiki/Logcat">https://bitbucket.org/MartinFelis/love- ... iki/Logcat</a><!-- m --><p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=27701">fysx</a> — Mon Jan 12, 2015 9:54 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[fysx]]></name></author>
+<updated>2015-01-12T09:53:34+00:00</updated>
+<published>2015-01-12T09:53:34+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178676#p178676</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178676#p178676"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: love-android-sdl2 (native, 0.9.0)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=76979&amp;p=178676#p178676"><![CDATA[
+<blockquote><div><cite>Abregado wrote:</cite><br />I've been making some prototypes and testing them on my Android Tablet as well as sending them to some friends to test. Some of them get the blue love stacktrace screen when the app crashes, but none of my devices do.<br /><br />Is there a way to enable this per device?<br /></div></blockquote><br />Older versions of LÖVE for Android (i.e. &lt; 0.9.1) had problems printing the stack-trace as the font rendering was not properly initialized and therefore only showed the blue screen.<br /><br />Do you have more detailed information what versions of LÖVE you are using? Also the type of Android devices and their Android versions would be very helpful.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=27701">fysx</a> — Mon Jan 12, 2015 9:53 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[fysx]]></name></author>
+<updated>2015-01-12T09:47:48+00:00</updated>
+<published>2015-01-12T09:47:48+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178675#p178675</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178675#p178675"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: IAP(In App Purchase)]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79303&amp;p=178675#p178675"><![CDATA[
+Not sure whether someone else is planning it I personally do not plan to add it. I also do not think that there will be a IAP-API on the LÖVE side itself and adding for each provider a custom API would be too cumbersome.<br /><br />The most feasible route I see is by implementing some communication layer with the Java side of the app. I.e. that one could send key-value pairs to Java, do some processing there, and send them back to LÖVE. That way you would implement the IAP code for the provider of your liking in Java as any other Android app and would have to figure out what to communicate between Java and LÖVE to make it happen or to confirm it.<br /><br />Any progress in the direction of Java-LÖVE-communication will be reported here: <!-- m --><a class="postlink" href="https://bitbucket.org/MartinFelis/love-android-sdl2/issue/69/communication-with-host-android">https://bitbucket.org/MartinFelis/love- ... st-android</a><!-- m -->. Would love to accept some patches for this!<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=27701">fysx</a> — Mon Jan 12, 2015 9:47 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Ulydev]]></name></author>
+<updated>2015-01-09T05:43:49+00:00</updated>
+<published>2015-01-09T05:43:49+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178463#p178463</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178463#p178463"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: &quot;LÖVE FOR ANDROID has stopped working&quot;]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178463#p178463"><![CDATA[
+Hello, clofresh, thank you for your answer.<br /><br />I should have closed the topic because I finally got it working by downgrading to r9. <img src="https://love2d.org/forums/images/smilies/ms-huh.png" alt=":huh:" title="Huuh..." /><p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135889">Ulydev</a> — Fri Jan 09, 2015 5:43 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[clofresh]]></name></author>
+<updated>2015-01-08T01:40:36+00:00</updated>
+<published>2015-01-08T01:40:36+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178419#p178419</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178419#p178419"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: &quot;LÖVE FOR ANDROID has stopped working&quot;]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178419#p178419"><![CDATA[
+Are there any errors in logcat? Does it work when installing the apk onto an actual device?<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=643">clofresh</a> — Thu Jan 08, 2015 1:40 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Gold_Car]]></name></author>
+<updated>2015-01-04T00:33:46+00:00</updated>
+<published>2015-01-04T00:33:46+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178257#p178257</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178257#p178257"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178257#p178257"><![CDATA[
+Thanks! It works now.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136120">Gold_Car</a> — Sun Jan 04, 2015 12:33 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Robin]]></name></author>
+<updated>2015-01-03T22:53:44+00:00</updated>
+<published>2015-01-03T22:53:44+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178253#p178253</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178253#p178253"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178253#p178253"><![CDATA[
+Replace<br /><dl class="codebox"><dt>Code: </dt><dd><code>require &quot;entities.lua&quot;</code></dd></dl><br />with<br /><dl class="codebox"><dt>Code: </dt><dd><code>require &quot;entities&quot;</code></dd></dl><br />The string that is passed to <span style="font-weight: bold">require</span> is a module name, not a file name. A module called &quot;foo.bar&quot; can generally be found in &quot;foo/bar.lua&quot; or &quot;foo/bar/init.lua&quot;, so your code is looking for &quot;entities/lua.lua&quot; and &quot;entities/lua/init.lua&quot; etc.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=436">Robin</a> — Sat Jan 03, 2015 10:53 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Gold_Car]]></name></author>
+<updated>2015-01-03T21:54:13+00:00</updated>
+<published>2015-01-03T21:54:13+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178249#p178249</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178249#p178249"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178249#p178249"><![CDATA[
+Alright, here's what I've got. I'm trying to make the entities.lua load with the main.lua, and I get that cheeky old bluescreen.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136120">Gold_Car</a> — Sat Jan 03, 2015 9:54 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Gold_Car]]></name></author>
+<updated>2015-01-01T23:48:00+00:00</updated>
+<published>2015-01-01T23:48:00+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178172#p178172</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178172#p178172"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178172#p178172"><![CDATA[
+Will do.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136120">Gold_Car</a> — Thu Jan 01, 2015 11:48 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Robin]]></name></author>
+<updated>2015-01-01T21:13:21+00:00</updated>
+<published>2015-01-01T21:13:21+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178170#p178170</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178170#p178170"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178170#p178170"><![CDATA[
+Put them in a .zip, and then rename the .zip to .love, as seen on the wiki page <a href="/wiki/Game_Distribution">Game_Distribution</a>. If you prefer, you could just upload a zip file of your game, it's just more convenient for us if it's a .love.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=436">Robin</a> — Thu Jan 01, 2015 9:13 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Gold_Car]]></name></author>
+<updated>2015-01-01T21:09:04+00:00</updated>
+<published>2015-01-01T21:09:04+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178169#p178169</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178169#p178169"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178169#p178169"><![CDATA[
+<blockquote><div><cite>Robin wrote:</cite><br />You could try uploading a .love of your game so we can take a look at it.<br /></div></blockquote><br /><br />How do I turn my files into .love?<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136120">Gold_Car</a> — Thu Jan 01, 2015 9:09 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Robin]]></name></author>
+<updated>2015-01-01T13:37:45+00:00</updated>
+<published>2015-01-01T13:37:45+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178162#p178162</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178162#p178162"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178162#p178162"><![CDATA[
+<blockquote><div><cite>Gold_Car wrote:</cite><br />I've been trying to use the require() thingy for quite some time now and haven't made any progress. But I need it - or something equivalent to it - to finish a small project that I've been trying to figure out (I.E. following Goature's tutorial). Should I just downgrade my LOVE?<br /></div></blockquote><br />You could try uploading a .love of your game so we can take a look at it.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=436">Robin</a> — Thu Jan 01, 2015 1:37 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Gold_Car]]></name></author>
+<updated>2015-01-01T02:23:49+00:00</updated>
+<published>2015-01-01T02:23:49+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178135#p178135</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178135#p178135"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: LÖVE 0.9.1 released]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=77609&amp;p=178135#p178135"><![CDATA[
+<blockquote><div><cite>slime wrote:</cite><br /><blockquote><div><cite>osuf oboys wrote:</cite>However, it is no longer possible to 'require &quot;bit&quot;' (works fine in lua) - would it be possible to add back this library?<br /></div></blockquote><br />There is no bit operations library in Lua 5.1 (which LÖVE used to use until 0.9). LuaJIT (which LÖVE uses by default in 0.9.0 and 0.9.1) includes a bit library which you can use like so:<br /><dl class="codebox"><dt>Code: </dt><dd><code>local bit = require(&quot;bit&quot;)</code></dd></dl></div></blockquote><br /><br />I've been trying to use the require() thingy for quite some time now and haven't made any progress. But I need it - or something equivalent to it - to finish a small project that I've been trying to figure out (I.E. following Goature's tutorial). Should I just downgrade my LOVE?<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=136120">Gold_Car</a> — Thu Jan 01, 2015 2:23 am</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Ulydev]]></name></author>
+<updated>2014-12-29T20:12:58+00:00</updated>
+<published>2014-12-29T20:12:58+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178043#p178043</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178043#p178043"/>
+<title type="html"><![CDATA[LÖVE-Android • &quot;LÖVE FOR ANDROID has stopped working&quot;]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79370&amp;p=178043#p178043"><![CDATA[
+Hello everyone, I'm running into (hopefully) the last issue before actually releasing my first two Löve2D games to iOS and Android.<br /><br />I've searched on the internet and on the forums for answers but it seems like this problem has not been solved. Please tell me if an answer has already been posted. <img src="https://love2d.org/forums/images/smilies/ms-death.png" alt=":death:" title="Death" /> <br /><br />I followed the instructions to build Löve for Android, as specified in the bitbucket documentation.<br />I first ran into an issue and had to downgrade the NDK to r10. Then building worked fine and &quot;ant debug&quot; resulted in a test .apk. The problem I'm getting is that whenever I try to install the .apk I built on an Android emulator, it crashes and tells me that &quot;LÖVE FOR ANDROID has stopped working&quot;.<br />At first I thought there was a problem with the emulator. So, I tried to install the pre-built .apk version of Löve available in the bitbucket repo, and... surprisingly, it worked fine. Now that I need to package my game for releasing, I do need to build my own .apk.<br /><br />I must add that I'm using OSX 10.9.5.<br /><br />Thank you in advance for your answers, I really need to get this working ASAP as my games need to be released in less than a week.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=135889">Ulydev</a> — Mon Dec 29, 2014 8:12 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[slime]]></name></author>
+<updated>2014-12-20T16:25:26+00:00</updated>
+<published>2014-12-20T16:25:26+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177698#p177698</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177698#p177698"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: Installing .apk files?]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177698#p177698"><![CDATA[
+<blockquote><div><cite>Germanunkol wrote:</cite><br />Settings for the emulator: Android 3.1 (API level 12)<br /></div></blockquote><br />I believe newer versions of the emulator support OpenGL ES 2, but it still might be buggy enough to not work properly.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=1399">slime</a> — Sat Dec 20, 2014 4:25 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[bartbes]]></name></author>
+<updated>2014-12-20T14:21:19+00:00</updated>
+<published>2014-12-20T14:21:19+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177694#p177694</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177694#p177694"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: Installing .apk files?]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177694#p177694"><![CDATA[
+Maybe it does support GLESv1.1 but not GLESv2.<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=147">bartbes</a> — Sat Dec 20, 2014 2:21 pm</p><hr />
+]]></content>
+</entry>
+<entry>
+<author><name><![CDATA[Germanunkol]]></name></author>
+<updated>2014-12-20T13:43:57+00:00</updated>
+<published>2014-12-20T13:43:57+00:00</published>
+<id>https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177692#p177692</id>
+<link href="https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177692#p177692"/>
+<title type="html"><![CDATA[LÖVE-Android • Re: Installing .apk files?]]></title>
+
+<category term="LÖVE-Android" scheme="https://love2d.org/forums/viewforum.php?f=11" label="LÖVE-Android"/>
+<content type="html" xml:base="https://love2d.org/forums/viewtopic.php?t=79327&amp;p=177692#p177692"><![CDATA[
+Right... weird though, there was a folder with &quot;API Samples/GLES&quot; or similar, and those worked.<br /><br />Anyway, then I'll have to get my hands on a real phone one of these days...<p>Statistics: Posted by <a href="https://love2d.org/forums/memberlist.php?mode=viewprofile&amp;u=54284">Germanunkol</a> — Sat Dec 20, 2014 1:43 pm</p><hr />
+]]></content>
+</entry>
+</feed>

@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="canonical" href="lua_enet.html" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>lua-enet - LOVE</title>
+		<link rel="stylesheet" href="shared.css" media="screen" />
+<link rel="stylesheet" href="commonprint.css" media="print" />
+<link rel="stylesheet" href="main.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.love2d.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="lua-enet",
+wgTitle="lua-enet",
+wgAction="view",
+wgArticleId=3666,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=14536,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=[],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="lua-enet" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-lua-enet skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-main" class="selected"><a href="lua_enet.html" title="View the content page [c]" accesskey="c">Page</a></li>
+					 <li id="ca-talk"><a href="talk_lua_enet.html" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">lua-enet</h1>
+		<div id="bodyContent">
+			<div id="contentSub">(Redirected from <a href="" title="enet">enet</a>)</div>
+									<!-- start content -->
+			<table bgcolor="#d0d0ff" style="margin-top: 1em; padding: 3px; border-radius:5px; -moz-border-radius:5px;">
+<tr>
+<td><i> <b>Available since LÖVE <a href="0.9.html" title="0.9.0">0.9.0</a></b> </i>
+</td></tr>
+<tr>
+<td> <small>This module is not supported in earlier versions.</small>
+</td></tr></table>
+<p><br />
+</p>
+<table bgcolor="gold" style="border-style:solid;border-width:1px;-moz-border-radius:3px;border-radius:3px;" align="center" width="80%">
+<tr>
+<td width="1"> <a href="file_o.html" class="image"><img alt="O.png" src="o.png" width="64" height="64" /></a>
+</td><td>Official documentation for lua-enet is available <a href="http://leafo.net/lua-enet/" class="external text" rel="nofollow">here</a>. ENet's features are listed on its <a href="http://enet.bespin.org/Features.html" class="external text" rel="nofollow">homepage</a>. Be wary that there's misspellings and misleading examples in the official documentation.
+</td><td width="1">&nbsp;
+</td></tr></table><br />
+<p>lua-enet is simply some lua bindings for ENet.
+</p><p>ENet's purpose is to provide a relatively thin, simple and robust network communication layer on top of UDP (User Datagram Protocol).The primary feature it provides is optional reliable, in-order delivery of packets.
+</p><p>ENet omits certain higher level networking features such as authentication, lobbying, server discovery, encryption, or other similar tasks that are particularly application specific so that the library remains flexible, portable, and easily embeddable.
+</p>
+<h2> <span class="mw-headline" id="Types"> Types </span></h2>
+<table class="wikitable">
+<tr>
+<th>Type
+</th><th>Description
+</th></tr>
+<tr>
+<td><a href="enet1.html" title="enet.host"> host</a>
+</td><td>An ENet host for communicating with peers.
+</td></tr>
+<tr>
+<td><a href="enet2.html" title="enet.peer"> peer</a>
+</td><td>An ENet peer which data packets may be sent or received from.
+</td></tr>
+<tr>
+<td><a href="enet3.html" title="enet.event"> event</a>
+</td><td>A simple table containing information on an event.
+</td></tr></table>
+<h2> <span class="mw-headline" id="Functions"> Functions </span></h2>
+<table class="wikitable">
+<tr>
+<th>Function
+</th><th>Description
+</th></tr>
+
+<tr>
+<td><a href="enet_host_create.html" title="enet:host create"> host_create</a>
+</td><td>Returns a new host.
+</td></tr>
+<tr>
+<td><a href="enet4.html" title="enet.host:service"> host:service</a>
+</td><td>Wait for <a href="enet3.html" title="enet.event"> events</a>, send and receive any ready packets.
+</td></tr>
+<tr>
+<td><a href="enet5.html" title="enet.host:check events"> host:check_events</a>
+</td><td>Checks for any queued <a href="enet3.html" title="enet.event"> events</a> and dispatches one if available.
+</td></tr>
+<tr>
+<td><a href="enet6.html" title="enet.host:connect"> host:connect</a>
+</td><td>Connects a host to a remote host. Returns <a href="enet2.html" title="enet.peer"> peer</a> object associated with remote host.
+</td></tr>
+<tr>
+<td><a href="enet7.html" title="enet.host:flush"> host:flush</a>
+</td><td>Sends any queued packets.
+</td></tr>
+<tr>
+<td><a href="enet8.html" title="enet.host:broadcast"> host:broadcast</a>
+</td><td>Queues a packet to be sent to all connected peers.
+</td></tr>
+<tr>
+<td><a href="enet9.html" title="enet.host:channel limit"> host:channel_limit</a>
+</td><td>Sets the maximum number of channels allowed.
+</td></tr>
+<tr>
+<td><a href="enet10.html" title="enet.host:bandwidth limit"> host:bandwidth_limit</a>
+</td><td>Sets the bandwidth limits of the host in bytes/sec.
+</td></tr>
+<tr>
+<td><a href="enet11.html" title="enet.host:socket get address"> host:socket_get_address</a>
+</td><td>Returns a <a href="string.html" title="string">string</a> that describes the socket address of the given host.
+</td></tr>
+<tr>
+<td><a href="enet12.html" title="enet.host:total sent data"> host:total_sent_data</a>
+</td><td>Returns the <a href="number1.html" title="number">number</a> of bytes that were sent through the given host.
+</td></tr>
+<tr>
+<td><a href="enet13.html" title="enet.host:total received data"> host:total_received_data</a>
+</td><td>Returns the <a href="number1.html" title="number">number</a> of bytes that were received by the given host.
+</td></tr>
+<tr>
+<td><a href="enet14.html" title="enet.host:service time"> host:service_time</a>
+</td><td>Returns the timestamp of the last call to <a href="enet4.html" title="enet.host:service"> host:service()</a> or <a href="enet7.html" title="enet.host:flush"> host:flush()</a>.
+</td></tr>
+<tr>
+<td><a href="enet15.html" title="enet.host:peer count"> host:peer_count</a>
+</td><td>Returns the number of peers that are allocated for the given host.
+</td></tr>
+<tr>
+<td><a href="enet16.html" title="enet.host:get peer"> host:get_peer</a>
+</td><td>Returns the connected <a href="enet2.html" title="enet.peer"> peer</a> at the specified index (starting at 1).
+</td></tr>
+<tr>
+<td><a href="enet17.html" title="enet.host: gc"> host:__gc</a>
+</td><td>Destroys the host, freeing any bound ports and addresses.
+</td></tr>
+<tr>
+<td><a href="enet18.html" title="enet.peer:disconnect"> peer:disconnect</a>
+</td><td>Requests a disconnection from the peer.
+</td></tr>
+<tr>
+<td><a href="enet19.html" title="enet.peer:disconnect now"> peer:disconnect_now</a>
+</td><td>Force immediate disconnection from peer.
+</td></tr>
+<tr>
+<td><a href="enet20.html" title="enet.peer:disconnect later"> peer:disconnect_later</a>
+</td><td>Request a disconnection from peer, but only after all queued outgoing packets are sent.
+</td></tr>
+<tr>
+<td><a href="enet21.html" title="enet.peer:reset"> peer:reset</a>
+</td><td>Forcefully disconnects peer. The peer is not notified of the disconnection.
+</td></tr>
+<tr>
+<td><a href="enet22.html" title="enet.peer:ping"> peer:ping</a>
+</td><td>Send a ping request to peer, updates <a href="enet23.html" title="enet.peer:round trip time"> round_trip_time</a>. This is called automatically at regular intervals.
+</td></tr>
+<tr>
+<td><a href="enet24.html" title="enet.peer:receive"> peer:receive</a>
+</td><td>Attempts to dequeue an incoming packet for this peer.
+</td></tr>
+<tr>
+<td><a href="enet25.html" title="enet.peer:send"> peer:send</a>
+</td><td>Queues a packet to be sent to peer.
+</td></tr>
+<tr>
+<td><a href="enet26.html" title="enet.peer:throttle configure"> peer:throttle_configure</a>
+</td><td>Changes the probability at which unreliable packets should not be dropped.
+</td></tr>
+<tr>
+<td><a href="enet27.html" title="enet.peer:ping interval"> peer:ping_interval</a>
+</td><td>Specifies the interval in milliseconds that pings are sent to the other end of the connection (defaults to 500).
+</td></tr>
+<tr>
+<td><a href="enet28.html" title="enet.peer:timeout"> peer:timeout</a>
+</td><td>Returns or sets the parameters when a timeout is detected.
+</td></tr>
+<tr>
+<td><a href="enet29.html" title="enet.peer:index"> peer:index</a>
+</td><td>Returns the index of the peer.
+</td></tr>
+<tr>
+<td><a href="enet30.html" title="enet.peer:state"> peer:state</a>
+</td><td>Returns the state of the peer.
+</td></tr>
+<tr>
+<td><a href="enet31.html" title="enet.peer:connect id"> peer:connect_id</a>
+</td><td>Returns the field ENetPeer::connectID that is assigned for each connection.
+</td></tr>
+<tr>
+<td><a href="enet23.html" title="enet.peer:round trip time"> peer:round_trip_time</a>
+</td><td>Returns or sets the current round trip time (i.e. ping).
+</td></tr>
+<tr>
+<td><a href="enet32.html" title="enet.peer:last round trip time"> peer:last_round_trip_time</a>
+</td><td>Returns or sets the round trip time of the previous round trip time computation.
+</td></tr></table>
+<h2> <span class="mw-headline" id="Examples"> Examples </span></h2>
+<p><b>server.lua</b>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="co1">-- server.lua</span><br /><span class="kw1">require</span> <span class="st0">&quot;enet&quot;</span><br /><span class="kw1">local</span> host <span class="sy0">=</span> enet.host_create<span class="br0">&#40;</span><span class="st0">&quot;localhost:6789&quot;</span><span class="br0">&#41;</span><br /><span class="kw1">while</span> <span class="kw1">true</span> <span class="kw1">do</span><br />&nbsp; <span class="kw1">local</span> event <span class="sy0">=</span> host:service<span class="br0">&#40;</span><span class="nu0">100</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">while</span> event <span class="kw1">do</span><br />&nbsp; &nbsp; <span class="kw1">if</span> event.<span class="kw1">type</span> <span class="sy0">==</span> <span class="st0">&quot;receive&quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;Got message: &quot;</span>, event.data, event.peer<span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; event.peer:send<span class="br0">&#40;</span> <span class="st0">&quot;pong&quot;</span> <span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> event.<span class="kw1">type</span> <span class="sy0">==</span> <span class="st0">&quot;connect&quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span>event.peer .. <span class="st0">&quot; connected.&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> event.<span class="kw1">type</span> <span class="sy0">==</span> <span class="st0">&quot;disconnect&quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span>event.peer .. <span class="st0">&quot; disconnected.&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; event <span class="sy0">=</span> host:service<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+<p><b>client.lua</b>
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="co1">-- client.lua</span><br /><span class="kw1">require</span> <span class="st0">&quot;enet&quot;</span><br /><span class="kw1">local</span> host <span class="sy0">=</span> enet.host_create<span class="br0">&#40;</span><span class="br0">&#41;</span><br /><span class="kw1">local</span> server <span class="sy0">=</span> host:connect<span class="br0">&#40;</span><span class="st0">&quot;localhost:6789&quot;</span><span class="br0">&#41;</span><br /><span class="kw1">while</span> <span class="kw1">true</span> <span class="kw1">do</span><br />&nbsp; <span class="kw1">local</span> event <span class="sy0">=</span> host:service<span class="br0">&#40;</span><span class="nu0">100</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">while</span> event <span class="kw1">do</span><br />&nbsp; &nbsp; <span class="kw1">if</span> event.<span class="kw1">type</span> <span class="sy0">==</span> <span class="st0">&quot;receive&quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;Got message: &quot;</span>, event.data, event.peer<span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; event.peer:send<span class="br0">&#40;</span> <span class="st0">&quot;ping&quot;</span> <span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> event.<span class="kw1">type</span> <span class="sy0">==</span> <span class="st0">&quot;connect&quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span>event.peer .. <span class="st0">&quot; connected.&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; &nbsp; event.peer:send<span class="br0">&#40;</span> <span class="st0">&quot;ping&quot;</span> <span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">elseif</span> event.<span class="kw1">type</span> <span class="sy0">==</span> <span class="st0">&quot;disconnect&quot;</span> <span class="kw1">then</span><br />&nbsp; &nbsp; &nbsp; <span class="kw1">print</span><span class="br0">&#40;</span>event.peer .. <span class="st0">&quot; disconnected.&quot;</span><span class="br0">&#41;</span><br />&nbsp; &nbsp; <span class="kw1">end</span><br />&nbsp; &nbsp; event <span class="sy0">=</span> host:service<span class="br0">&#40;</span><span class="br0">&#41;</span><br />&nbsp; <span class="kw1">end</span><br /><span class="kw1">end</span></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 64/1000000
+Post-expand include size: 743/2097152 bytes
+Template argument size: 306/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:3666-0!1!0!!en!2!edit=0 and timestamp 20150125231312 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.love2d.org/wiki/lua-enet">http://www.love2d.org/wiki/lua-enet</a>"</div>
+			<div id='catlinks' class='catlinks catlinks-allhidden'></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki.png);" href="index.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love.html">love</a></li>
+				<li><a href="love1.html">love.audio</a></li>
+				<li><a href="love2.html">love.event</a></li>
+				<li><a href="love3.html">love.filesystem</a></li>
+				<li><a href="love4.html">love.graphics</a></li>
+				<li><a href="love5.html">love.image</a></li>
+				<li><a href="love6.html">love.joystick</a></li>
+				<li><a href="love7.html">love.keyboard</a></li>
+				<li><a href="love8.html">love.math</a></li>
+				<li><a href="love9.html">love.mouse</a></li>
+				<li><a href="love10.html">love.physics</a></li>
+				<li><a href="love11.html">love.sound</a></li>
+				<li><a href="love12.html">love.system</a></li>
+				<li><a href="love13.html">love.timer</a></li>
+				<li><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love.html">love</a></li>
+				<li id="n-love.audio"><a href="love1.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love2.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love3.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love15.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love4.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love5.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love6.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love7.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love8.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love9.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love10.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love11.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love12.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love16.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love13.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/lua-2Denet">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 13 January 2015, at 18:17.</li>
+					<li id="viewcount">This page has been accessed 1,236 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.264 secs. --></body></html>

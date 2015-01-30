@@ -1,0 +1,820 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<link rel="shortcut icon" type="image/png" href="favicon5.png" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2002-2006 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>LÖVE &bull; View topic - LUBE (Networking Library)</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - LÖVE" href="feed3.php" /><link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="feed3.php_mode_forums" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed3.php_mode_topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Projects and Demos" href="feed.php_f_5" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - LUBE (Networking Library)" href="" />
+
+<!--
+	phpBB style name: love
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      rude
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '22';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=5&amp;t=230&amp;sid=b9b060f87111698b626f977021e1b8a0';
+	var style_cookie = 'phpBBstyle';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (i = 0; i <= onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (i = 0; i <= onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="styleswitcher3.js"></script>
+<script type="text/javascript" src="forum_fn3.js"></script>
+<script type="text/javascript" src="mathjax.js">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["\\(","\\)"]]}
+  });
+</script>
+
+<link href="print3.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="normal3.css" rel="stylesheet" type="text/css" title="A" />
+<link href="medium3.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="large3.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+<link rel="stylesheet" href="docco.css"/>
+<script type="text/javascript" src="highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.configure({useBR: true});
+function hljs_init() {
+	var elements = document.getElementsByTagName("code");
+	for (var i = 0; i < elements.length; i++) {
+		hljs.highlightBlock(elements[i]);
+	}
+};
+onload_functions.push("hljs_init()");
+</script>
+<style>
+dl.codebox {
+	background-color: rgb(248, 248, 255); /* Match the highlighting background */
+}
+</style>
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<!-- CUSTOM STUFF GO HERE -->
+
+<header id="love_header">
+</header>
+
+<div id="love_wrap">
+
+	<nav>
+		<a href="love2d1.html">Home</a>
+		<a href="wiki.html">Wiki</a>
+		<a href="forums.html">Forums</a>
+		<a href="http://bitbucket.org/rude/love/issues">Issue tracker</a>
+	</nav>
+
+<div id="love_content">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+	
+
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="forums6.html" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="">Projects and Demos</a></li>
+
+				<li class="rightside"><a href="" onclick="fontsizeup(); return false;" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+                                <!-- <li class="icon-rss"><a href="" title="{ RSS_EXPLAIN }">RSS</a></li> -->
+				<!-- <li><a href="" title="{ RSS_EXPLAIN }"><img src="icon_rss3.gif"/></a></li> -->
+        <li class="icon-search"><a href="search6.html" title="{ SEARCH_EXPLAIN }">Search</a></li>
+        <li class="icon-faq"><a href="faq4.html" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-members"><a href="memberlist4.html" title="View complete list of members">Members</a></li><li class="icon-register"><a href="">Register</a></li>
+					<li class="icon-logout"><a href="" title="Login" accesskey="l">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	
+		<a name="start_here"></a>
+		<div id="page-body">
+			
+			 
+<h2><a href="">LUBE (Networking Library)</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><span style="display: none">Showcase your games and demos, and discuss ongoing projects.<br /></span>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="post" id="topic-search" action="search6.html">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" value="230" name="t" />
+				<input type="hidden" value="msgonly" name="sf" />
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			329 posts
+			 &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>22</strong> of <strong>33</strong></a> &bull; <span><a href="">1</a><span class="page-dots"> ... </span><a href="">19</a><span class="page-sep">, </span><a href="">20</a><span class="page-sep">, </span><a href="">21</a><span class="page-sep">, </span><strong>22</strong><span class="page-sep">, </span><a href="">23</a><span class="page-sep">, </span><a href="">24</a><span class="page-sep">, </span><a href="">25</a><span class="page-dots"> ... </span><a href="">33</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p21112" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p21112">A little help with LUBE</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">TechnoCat</a></strong> on Sun Oct 24, 2010 8:57 pm </p>
+
+			
+
+			<div class="content"><span style="font-size: 150%; line-height: 116%;"><span style="font-weight: bold">Having trouble getting started using LUBE?</span></span><br /><br /><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;">Selected posts from this thread.</span></span><br />Quick introduction (arguably the most useful for starting)<br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=120#p6154</a><!-- l --><br />Out of date examples<br /><!-- m --><a class="postlink" href="http://github.com/bartbes/lube-demo">http://github.com/bartbes/lube-demo</a><!-- m --><br />Very simple start<br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=30#p2905</a><!-- l --><br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=190#p15526</a><!-- l --><br />Pack and Unpack (no nested tables in lube.bin:pack/unpack<br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=170#p11178</a><!-- l --><br />Multiple connections to a server<br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=100#p6079</a><!-- l --><br />Broadcasting to a subnet<br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=120#p6151</a><!-- l --><br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=150#p7029</a><!-- l --><br /><br /><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;">Selected General Network Programming Guides:</span></span><br /><a href="http://gafferongames.com/networking-for-game-programmers/" class="postlink">Networking for Game Programmers</a><br /><a href="http://www.gamedev.net/reference/articles/article1370.asp" class="postlink">Targeting A variation of dead reckoning</a><br /><a href="http://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking" class="postlink">Source Multiplayer Networking</a><br /><a href="http://www.gamedev.net/community/forums/showfaq.asp?forum_id=15" class="postlink">FAQ - Multiplayer and Network Programming</a><br /><a href="http://www.gamasutra.com/resource_guide/20020916/lambright_01.htm" class="postlink">Distributing Object State for Networked Games Using Object Views</a><br /><a href="http://www.gamedev.net/reference/articles/article712.asp" class="postlink">What is Lag?</a><br /><a href="http://www.gamasutra.com/view/feature/3158/using_groupings_for_networked_.php" class="postlink">Using Groupings for Networked Gaming</a><br /><br /><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;">A very simple LOVE server/client skeleton.</span></span><br /><div class="inline-attachment">
+		<dl class="file">
+			<dt><img src="love.png" alt="" /> <a class="postlink" href="">LUBEMinimalSkeleton.love</a></dt>
+			<dd><em>LOVE 0.7.0<br />LUBE 0.7.1<br />MiddleClass + Stateful</em></dd>
+			<dd>(12.85 KiB) Downloaded 1071 times</dd>
+		</dl>
+		</div><br />All this does is connect to a server on localhost. And the server acknowledges the connection.<br />You will have to open up two instances of it, one for server, and then one for client.<br />Press 1 for server, Press 2 for client.<br /><br />In a nutshell, this is what is happening:<br />server:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>function onConnect(ip, port)<br />&nbsp; print(&quot;Connection from &quot; .. ip)<br />end<br />function onReceive(data, ip, port)<br />&nbsp; <br />end<br />function onDisconnect(ip, port)<br />&nbsp; <br />end<br />server = lube.server(18025)<br />server:setCallback(onReceive, onConnect, onDisconnect)<br />server:setHandshake(&quot;Hi!&quot;)<br /><br />function love.update(dt)<br />&nbsp; server:update(dt)<br />end<br /></code></dd></dl><br />client:<br /><dl class="codebox"><dt>Code: <a href="" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>function onReceive(data)<br />&nbsp; <br />end<br />client = lube.client()<br />client:setHandshake(&quot;Hi!&quot;)<br />client:setCallback(onReceive)<br />client:connect(&quot;127.0.0.1&quot;, 18025)<br /><br />function love.update(dt)<br />&nbsp; client:update(dt)<br />end<br /></code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21112">
+			<dt>
+				<a href=""><img src="file.php_avatar_649_1277354250.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">TechnoCat</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1610</dd><dd><strong>Joined:</strong> Thu Jul 30, 2009 12:31 am</dd><dd><strong>Location:</strong> Chicago, IL</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://about.me/dannyfritz" title="WWW: http://about.me/dannyfritz"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21582" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21582">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">TechnoCat</a></strong> on Wed Nov 03, 2010 4:03 am </p>
+
+			
+
+			<div class="content">How is a server supposed to be restarted? <span style="font-size: 50%; line-height: 116%;">double post was intentional by the way.</span><br /><br />For instance in this program.<br />Open up an instance, press 1 to turn it into a server.<br />Open up another instance on localhost and press 2 to turn it into a client.<br />Observe they made a connection and you can see the cursor on the server instance.<br />On the server instance, press escape to go back to the menu, and then press 1 to go to server again.<br />Turn the client instance back into a client.<br />No connection is made.<br /><br />This happens because I am unsure how to properly disconnect and reinitialize a server.</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="love.png" alt="" /> <a class="postlink" href="">LUBE Server Restart.love</a></dt>
+			<dd><em>0.7.0</em></dd>
+			<dd>(15.23 KiB) Downloaded 183 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21582">
+			<dt>
+				<a href=""><img src="file.php_avatar_649_1277354250.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">TechnoCat</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1610</dd><dd><strong>Joined:</strong> Thu Jul 30, 2009 12:31 am</dd><dd><strong>Location:</strong> Chicago, IL</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://about.me/dannyfritz" title="WWW: http://about.me/dannyfritz"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21583" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21583">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="" style="color: #00AA00;" class="username-coloured">bartbes</a></strong> on Wed Nov 03, 2010 6:45 am </p>
+
+			
+
+			<div class="content">It probably works if you call lube.server.socket:close(), but it is not exposed directly in LUBE.</div>
+
+			<div id="sig21583" class="signature">Cowardly acts and the eating of birds must not be the deeds of a Hero of Storms.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21583">
+			<dt>
+				<a href=""><img src="file.php_avatar_147_1275144396.jpg" width="90" height="81" alt="User avatar" /></a><br />
+				<a href="" style="color: #00AA00;" class="username-coloured">bartbes</a>
+			</dt>
+
+			<dd>Sex machine</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 4376</dd><dd><strong>Joined:</strong> Fri Aug 29, 2008 10:35 am</dd><dd><strong>Location:</strong> The Netherlands</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21584" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21584">Re: A little help with LUBE</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">kikito</a></strong> on Wed Nov 03, 2010 9:35 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>TechnoCat wrote:</cite><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;">A very simple LOVE server/client skeleton.</span></span><br /></div></blockquote><br />I still think this could be done simpler - at least one of the classes (NetTest or Game) isn't really needed. Also, I don't like having the love.xxx functions redefined on each state.<br /><br />I'll see if I can provide my own version this evening.</div>
+
+			<div id="sig21584" class="signature">When I write <span style="font-weight: bold">def</span> I mean <span style="font-weight: bold">function</span>.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21584">
+			<dt>
+				<a href=""><img src="file.php_avatar_710_1275310726.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">kikito</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2789</dd><dd><strong>Joined:</strong> Sat Oct 03, 2009 5:22 pm</dd><dd><strong>Location:</strong> Madrid, Spain</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://github.com/kikito" title="WWW: http://github.com/kikito"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21598" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21598">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">kikito</a></strong> on Thu Nov 04, 2010 12:45 am </p>
+
+			
+
+			<div class="content">(double posting since previous post was this morning)<br /><br />This is my take on the minimalskeleton thingie.<br /><br />Super-warning: I can't test the code on the computer I'm using for writing this, so the code is <span style="font-weight: bold">completely untested</span>. I'm not able to debug it, though. Pretty sure there are syntax errors etc. Technocat, would you kindly?<br /><br />The structure is simpler (everything is done by the class Game) and the callbacks management is more streamlined. Also, using <span style="font-weight: bold">self</span> on the server and client minimizes global variables.</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="love.png" alt="" /> <a class="postlink" href="">LUBEMinimalSkeleton.love</a></dt>
+			
+			<dd>(13.64 KiB) Downloaded 178 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			<div id="sig21598" class="signature">When I write <span style="font-weight: bold">def</span> I mean <span style="font-weight: bold">function</span>.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21598">
+			<dt>
+				<a href=""><img src="file.php_avatar_710_1275310726.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">kikito</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2789</dd><dd><strong>Joined:</strong> Sat Oct 03, 2009 5:22 pm</dd><dd><strong>Location:</strong> Madrid, Spain</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://github.com/kikito" title="WWW: http://github.com/kikito"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21599" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21599">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">TechnoCat</a></strong> on Thu Nov 04, 2010 2:07 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>kikito wrote:</cite>Super-warning: I can't test the code on the computer I'm using for writing this, so the code is <span style="font-weight: bold">completely untested</span>. I'm not able to debug it, though. Pretty sure there are syntax errors etc. Technocat, would you kindly?<br /><br />The structure is simpler (everything is done by the class Game) and the callbacks management is more streamlined. Also, using <span style="font-weight: bold">self</span> on the server and client minimizes global variables.</div></blockquote><br />Well, I fixed it up and it runs and makes connections, but the thing is, now that Game and Server are states of the same object, how do you draw the game and still run a server or client at the same time?</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="love.png" alt="" /> <a class="postlink" href="">kikito LUBE skeleton.love</a></dt>
+			<dd><em>0.7.0</em></dd>
+			<dd>(13.17 KiB) Downloaded 206 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21599">
+			<dt>
+				<a href=""><img src="file.php_avatar_649_1277354250.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">TechnoCat</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1610</dd><dd><strong>Joined:</strong> Thu Jul 30, 2009 12:31 am</dd><dd><strong>Location:</strong> Chicago, IL</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://about.me/dannyfritz" title="WWW: http://about.me/dannyfritz"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21601" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21601">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Robin</a></strong> on Thu Nov 04, 2010 7:09 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>TechnoCat wrote:</cite>the thing is, now that Game and Server are states of the same object, how do you draw the game and still run a server or client at the same time?</div></blockquote><br />Maybe with pushState()?</div>
+
+			<div id="sig21601" class="signature"><a href="" class="postlink">Help us help you</a>: attach a .love.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21601">
+			<dt>
+				<a href=""><img src="file.php_avatar_436_1359407191.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Robin</a>
+			</dt>
+
+			<dd>The Omniscient</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 6242</dd><dd><strong>Joined:</strong> Fri Feb 20, 2009 4:29 pm</dd><dd><strong>Location:</strong> The Netherlands</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://gvxdev.wordpress.com/" title="WWW: http://gvxdev.wordpress.com/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21602" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21602">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">kikito</a></strong> on Thu Nov 04, 2010 7:52 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>TechnoCat wrote:</cite>how do you draw the game and still run a server or client at the same time?</div></blockquote><br /><br />well, then it wouldn't be a minimal skeleton any more, would it ? <img src="ms_smile.png" alt=":)" title="Smile" /><br /><br />Pushing states could be an option, but it would be a bit tricky. A more proper way to do it probably involves threads/corroutines. Or maybe a separate state called ServerClient.</div>
+
+			<div id="sig21602" class="signature">When I write <span style="font-weight: bold">def</span> I mean <span style="font-weight: bold">function</span>.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21602">
+			<dt>
+				<a href=""><img src="file.php_avatar_710_1275310726.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">kikito</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2789</dd><dd><strong>Joined:</strong> Sat Oct 03, 2009 5:22 pm</dd><dd><strong>Location:</strong> Madrid, Spain</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://github.com/kikito" title="WWW: http://github.com/kikito"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21649" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21649">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">zac352</a></strong> on Fri Nov 05, 2010 8:54 pm </p>
+
+			
+
+			<div class="content">The documentation was useless in teaching me how to make server information broadcast to all clients... Is it possible to enumerate through local area clients?</div>
+
+			<div id="sig21649" class="signature">Hello, I am not dead.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21649">
+			<dt>
+				<a href=""><img src="file.php_avatar_1415_1286733148.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">zac352</a>
+			</dt>
+
+			<dd>Party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 496</dd><dd><strong>Joined:</strong> Sat Aug 28, 2010 8:13 pm</dd><dd><strong>Location:</strong> In your head.</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://physibots.info" title="WWW: http://physibots.info"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p21661" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p21661">Re: LUBE (Networking Library)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">TechnoCat</a></strong> on Fri Nov 05, 2010 10:41 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>zac352 wrote:</cite>The documentation was useless in teaching me how to make server information broadcast to all clients... Is it possible to enumerate through local area clients?</div></blockquote><br />I think you would find my post quite helpful. <!-- l --><a class="postlink-local" href="">posting.php?mode=quote&amp;f=5&amp;p=21649#pr21112</a><!-- l --><br />It even has these two links about broadcasting to certain clients. Seems like you might want to broadcast to the 192.168.x.x subnet?<br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=120#p6151</a><!-- l --><br /><!-- l --><a class="postlink-local" href="">viewtopic.php?f=5&amp;t=230&amp;start=150#p7029</a><!-- l --></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile21661">
+			<dt>
+				<a href=""><img src="file.php_avatar_649_1277354250.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">TechnoCat</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1610</dd><dd><strong>Joined:</strong> Thu Jul 30, 2009 12:31 am</dd><dd><strong>Location:</strong> Chicago, IL</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://about.me/dannyfritz" title="WWW: http://about.me/dannyfritz"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="" class="left-box left">Previous</a><a href="" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			329 posts
+			 &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>22</strong> of <strong>33</strong></a> &bull; <span><a href="">1</a><span class="page-dots"> ... </span><a href="">19</a><span class="page-sep">, </span><a href="">20</a><span class="page-sep">, </span><a href="">21</a><span class="page-sep">, </span><strong>22</strong><span class="page-sep">, </span><a href="">23</a><span class="page-sep">, </span><a href="">24</a><span class="page-sep">, </span><a href="">25</a><span class="page-dots"> ... </span><a href="">33</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="" class="left-box left" accesskey="r">Return to Projects and Demos</a></p>
+
+	<form method="post" id="jumpbox" action="viewforum.php_sid_b9b060f87111698b626f977021e1b8a0" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="3">General</option>
+			
+				<option value="4">Support and Development</option>
+			
+				<option value="5" selected="selected">Projects and Demos</option>
+			
+				<option value="7">Community</option>
+			
+				<option value="12">&nbsp; &nbsp;Ports</option>
+			
+				<option value="10">&nbsp; &nbsp;&nbsp; &nbsp;nLÖVE</option>
+			
+				<option value="11">&nbsp; &nbsp;&nbsp; &nbsp;LÖVE-Android</option>
+			
+				<option value="13">&nbsp; &nbsp;Archives</option>
+			
+				<option value="8">&nbsp; &nbsp;&nbsp; &nbsp;A Whiff of Steam</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="viewonline3.html">Who is online</a></h3>
+	<p>Users browsing this forum: <a href="">Muris</a>, <span style="color: #9E8DA7;" class="username-coloured">Yahoo [Bot]</span> and 9 guests</p>
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="forums6.html" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="">The team</a> &bull; <a href="">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br />Karma functions powered by Karma MOD &copy; 2007, 2009 m157y
+
+		<br />Protected by <a href="http://www.lithiumstudios.org" target="_blank">Anti-Spam ACP</a>
+		
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+		</div> <!-- page-body -->
+	</div> <!-- love_content -->
+	</div> <!-- love_wrap --><!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+
+</body>
+</html>

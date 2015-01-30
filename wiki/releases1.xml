@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>LÖVE releases</title>
+		<description>Releases of the LÖVE game framework</description>
+		<link>http://www.love2d.org</link>
+		<lastBuildDate>Sun, 29 Jun 2014 23:30:11 +0200</lastBuildDate>
+		<pubDate>Sun, 29 Jun 2014 23:30:11 +0200</pubDate>
+		<ttl>1500</ttl>
+
+		<item>
+			<title>0.9.1 Baby Inspector</title>
+			<description>0.9.1 'Baby Inspector' has been released!</description>
+			<link>https://love2d.org/forums/viewtopic.php?f=3&amp;t=77609</link>
+			<guid>7cb2aec8-8dc9-4a15-8320-a8cd92c57bcd</guid>
+			<pubDate>Tue, 01 Apr 2014 20:20:00 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

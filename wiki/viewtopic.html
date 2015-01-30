@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<link rel="shortcut icon" type="image/png" href="favicon5.png" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2002-2006 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>LÖVE &bull; View topic - A game about growing plants (beta 6 released!)</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - LÖVE" href="feed3.php" /><link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="feed3.php_mode_forums" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed3.php_mode_topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Projects and Demos" href="feed.php_f_5" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - A game about growing plants (beta 6 released!)" href="" />
+
+<!--
+	phpBB style name: love
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      rude
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=5&amp;t=2244&amp;sid=d2fb3c9089e41d2f3bf2355436154954';
+	var style_cookie = 'phpBBstyle';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (i = 0; i <= onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (i = 0; i <= onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="styleswitcher3.js"></script>
+<script type="text/javascript" src="forum_fn3.js"></script>
+<script type="text/javascript" src="mathjax.js">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["\\(","\\)"]]}
+  });
+</script>
+
+<link href="print3.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="normal3.css" rel="stylesheet" type="text/css" title="A" />
+<link href="medium3.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="large3.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+<link rel="stylesheet" href="docco.css"/>
+<script type="text/javascript" src="highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.configure({useBR: true});
+function hljs_init() {
+	var elements = document.getElementsByTagName("code");
+	for (var i = 0; i < elements.length; i++) {
+		hljs.highlightBlock(elements[i]);
+	}
+};
+onload_functions.push("hljs_init()");
+</script>
+<style>
+dl.codebox {
+	background-color: rgb(248, 248, 255); /* Match the highlighting background */
+}
+</style>
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<!-- CUSTOM STUFF GO HERE -->
+
+<header id="love_header">
+</header>
+
+<div id="love_wrap">
+
+	<nav>
+		<a href="love2d1.html">Home</a>
+		<a href="wiki.html">Wiki</a>
+		<a href="forums.html">Forums</a>
+		<a href="http://bitbucket.org/rude/love/issues">Issue tracker</a>
+	</nav>
+
+<div id="love_content">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+	
+
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="forums7.html" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="">Projects and Demos</a></li>
+
+				<li class="rightside"><a href="" onclick="fontsizeup(); return false;" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+                                <!-- <li class="icon-rss"><a href="" title="{ RSS_EXPLAIN }">RSS</a></li> -->
+				<!-- <li><a href="" title="{ RSS_EXPLAIN }"><img src="icon_rss3.gif"/></a></li> -->
+        <li class="icon-search"><a href="search7.html" title="{ SEARCH_EXPLAIN }">Search</a></li>
+        <li class="icon-faq"><a href="faq5.html" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-members"><a href="memberlist5.html" title="View complete list of members">Members</a></li><li class="icon-register"><a href="">Register</a></li>
+					<li class="icon-logout"><a href="" title="Login" accesskey="l">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	
+		<a name="start_here"></a>
+		<div id="page-body">
+			
+			 
+<h2><a href="">A game about growing plants (beta 6 released!)</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><span style="display: none">Showcase your games and demos, and discuss ongoing projects.<br /></span>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="post" id="topic-search" action="search7.html">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" value="2244" name="t" />
+				<input type="hidden" value="msgonly" name="sf" />
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			137 posts
+			 &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>14</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="">2</a><span class="page-sep">, </span><a href="">3</a><span class="page-sep">, </span><a href="">4</a><span class="page-sep">, </span><a href="">5</a><span class="page-dots"> ... </span><a href="">14</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<form method="post" action="">
+
+	<div class="panel">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="content">
+			<h2>Beta 5: What should be worked on now?</h2>
+			<p class="author"></p>
+
+			<fieldset class="polls">
+			
+				<dl class="">
+					<dt>Polish the 'Perfect Plant' mode</dt>
+					<dd class="resultbar"><div class="pollbar4" style="width:64%;">7</div></dd>
+					<dd>64%</dd>
+				</dl>
+			
+				<dl class="">
+					<dt>Add an options menu</dt>
+					<dd class="resultbar"><div class="pollbar2" style="width:27%;">3</div></dd>
+					<dd>27%</dd>
+				</dl>
+			
+				<dl class="">
+					<dt>Improve graphics and sound</dt>
+					<dd class="resultbar"><div class="pollbar1" style="width:9%;">1</div></dd>
+					<dd>9%</dd>
+				</dl>
+			
+				<dl class="">
+					<dt>Something else (please explain)</dt>
+					<dd class="resultbar"><div class="pollbar1" style="width:0%;">0</div></dd>
+					<dd>No votes</dd>
+				</dl>
+			
+				<dl>
+					<dt>&nbsp;</dt>
+					<dd class="resultbar">Total votes : 11</dd>
+				</dl>
+			
+			</fieldset>
+		</div>
+
+		<span class="corners-bottom"><span></span></span></div>
+		
+		
+	</div>
+
+
+	</form>
+	<hr />
+
+	<div id="p24015" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p24015">A game about growing plants (beta 6 released!)</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Taehl</a></strong> on Wed Dec 15, 2010 8:49 am </p>
+
+			
+
+			<div class="content">EDIT) The game was developing as this thread went on, so the stuff on the early pages is out of date. The game now looks more like <a href="http://dl.dropbox.com/u/3713769/web/flower/love%202011-02-25%2000-28-19-22.png" class="postlink">this</a>, and you can try out a beta version <a href="http://dl.dropbox.com/u/3713769/web/flower/flower.love" class="postlink">here</a>. And now, back to the original thread.<br /><br /><br />This is a design document Ensayia and I have been discussing for a new game. I'm putting it here so we can hear general comments and critique (or just to hear if anyone would be interested in playing it). The game would be about growing plants, complete with genetics. The flora isn't going to be strictly terrestrial, we plan on taking liberties. Unlike the few other games which centrally deal with plants, we're /not/ planning on having any main mechanics based on repetitive taking care of them (watering, etc.), since that sort of thing is very boring to us (Harvest Moon, anyone?). So, for your discussion:<br /><br /><blockquote><div><cite>And thus, on this eve of December 15, year ten of the second millennium, we wrote:</cite><br />&gt; interface:<br />---&gt; click on two plants to crossbreed them, then on the ground to plant their offspring<br />---&gt; have only a certain number of growing-spots<br />---&gt; plants can be removed at any time to free up their growing spot<br />------&gt; have some kind of special effect for this?<br /><br />&gt; game modes:<br />---&gt; sandbox<br />------&gt; include a button to spawn random plants<br />---&gt; tutorial?<br />---&gt; &quot;breed this plant&quot;<br />------&gt; a &quot;perfect&quot; plant is shown, and the player has to breed a copy of it<br />------&gt; the player ends the level whenever they want, and then they're scored<br />---------&gt; the score is determined by each plant's genetic similarity to the target plant. The closest plant is used for the earned score.<br />------&gt; if there are no plants left, the player loses<br />------&gt; Start with only one modifiable trait (others are locked), and each level unlocks a new trait, until in the final level you have to balance them all.<br />------&gt; if all spots are empty, the level is over<br />------&gt; IDEA! A level where you're ordered to make a certain plant (and its entire family) get killed by a disease (or sterile, depending one which mechanic we use) while protecting the other plant (and its family).<br />---&gt; survival<br />------&gt; aggressive disease, which strikes with increasing frequency<br />------&gt; players are scored based on how long they can keep at least two plants alive<br /><br />&gt; genome and crossbreeding systems<br />---&gt; traits: stem length, joint angle variance, number of splits per joint, number of stem iterations, number of leaves per bunch, chance leaf will be flower, chance flower will turn to fruit, flower/fruit hue, hue variance, and lightness, familyID<br />------&gt; when crossbreeding, each trait becomes random in the range of its parents, plus a little extra random mutation<br />------&gt; familyID is an invisible genetic trait which acts like all others, meant to roughly track lineage<br />---&gt; plants must be full (or at least somewhat?) grown to be crossbred<br />---&gt; to make sure players don't breed one family too heavily, use one of these mechanics:<br />------&gt; disease: every 5 minutes, introduce a disease which has a chance of killing plants which are close to a certain randomly-chosen familyID.<br />------&gt; sterility: each time a plant is bred, there's a chance it will stop being fertile and can't be bred any more. The closer the familyID between parents are, the higher this chance will be.<br />---------&gt; make an obvious graphic (and sound?) to show which plants are fertile or not, maybe mushrooms growing on/around it?<br /><br />&gt; special plants:<br />---&gt; directly make some plants we like, name them, and record their genomes<br />---&gt; when player makes a plant that's very similar to one of them, transform their plant into a copy of the special plant and praise them<br />---&gt; give buttons for unlocked plants, so players can spawn them once per level (or infinite times, in sandbox)<br />---&gt; make a few of the special plants as the goal of the breed gamemode, so players will discover the unlock system<br />---&gt; maybe have a special effect for each special plant? Sparkling, or something?<br /><br />&gt; make a neat bug which hovers around the cursor<br />---&gt; maybe like a beetle or a dragonfly, but obviously not a real bug<br />---&gt; animated wings<br />------&gt; maybe multiple sets of wings?<br /></div></blockquote><br /><br /><img src="http://dl.dropbox.com/u/3713769/web/flower/beta%20trees.png" alt="Image" /><br /><br /><img src="http://dl.dropbox.com/u/3713769/web/flower/love%202010-12-15%2003-36-27-33.gif" alt="Image" /></div>
+
+			
+				<div class="notice">Last edited by <a href="">Taehl</a> on Fri Mar 04, 2011 8:23 am, edited 9 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24015">
+			<dt>
+				<a href=""><img src="file.php_avatar_874_1276377128.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Taehl</a>
+			</dt>
+
+			<dd>Dreaming in associative arrays</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1000</dd><dd><strong>Joined:</strong> Mon Jan 11, 2010 5:07 am</dd><dd><strong>Location:</strong> FL, USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://sites.google.com/site/pixelperfectsite/" title="WWW: http://sites.google.com/site/pixelperfectsite/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24021" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24021">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Ryne</a></strong> on Wed Dec 15, 2010 4:47 pm </p>
+
+			
+
+			<div class="content">From reading the description this visual popped into my head.<br /><br />&quot; A harvest moon type game, where you have a farm and can grow plants, own a house, expand the house etc.&quot;<br /><br />Then I though that a reworked version of the sprites from my top-down zombie game code would look awesome <a href="" class="postlink">http://love2d.org/forums/viewtopic.php?f=5&amp;t=2098</a>.<br /><br /> I'm not sure if you wanted to take it in that direction, but I wouldn't mind reworking those sprites for you, and maybe also drawing up some plants/plants growing sprites. In the end you could still have the same general Idea (with combining plants and what not) but with a harvest moon type graphic style.<br /><br />I wouldn't be able to offer any help along the lines of programming, but I could definitely do some graphic work for you.<br /><br />Edit: Okay, Literally after post I read that bit where you said &quot;Harvest moon anyone&quot;. Which is pretty funny, since that's the conclusion I came to while reading the description, without actually reading that part <img src="ms_glad.png" alt=":D" title="Very Happy" /></div>
+
+			<div id="sig24021" class="signature"><span style="font-size: 85%; line-height: 116%;">@rynesaur</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24021">
+			<dt>
+				<a href=""><img src="file.php_avatar_932_1304737965.gif" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Ryne</a>
+			</dt>
+
+			<dd>Party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 444</dd><dd><strong>Joined:</strong> Fri Jan 29, 2010 11:10 am</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://codesomething.tumblr.com" title="WWW: http://codesomething.tumblr.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24024" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24024">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Taehl</a></strong> on Wed Dec 15, 2010 7:41 pm </p>
+
+			
+
+			<div class="content">Actually, we're planning on making this nothing like Harvest Moon (I just mentioned it as an example of a game with plants that we find to be overly repetitive and boring). There's not going to be any farmhouse, farmer, farm, town, relationships, or anything like that - we currently are planning on the crossbreeding being the main mechanic, with the player just as a magic bug or something. As such, we won't need people (or zombie) sprites.<br /><br />Really, when it comes to graphics, we're set, since both of us are artists. Fortunately we also hold the roles of master and apprentice coder, so we're good on that front, too. If anything, we could use someone who's good at making sound and/or music (we're both barely capable, but neither of us is too great at it).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24024">
+			<dt>
+				<a href=""><img src="file.php_avatar_874_1276377128.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Taehl</a>
+			</dt>
+
+			<dd>Dreaming in associative arrays</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1000</dd><dd><strong>Joined:</strong> Mon Jan 11, 2010 5:07 am</dd><dd><strong>Location:</strong> FL, USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://sites.google.com/site/pixelperfectsite/" title="WWW: http://sites.google.com/site/pixelperfectsite/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24028" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24028">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">TechnoCat</a></strong> on Wed Dec 15, 2010 8:46 pm </p>
+
+			
+
+			<div class="content">Punnett squares the game?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24028">
+			<dt>
+				<a href=""><img src="file.php_avatar_649_1277354250.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">TechnoCat</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1610</dd><dd><strong>Joined:</strong> Thu Jul 30, 2009 12:31 am</dd><dd><strong>Location:</strong> Chicago, IL</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://about.me/dannyfritz" title="WWW: http://about.me/dannyfritz"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24029" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24029">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Taehl</a></strong> on Wed Dec 15, 2010 9:06 pm </p>
+
+			
+
+			<div class="content">Not quite - I'm not currently planning on having any traits be dominant, so the player won't have to fight against them... Or would that actually be fun?<br /><br />Playing around with graphics and new growth code:<br /><img src="http://dl.dropbox.com/u/3713769/web/flower/wild.png" alt="Image" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24029">
+			<dt>
+				<a href=""><img src="file.php_avatar_874_1276377128.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Taehl</a>
+			</dt>
+
+			<dd>Dreaming in associative arrays</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1000</dd><dd><strong>Joined:</strong> Mon Jan 11, 2010 5:07 am</dd><dd><strong>Location:</strong> FL, USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://sites.google.com/site/pixelperfectsite/" title="WWW: http://sites.google.com/site/pixelperfectsite/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24031" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24031">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">ZenX2</a></strong> on Wed Dec 15, 2010 11:01 pm </p>
+
+			
+
+			<div class="content">Breeding specific species of plant and stuff sound fun  <img src="ms_glee.png" alt="^^" title="Glee" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24031">
+			<dt>
+				<a href=""><img src="file.php_avatar_1613_1289974231.png" width="79" height="89" alt="User avatar" /></a><br />
+				<a href="">ZenX2</a>
+			</dt>
+
+			<dd>Citizen</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 89</dd><dd><strong>Joined:</strong> Wed Nov 17, 2010 5:35 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24032" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24032">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Taehl</a></strong> on Wed Dec 15, 2010 11:52 pm </p>
+
+			
+
+			<div class="content">Since my last post I've simplified the growing algorithm, did some general work, and have implemented three genes (overall size, leaf size, and plant uniformity/variance). Here's an animation of how it looks right now:<br /><br /><img src="http://dl.dropbox.com/u/3713769/web/flower/love%202010-12-15%2017-42-42-62.gif" alt="Image" /><br /><br />Ensayia is about to start experimenting with different graphic styles while I continue coding the genetics.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24032">
+			<dt>
+				<a href=""><img src="file.php_avatar_874_1276377128.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Taehl</a>
+			</dt>
+
+			<dd>Dreaming in associative arrays</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1000</dd><dd><strong>Joined:</strong> Mon Jan 11, 2010 5:07 am</dd><dd><strong>Location:</strong> FL, USA</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://sites.google.com/site/pixelperfectsite/" title="WWW: http://sites.google.com/site/pixelperfectsite/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24035" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24035">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">TechnoCat</a></strong> on Thu Dec 16, 2010 1:28 am </p>
+
+			
+
+			<div class="content">Very cool looking plant you've got growing there.  <img src="ms_sunglass.png" alt=":cool:" title="Cool" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24035">
+			<dt>
+				<a href=""><img src="file.php_avatar_649_1277354250.jpg" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">TechnoCat</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1610</dd><dd><strong>Joined:</strong> Thu Jul 30, 2009 12:31 am</dd><dd><strong>Location:</strong> Chicago, IL</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://about.me/dannyfritz" title="WWW: http://about.me/dannyfritz"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24037" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24037">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">tentus</a></strong> on Thu Dec 16, 2010 2:17 am </p>
+
+			
+
+			<div class="content">Dude, study Eufloria. The game has some absolutely brilliant growing animations, all done with what look like static SVG files (I cannot say for certain... the game does use Lua extensively though, which gives me great hope for Love). It's also a rather fantastic game in general, it's worth your twenty dollars (procedural generation FTW!).</div>
+
+			<div id="sig24037" class="signature"><a href="" class="postlink">Kurosuke</a> needs beta testers</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24037">
+			<dt>
+				<a href=""><img src="file.php_avatar_1578_1289582574.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">tentus</a>
+			</dt>
+
+			<dd>Inner party member</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1050</dd><dd><strong>Joined:</strong> Sun Oct 31, 2010 7:56 pm</dd><dd><strong>Location:</strong> Appalachia</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://tsholden.com/" title="WWW: http://tsholden.com/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p24040" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p24040">Re: A game about growing plants</a></h3>
+			<p class="author"><a href=""><img src="icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="">Robin</a></strong> on Thu Dec 16, 2010 6:21 am </p>
+
+			
+
+			<div class="content">Hm... bacon...</div>
+
+			<div id="sig24040" class="signature"><a href="" class="postlink">Help us help you</a>: attach a .love.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile24040">
+			<dt>
+				<a href=""><img src="file.php_avatar_436_1359407191.png" width="90" height="90" alt="User avatar" /></a><br />
+				<a href="">Robin</a>
+			</dt>
+
+			<dd>The Omniscient</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 6242</dd><dd><strong>Joined:</strong> Fri Feb 20, 2009 4:29 pm</dd><dd><strong>Location:</strong> The Netherlands</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://gvxdev.wordpress.com/" title="WWW: http://gvxdev.wordpress.com/"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			137 posts
+			 &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>14</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="">2</a><span class="page-sep">, </span><a href="">3</a><span class="page-sep">, </span><a href="">4</a><span class="page-sep">, </span><a href="">5</a><span class="page-dots"> ... </span><a href="">14</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="" class="left-box left" accesskey="r">Return to Projects and Demos</a></p>
+
+	<form method="post" id="jumpbox" action="viewforum.php_sid_d2fb3c9089e41d2f3bf2355436154954" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="3">General</option>
+			
+				<option value="4">Support and Development</option>
+			
+				<option value="5" selected="selected">Projects and Demos</option>
+			
+				<option value="7">Community</option>
+			
+				<option value="12">&nbsp; &nbsp;Ports</option>
+			
+				<option value="10">&nbsp; &nbsp;&nbsp; &nbsp;nLÖVE</option>
+			
+				<option value="11">&nbsp; &nbsp;&nbsp; &nbsp;LÖVE-Android</option>
+			
+				<option value="13">&nbsp; &nbsp;Archives</option>
+			
+				<option value="8">&nbsp; &nbsp;&nbsp; &nbsp;A Whiff of Steam</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="viewonline4.html">Who is online</a></h3>
+	<p>Users browsing this forum: <a href="">Muris</a>, <span style="color: #9E8DA7;" class="username-coloured">Yahoo [Bot]</span> and 9 guests</p>
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="forums7.html" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="">The team</a> &bull; <a href="">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br />Karma functions powered by Karma MOD &copy; 2007, 2009 m157y
+
+		<br />Protected by <a href="http://www.lithiumstudios.org" target="_blank">Anti-Spam ACP</a>
+		
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+		</div> <!-- page-body -->
+	</div> <!-- love_content -->
+	</div> <!-- love_wrap --><!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+
+</body>
+</html>

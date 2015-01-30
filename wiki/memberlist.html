@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<link rel="shortcut icon" type="image/png" href="favicon2.png" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2002-2006 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>LÖVE &bull; Members</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - LÖVE" href="feed1.php" /><link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="feed1.php_mode_forums" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed1.php_mode_topics" />
+
+<!--
+	phpBB style name: love
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      rude
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '25';
+	var base_url = './memberlist.php?sid=b92966e429b54c4557e32f2d1cc2c73c';
+	var style_cookie = 'phpBBstyle';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (i = 0; i <= onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (i = 0; i <= onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="styleswitcher1.js"></script>
+<script type="text/javascript" src="forum_fn1.js"></script>
+<script type="text/javascript" src="mathjax1.js">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["\\(","\\)"]]}
+  });
+</script>
+
+<link href="print1.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="normal1.css" rel="stylesheet" type="text/css" title="A" />
+<link href="medium1.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="large1.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+<link rel="stylesheet" href="docco1.css"/>
+<script type="text/javascript" src="highlight.pack2.js"></script>
+<script type="text/javascript">
+hljs.configure({useBR: true});
+function hljs_init() {
+	var elements = document.getElementsByTagName("code");
+	for (var i = 0; i < elements.length; i++) {
+		hljs.highlightBlock(elements[i]);
+	}
+};
+onload_functions.push("hljs_init()");
+</script>
+<style>
+dl.codebox {
+	background-color: rgb(248, 248, 255); /* Match the highlighting background */
+}
+</style>
+
+
+
+</head>
+
+<body id="phpbb" class="section-memberlist ltr">
+
+<!-- CUSTOM STUFF GO HERE -->
+
+<header id="love_header">
+</header>
+
+<div id="love_wrap">
+
+	<nav>
+		<a href="love2d2.html">Home</a>
+		<a href="wiki1.html">Wiki</a>
+		<a href="forums1.html">Forums</a>
+		<a href="http://bitbucket.org/rude/love/issues">Issue tracker</a>
+	</nav>
+
+<div id="love_content">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+	
+
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="forums2.html" accesskey="h">Board index</a> </li>
+
+				<li class="rightside"><a href="" onclick="fontsizeup(); return false;" class="fontsize" title="Change font size">Change font size</a></li>
+
+				
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+                                <!-- <li class="icon-rss"><a href="" title="{ RSS_EXPLAIN }">RSS</a></li> -->
+				<!-- <li><a href="" title="{ RSS_EXPLAIN }"><img src="icon_rss1.gif"/></a></li> -->
+        <li class="icon-search"><a href="search.html" title="{ SEARCH_EXPLAIN }">Search</a></li>
+        <li class="icon-faq"><a href="faq.html" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-members"><a href="" title="View complete list of members">Members</a></li><li class="icon-register"><a href="">Register</a></li>
+					<li class="icon-logout"><a href="" title="Login" accesskey="l">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	
+		<a name="start_here"></a>
+		<div id="page-body">
+			
+			 
+	<form method="post" action="">
+
+
+		<h2 class="solo">Members</h2>
+
+		<div class="panel">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist">
+				<li>
+
+				<a href="">Find a member</a> &bull; 
+				<strong style="font-size: 0.95em;"><a href="">All</a>&nbsp; 
+				<a href="">A</a>&nbsp; 
+				<a href="">B</a>&nbsp; 
+				<a href="">C</a>&nbsp; 
+				<a href="">D</a>&nbsp; 
+				<a href="">E</a>&nbsp; 
+				<a href="">F</a>&nbsp; 
+				<a href="">G</a>&nbsp; 
+				<a href="">H</a>&nbsp; 
+				<a href="">I</a>&nbsp; 
+				<a href="">J</a>&nbsp; 
+				<a href="">K</a>&nbsp; 
+				<a href="">L</a>&nbsp; 
+				<a href="">M</a>&nbsp; 
+				<a href="">N</a>&nbsp; 
+				<a href="">O</a>&nbsp; 
+				<a href="">P</a>&nbsp; 
+				<a href="">Q</a>&nbsp; 
+				<a href="">R</a>&nbsp; 
+				<a href="">S</a>&nbsp; 
+				<a href="">T</a>&nbsp; 
+				<a href="">U</a>&nbsp; 
+				<a href="">V</a>&nbsp; 
+				<a href="">W</a>&nbsp; 
+				<a href="">X</a>&nbsp; 
+				<a href="">Y</a>&nbsp; 
+				<a href="">Z</a>&nbsp; 
+				<a href="">#</a></strong>
+				</li>
+				<li class="rightside pagination">
+					13233 users &bull; 
+					<a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>530</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="">2</a><span class="page-sep">, </span><a href="">3</a><span class="page-sep">, </span><a href="">4</a><span class="page-sep">, </span><a href="">5</a><span class="page-dots"> ... </span><a href="">530</a></span>
+				</li>
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+	
+
+	<div class="forumbg forumbg-table">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<table class="table1" cellspacing="1" id="memberlist">
+		<thead>
+		<tr>
+			<th class="name"><span class="rank-img"><a href="">Rank</a></span><a href="">Username</a></th>
+			<th class="posts"><a href="">Posts</a></th>
+			<th class="info"><a href="">Website</a>, <a href="">Location</a></th>
+			<th class="joined"><a href="">Joined</a></th>
+			
+		</tr>
+		</thead>
+		<tbody>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Administrator</span><a href="" style="color: #990000;" class="username-coloured">rude</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">1045</a></td>
+		<td class="info"><div>Oslo, Norway</div></td>
+		<td>Mon Feb 04, 2008 3:58 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Moderator</span><a href="" style="color: #00AA00;" class="username-coloured">fleg</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">17</a></td>
+		<td class="info"><div>City 42, Norway</div></td>
+		<td>Mon Feb 04, 2008 4:08 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="" style="color: #00AA00;" class="username-coloured">tido</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">26</a></td>
+		<td class="info"><div><a href="http://www.haicongastudios.net/" title="Visit website: http://www.haicongastudios.net/">http://www.haicongastudios.net/</a></div></td>
+		<td>Mon Feb 04, 2008 4:08 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Administrator</span><a href="" style="color: #990000;" class="username-coloured">mike</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">363</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Mon Feb 04, 2008 5:24 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Party member</span><a href="">Merkoth</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">186</a></td>
+		<td class="info"><div>Buenos Aires, Argentina</div></td>
+		<td>Mon Feb 04, 2008 11:43 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">SCIBOTIC</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">5</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Wed Feb 06, 2008 8:01 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Commander of the Circuloids</span><a href="">nevon</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">938</a></td>
+		<td class="info"><div><a href="http://tommybrunn.com" title="Visit website: http://tommybrunn.com">http://tommybrunn.com</a></div><div>Stockholm, Sweden</div></td>
+		<td>Thu Feb 14, 2008 8:25 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Citizen</span><a href="">Green_Hell</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">94</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Thu Feb 21, 2008 1:11 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Party member</span><a href="">Sardtok</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">108</a></td>
+		<td class="info"><div><a href="http://chickensoft.com" title="Visit website: http://chickensoft.com">http://chickensoft.com</a></div><div>Norway/Norge/諾威/挪威 (Yes, I'm teh back!)</div></td>
+		<td>Thu Feb 21, 2008 2:37 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">mikulka</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">19</a></td>
+		<td class="info"><div>Estonia</div></td>
+		<td>Thu Feb 21, 2008 10:43 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">umhyuk</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">1</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Sun Feb 24, 2008 12:21 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">incognito54</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">2</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Wed Feb 27, 2008 12:11 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">alxs</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">31</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Fri Feb 29, 2008 5:22 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Party member</span><a href="">ivan</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">476</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Fri Mar 07, 2008 1:39 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">zombie2cat</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">2</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Sun Mar 23, 2008 12:10 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">aes</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">13</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Sat Mar 29, 2008 2:24 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">nathany</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">1</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Fri Apr 25, 2008 9:08 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Citizen</span><a href="">hagish</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">85</a></td>
+		<td class="info"><div><a href="http://schattenkind.net" title="Visit website: http://schattenkind.net">http://schattenkind.net</a></div></td>
+		<td>Thu May 01, 2008 12:51 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">LSD</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">3</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Wed May 07, 2008 11:35 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">caracal</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">2</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Fri May 16, 2008 8:26 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">Buck</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">2</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Tue May 20, 2008 9:23 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">Night-Eagle</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">1</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Mon May 26, 2008 10:45 pm</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">7amza</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">3</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Wed Jun 04, 2008 6:38 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg2">
+		<td><span class="rank-img">Prole</span><a href="">Phenax</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">6</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Fri Jun 06, 2008 4:25 am</td>
+		
+	</tr>
+		
+
+	<tr class="bg1">
+		<td><span class="rank-img">Prole</span><a href="">Vadi</a></td>
+		<td class="posts"><a href="" title="Search user’s posts">8</a></td>
+		<td class="info">&nbsp;</td>
+		<td>Wed Jun 18, 2008 10:51 pm</td>
+		
+	</tr>
+		
+	</tbody>
+	</table>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+
+
+</form>
+
+<hr />
+
+<ul class="linklist">
+	<li class="rightside pagination">13233 users &bull; <a href="" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>530</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="">2</a><span class="page-sep">, </span><a href="">3</a><span class="page-sep">, </span><a href="">4</a><span class="page-sep">, </span><a href="">5</a><span class="page-dots"> ... </span><a href="">530</a></span></li>
+</ul>
+
+
+	<form method="post" id="jumpbox" action="viewforum.php_sid_b92966e429b54c4557e32f2d1cc2c73c" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="3">General</option>
+			
+				<option value="4">Support and Development</option>
+			
+				<option value="5">Projects and Demos</option>
+			
+				<option value="7">Community</option>
+			
+				<option value="12">&nbsp; &nbsp;Ports</option>
+			
+				<option value="10">&nbsp; &nbsp;&nbsp; &nbsp;nLÖVE</option>
+			
+				<option value="11">&nbsp; &nbsp;&nbsp; &nbsp;LÖVE-Android</option>
+			
+				<option value="13">&nbsp; &nbsp;Archives</option>
+			
+				<option value="8">&nbsp; &nbsp;&nbsp; &nbsp;A Whiff of Steam</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="forums2.html" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="">The team</a> &bull; <a href="">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br />Karma functions powered by Karma MOD &copy; 2007, 2009 m157y
+
+		<br />Protected by <a href="http://www.lithiumstudios.org" target="_blank">Anti-Spam ACP</a>
+		
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+		</div> <!-- page-body -->
+	</div> <!-- love_content -->
+	</div> <!-- love_wrap --><!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg1.js"></script>
+
+</body>
+</html>

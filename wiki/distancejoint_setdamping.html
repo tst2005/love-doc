@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>DistanceJoint:setDamping - LOVE</title>
+		<link rel="stylesheet" href="shared.css" media="screen" />
+<link rel="stylesheet" href="commonprint.css" media="print" />
+<link rel="stylesheet" href="main.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.love2d.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="DistanceJoint:setDamping",
+wgTitle="DistanceJoint:setDamping",
+wgAction="view",
+wgArticleId=562,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=10553,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=["Templates", "Functions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="DistanceJoint:setDamping" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-DistanceJoint_setDamping skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-main" class="selected"><a href="" title="View the content page [c]" accesskey="c">Page</a></li>
+					 <li id="ca-talk" class="new"><a href="" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">DistanceJoint:setDamping</h1>
+		<div id="bodyContent">
+			<div id="contentSub"></div>
+									<!-- start content -->
+			<table bgcolor="#ffacac" style="margin-top: 1em; padding: 3px; border-radius:5px; -moz-border-radius:5px;">
+<tr>
+<td><i> <b>Removed in LÖVE <a href="0.8.html" title="0.8.0">0.8.0</a></b> </i>
+</td></tr>
+<tr>
+<td> <small>It has been replaced with <a href="distancejoint_setdampingratio.html" title="DistanceJoint:setDampingRatio">DistanceJoint:setDampingRatio</a>.</small>
+</td></tr></table>
+<p>Sets the damping ratio.
+</p>
+<h2> <span class="mw-headline" id="Function"> Function </span></h2>
+<h3> <span class="mw-headline" id="Synopsis"> Synopsis </span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">DistanceJoint:setDamping<span class="br0">&#40;</span> ratio <span class="br0">&#41;</span></div></div>
+<h3> <span class="mw-headline" id="Arguments"> Arguments </span></h3>
+<dl><dt><code><a href="number1.html" title="number">number</a> ratio</code></dt><dd> The damping ratio.
+</dd></dl>
+<h3> <span class="mw-headline" id="Returns"> Returns </span></h3>
+<p>Nothing.
+</p>
+<h2> <span class="mw-headline" id="See_Also"> See Also </span></h2>
+<ul><li> <a href="distancejoint1.html" title="DistanceJoint">DistanceJoint</a>
+</li></ul>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Other_Languages"> Other Languages </span></h2>
+<div class="i18n">
+<p><a href="" class="new" title="DistanceJoint:setDamping (Dansk) (page does not exist)">Dansk</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Deutsch) (page does not exist)">Deutsch</a>&nbsp;&ndash;
+<strong class="selflink">English</strong>&nbsp;&ndash; 
+<a href="" class="new" title="DistanceJoint:setDamping (Español) (page does not exist)">Español</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Français) (page does not exist)">Français</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Indonesia) (page does not exist)">Indonesia</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Italiano) (page does not exist)">Italiano</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Lietuviškai) (page does not exist)">Lietuviškai</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Magyar) (page does not exist)">Magyar</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Nederlands) (page does not exist)">Nederlands</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Polski) (page does not exist)">Polski</a>&nbsp;&ndash;
+<a href="distancejoint_setdamping_portugu_s.html" title="DistanceJoint:setDamping (Português)">Português</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Română) (page does not exist)">Română</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Slovenský) (page does not exist)">Slovenský</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Suomi) (page does not exist)">Suomi</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Svenska) (page does not exist)">Svenska</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Türkçe) (page does not exist)">Türkçe</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Česky) (page does not exist)">Česky</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Ελληνικά) (page does not exist)">Ελληνικά</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Български) (page does not exist)">Български</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Русский) (page does not exist)">Русский</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Српски) (page does not exist)">Српски</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Українська) (page does not exist)">Українська</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (עברית) (page does not exist)">עברית</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (ไทย) (page does not exist)">ไทย</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (日本語) (page does not exist)">日本語</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (正體中文) (page does not exist)">正體中文</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (简体中文) (page does not exist)">简体中文</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (Tiếng Việt) (page does not exist)">Tiếng Việt</a>&nbsp;&ndash;
+<a href="" class="new" title="DistanceJoint:setDamping (한국어) (page does not exist)">한국어</a> 
+<br />
+<span style="text-align:right;"><i><a href="help_i18n.html" title="Help:i18n">More info</a></i></span>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 316/1000000
+Post-expand include size: 4238/2097152 bytes
+Template argument size: 2140/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:562-0!1!0!!en!2!edit=0 and timestamp 20150125065529 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.love2d.org/wiki/DistanceJoint:setDamping">http://www.love2d.org/wiki/DistanceJoint:setDamping</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="" title="Special:Categories">Categories</a>: <span dir='ltr'><a href="category_templates.html" title="Category:Templates">Templates</a></span> | <span dir='ltr'><a href="category_functions.html" title="Category:Functions">Functions</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki.png);" href="index.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love.html">love</a></li>
+				<li><a href="love1.html">love.audio</a></li>
+				<li><a href="love2.html">love.event</a></li>
+				<li><a href="love3.html">love.filesystem</a></li>
+				<li><a href="love4.html">love.graphics</a></li>
+				<li><a href="love5.html">love.image</a></li>
+				<li><a href="love6.html">love.joystick</a></li>
+				<li><a href="love7.html">love.keyboard</a></li>
+				<li><a href="love8.html">love.math</a></li>
+				<li><a href="love9.html">love.mouse</a></li>
+				<li><a href="love10.html">love.physics</a></li>
+				<li><a href="love11.html">love.sound</a></li>
+				<li><a href="love12.html">love.system</a></li>
+				<li><a href="love13.html">love.timer</a></li>
+				<li><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love.html">love</a></li>
+				<li id="n-love.audio"><a href="love1.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love2.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love3.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love15.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love4.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love5.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love6.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love7.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love8.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love9.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love10.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love11.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love12.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love16.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love13.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/DistanceJoint:setDamping">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 29 May 2013, at 17:35.</li>
+					<li id="viewcount">This page has been accessed 5,206 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.430 secs. --></body></html>

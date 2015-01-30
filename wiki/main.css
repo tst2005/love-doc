@@ -1,0 +1,529 @@
+
+body {
+	background-color: #83c0f0;
+}
+
+div, li {
+	font-family: sans-serif;
+	font-size: 0.95em;
+}
+
+div, input {
+	color: #28465c;
+}
+
+h1 {
+	color: #597e9a;
+	background-color: #e9f5ff;
+	padding: 0.3em 0.5em 0.3em 0.5em;
+	font-size: 1.75em;
+	border-bottom: 1px solid #d7e8f7;
+	margin: 0;
+}
+
+h2 {
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #dae8f2;
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1em;
+	font-variant: small-caps;
+}
+
+h1, h2, h3 {
+	color: #597e9a;
+}
+
+a {
+	text-decoration: none;
+	color: #597e9a;
+	background: none;
+}
+
+/* .toc, #toc { display: none; } */
+
+/*
+a:visited {
+	color: #5a3696;
+}
+*/
+a:active {
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.stub {
+	color: #772233;
+}
+
+/*
+a.new:visited, #p-personal a.new:visited {
+	color: #a55858;
+}
+*/
+
+h1 .editsection { font-size: 0.5em; opacity: 0.2; }
+h1 .editsection:hover { opacity: 1; }
+
+h2 .editsection { font-size: 0.5em; opacity: 0.2; }
+h2 .editsection:hover { opacity: 1; }
+
+h3 .editsection { font-size: 0.5em; opacity: 0.2; font-variant: normal; }
+h3 .editsection:hover { opacity: 1; }
+
+.visualClear {
+	clear: both;
+}
+
+/*
+** keep the whitespace in front of the ^=, hides rule from konqueror
+** this is css3, the validator doesn't like it when validating as css2
+*/
+#bodyContent a.external,
+#bodyContent a[href ^="gopher://"] {
+	background: url(external.png) center right no-repeat;
+	padding: 0 13px 0 0;
+}
+.rtl #bodyContent a.external,
+.rtl #bodyContent a[href ^="gopher://"] {
+	background-image: url(external_rtl.png);
+}
+#bodyContent a[href ^="https://"],
+.link-https {
+	background: url(lock_icon.gif) center right no-repeat;
+	padding: 0 16px 0 0;
+}
+#bodyContent a[href ^="mailto:"],
+.link-mailto {
+	background: url(mail_icon.gif) center right no-repeat;
+	padding: 0 18px 0 0;
+}
+#bodyContent a[href ^="news://"] {
+	background: url(news_icon.png) center right no-repeat;
+	padding: 0 18px 0 0;
+}
+#bodyContent a[href ^="ftp://"],
+.link-ftp {
+	background: url(file_icon.gif) center right no-repeat;
+	padding: 0 18px 0 0;
+}
+#bodyContent a[href ^="irc://"],
+#bodyContent a.extiw[href ^="irc://"],
+.link-irc {
+	background: url(discussionitem_icon.gif) center right no-repeat;
+	padding: 0 18px 0 0;
+}
+#bodyContent a.external[href $=".ogg"], #bodyContent a.external[href $=".OGG"],
+#bodyContent a.external[href $=".mid"], #bodyContent a.external[href $=".MID"],
+#bodyContent a.external[href $=".midi"], #bodyContent a.external[href $=".MIDI"],
+#bodyContent a.external[href $=".mp3"], #bodyContent a.external[href $=".MP3"],
+#bodyContent a.external[href $=".wav"], #bodyContent a.external[href $=".WAV"],
+#bodyContent a.external[href $=".wma"], #bodyContent a.external[href $=".WMA"],
+.link-audio {
+	background: url("audio.png") center right no-repeat;
+	padding: 0 13px 0 0;
+}
+#bodyContent a.external[href $=".ogm"], #bodyContent a.external[href $=".OGM"],
+#bodyContent a.external[href $=".avi"], #bodyContent a.external[href $=".AVI"],
+#bodyContent a.external[href $=".mpeg"], #bodyContent a.external[href $=".MPEG"],
+#bodyContent a.external[href $=".mpg"], #bodyContent a.external[href $=".MPG"],
+.link-video {
+	background: url("video.png") center right no-repeat;
+	padding: 0 13px 0 0;
+}
+#bodyContent a.external[href $=".pdf"], #bodyContent a.external[href $=".PDF"],
+#bodyContent a.external[href *=".pdf#"], #bodyContent a.external[href *=".PDF#"],
+#bodyContent a.external[href *=".pdf?"], #bodyContent a.external[href *=".PDF?"],
+.link-document {
+	background: url("document.png") center right no-repeat;
+	padding: 0 12px 0 0;
+}
+
+
+#column-content {
+	width: 100%;
+	float: right;
+	margin: 0 0 .6em -163px;
+	padding: 0;
+}
+#content {
+	margin: 0 0.3em 0.3em 163px;
+	padding: 0;
+	position: relative;
+}
+#column-one {
+	padding-top: 140px;
+}
+
+#bodyContent {
+	background: #f8fcff;
+	padding: 0.3em 1.3em 1.3em 1.3em;
+	min-height: 55em;
+	border-radius: 0 0 5px 5px;
+}
+
+.printfooter {
+	display: none;
+}
+
+
+/*
+** general portlet styles (elements in the quickbar)
+*/
+.portlet {
+	border: none;
+	margin: 0 0 .5em;
+	padding: 0;
+	float: none;
+	width: 155px;
+	overflow: hidden;
+}
+.portlet h4 {
+	font-size: 1.25em;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #638cad;
+}
+.portlet h5 {
+	background: transparent;
+	display: inline;
+	text-transform: capitalize;
+	font-weight: normal;
+	white-space: nowrap;
+	font-size: 1em;
+	font-weight: bold;
+	color: #638cad;
+}
+.portlet h6 {
+	background: #ffae2e;
+	border: 1px solid #2f6fab;
+	border-style: solid solid none solid;
+	padding: 0 1em 0 1em;
+	text-transform: lowercase;
+	display: block;
+	font-size: 1em;
+	height: 1.2em;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.pBody {
+	font-size: 0.8em;
+	background-color: #7ab3de;
+	border-radius: 5px;
+	padding: 1em;
+	margin-top: .25em;
+}
+.portlet h1,
+.portlet h2,
+.portlet h3,
+.portlet h4 {
+	margin: 0;
+	padding: 0;
+}
+.portlet ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.portlet li {
+	padding: 0;
+	margin: 0;
+}
+
+.portlet a, .portlet a.new {
+	color: #dfedf8;
+}
+
+.portlet a:hover {
+	color: #fff;
+}
+/*
+#p-personal a.new {
+	color: white;
+}
+*/
+
+/*
+** the page-related actions- page/talk, edit etc
+*/
+#p-cactions {
+	white-space: nowrap;
+	background-color: #dcefff;
+	list-style: none;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid #c0def8;
+	overflow: visible;
+	width: auto;
+}
+#p-cactions ul {
+	list-style: none;
+	padding: 0.8em;
+	margin: 0px;
+}
+#p-cactions li {
+	display: inline;
+	margin: 0 .3em 0 0;
+}
+
+#p-cactions li.selected {
+}
+
+#p-cactions li a {
+	background-color: #597e9a;
+	color: #eef7ff;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 0.3em 1em 0.3em 1em;
+	border-radius: 3px;
+	font-weight: bold;
+}
+#p-cactions li.selected a {
+	background-color: #e658a0;
+}
+#p-cactions .new a {
+	color: #white;
+	opacity: 0.7;
+}
+#p-cactions li a:hover {
+	text-decoration: none;
+	background-color: #7caf45;
+}
+
+#p-cactions h5 {
+	display: none;
+}
+
+#p-cactions li.istalk {
+	margin-right: 0;
+}
+#p-cactions li.istalk a {
+	padding-right: .5em;
+}
+#p-cactions #ca-addsection a {
+	padding-left: .4em;
+	padding-right: .4em;
+}
+
+/*
+** Logo properties
+*/
+
+#p-logo {
+	top: 0;
+	left: 0;
+	position: absolute; /*needed to use z-index */
+	z-index: 3;
+	height: 155px;
+	width: 12em;
+	overflow: visible;
+}
+#p-logo h5 {
+	display: none;
+}
+#p-logo a,
+#p-logo a:hover {
+	display: block;
+	height: 155px;
+	width: 12.2em;
+	background-repeat: no-repeat;
+	background-position: 35% 50% !important;
+	text-decoration: none;
+}
+
+
+/*
+** Search portlet
+*/
+#p-search {
+}
+
+input.searchButton {
+	margin-top: 1px;
+	font-size: 95%;
+}
+#searchGoButton {
+	padding-left: .5em;
+	padding-right: .5em;
+	font-weight: bold;
+}
+#searchInput {
+	width: 130px;
+	margin: 0 0 3px;
+	font-size: 95%;
+	border: 1px solid white;
+}
+#p-search .pBody {
+	text-align: left;
+}
+#p-search #searchform 
+{
+	margin: 0;
+}
+
+
+#p-search #searchform div div {
+	margin-top: .4em;
+	font-size: 95%;
+}
+
+/*
+** footer
+*/
+#footer {
+	background-color: #e5f1fa;
+	margin: .6em 0 1em 0;
+	/*padding: .4em 0 1.2em 0;*/
+	padding: 0.2em;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 0.75em;
+}
+#footer li {
+	display: inline;
+	margin: 0 1.3em;
+}
+#f-poweredbyico, #f-copyrightico {
+	margin: 2px 2px
+}
+#f-poweredbyico {
+	float: right;
+	height: 1%;
+}
+#f-copyrightico {
+	float: left;
+	height: 1%;
+}
+
+.catlinks {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-top: 1em;
+	clear: both;
+	background-color: #e5f1fa;
+	border: 1px solid #d5e3ee;
+}
+
+/**
+* Source code.
+**/
+
+.mw-geshi {
+	padding: 3px 7px 3px 7px;
+	background-color: #e5f1fa;
+	border: 1px solid #d5e3ee;
+	border-radius: 3px;
+}
+
+/* GESHI */
+
+.lua {
+	font-family: monospace;
+	list-style-type: decimal;
+	list-style-position: outside;
+	font-size: 12px;
+}
+.lua .li1 {
+	color: #0d8bca;
+	border-left: 1px solid #d1d9fd;
+	background: #f1f9fd;
+}
+
+.lua .de1 {
+	font-family: monospace;
+	color: #333;
+	margin: 0 0 0 0;
+}
+
+.lua .kw1 { 
+	color: #0d8bca;
+	font-weight: bold;
+}
+
+.lua .co1, .lua .coMULTI { 
+	color: #888;
+	font-weight: normal;
+}
+
+.lua .nu0 { 
+	color: red;
+}
+
+.lua .sy0 { 
+	color: #555;
+}
+
+.lua .st0 { 
+	color: #008000;
+}
+
+.lua .br0 { 
+	color: #555;
+}
+
+#mw-pages { display: none; }
+
+.gamelistitem {
+	background-color: #e5f1fa;
+	border-bottom: 1px solid #d5e3ee;
+	padding: 5px;
+	clear: both;
+}
+
+.gamelistitem .thumb {
+	float: left;
+	width: 161px;
+	height: 100px;
+}
+
+.gamelistitem .thumb p {
+	margin: 0 0 0 0 !important;
+	color: #e5f1fa;
+}
+
+.gamelistitem .data {
+	float: left;
+	padding: 0;
+	margin-left: 7px;
+}
+
+.gamelistitem .data {
+	float: left;
+	padding: 0;
+	margin-left: 7px;
+}
+
+.gamelistitem .data .name {
+	margin-bottom: 5px;
+}
+.gamelistitem .data .property {}
+.gamelistitem .data .property .name {
+	margin-right: 7px;
+	font-weight: bold;
+}
+.gamelistitem .data .top {}
+.gamelistitem .data .bottom {}
+
+.gamelistitem .data .description {
+	margin-top: 5px;
+}
+.gamelistitem .data {}
+
+.i18n {
+	text-align: center;
+	margin-bottom: 1em;
+	border: 1px solid #D5E3EE;
+	background-color: #E5F1FA;
+	padding: 3px;
+	position: relative;
+	border-radius: 3px;
+}
+
+.i18n span {
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+}

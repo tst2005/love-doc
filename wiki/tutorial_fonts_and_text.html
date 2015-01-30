@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="LOVE (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="" rel="meta" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="LOVE Atom feed" href="" />		<title>Tutorial:Fonts and Text - LOVE</title>
+		<link rel="stylesheet" href="shared.css" media="screen" />
+<link rel="stylesheet" href="commonprint.css" media="print" />
+<link rel="stylesheet" href="main.css" media="screen" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" media="print" />
+<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="" />
+		<!--[if lt IE 7]><script type="text/javascript" src="iefixes.js_270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>
+var skin="love",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.love2d.org",
+wgCanonicalNamespace="Tutorial",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=500,
+wgPageName="Tutorial:Fonts_and_Text",
+wgTitle="Fonts and Text",
+wgAction="view",
+wgArticleId=494,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=9633,
+wgVersion="1.16.2",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "LOVE", "5": "LOVE talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "102": "Property", "103": "Property talk", "104": "Type", "105": "Type talk", "108": "Concept", "109": "Concept talk", "500": "Tutorial", "501": "Tutorial talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "love": 4, "love_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "property": 102, "property_talk": 103, "type": 104, "type_talk": 105, "concept": 108, "concept_talk": 109, "tutorial": 500, "tutorial_talk": 501, "image": 6, "image_talk": 7},
+wgSiteName="LOVE",
+wgCategories=["Tutorials"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script>
+		<script type="text/javascript" src="wikibits.js_270"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="ajax.js_270"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Tutorial:Fonts and Text" href="" />
+		<script type="text/javascript" src=""><!-- site js --></script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6143729-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="egg.js"></script>
+  <link href="https://plus.google.com/b/108553500970002863436/" rel="publisher" />
+	</head>
+<body class="mediawiki ltr ns-500 ns-subject page-Tutorial_Fonts_and_Text skin-love">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			
+		<div id="p-cactions">
+			<h5>Views</h5>
+			<div>
+				<ul>
+		
+					 <li id="ca-nstab-tutorial" class="selected"><a href="">Tutorial</a></li>
+					 <li id="ca-talk" class="new"><a href="" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-viewsource"><a href="" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+					 <li id="ca-history"><a href="" title="Past revisions of this page [h]" accesskey="h">History</a></li>				</ul>
+			</div>
+		</div>
+	
+		<h1 id="firstHeading" class="firstHeading">Tutorial:Fonts and Text</h1>
+		<div id="bodyContent">
+			<div id="contentSub"></div>
+									<!-- start content -->
+			<p>Adding and using fonts in LÖVE isn't very complicated, but what you have to keep in mind is that you need to set the font before you can use it. There is no way to render text directly from a font object, it must always be done via the <code><a href="love.graphics100.html" title="love.graphics.print">love.graphics.print</a></code> function which will render text based on the current font.
+There are three types of fonts available in love: 
+</p>
+<ul><li> The default font (Bitstream Vera Sans)
+</li><li> Any font file supported by FreeType 2
+</li><li> An image containing glyphs (ImageFont)
+</li></ul>
+<h2> <span class="mw-headline" id="Creating_a_font_object_using_the_default_font">Creating a font object using the default font</span></h2>
+<p>The default font is available for everyone and anyone and can be created using the following code: 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">font <span class="sy0">=</span> love.graphics.newFont<span class="br0">&#40;</span><span class="nu0">14</span><span class="br0">&#41;</span> <span class="co1">-- the number denotes the font size</span></div></div>
+<h2> <span class="mw-headline" id="Creating_a_font_object_using_a_font_file">Creating a font object using a font file</span></h2>
+<p>Font files are just normal files that you download from the internet (or create yourself) that contains font information. They can be used just like the default font, just that you specify the filepath along with the font size:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">font <span class="sy0">=</span> love.graphics.newFont<span class="br0">&#40;</span><span class="st0">&quot;AwesomeFont.ttf&quot;</span>, <span class="nu0">15</span><span class="br0">&#41;</span></div></div>
+<p>Keep in mind the that some fonts you download come with restrictions on when/how you can use them.
+</p>
+<h2> <span class="mw-headline" id="Creating_a_font_object_using_an_image">Creating a font object using an image</span></h2>
+<p>An image font is a little tougher to explain, as it all depends on a specifically formatted image. If you look at this <a href="file_resource_imagefont.html" class="image" title="example image"><img alt="example image" src="resource_imagefont.png" width="973" height="17" /></a> you will see that it contains glyphs along one row, each separated by a specific color. This color is used to separate the glyphs and needs to be found at between every character and at the beginning of the list (all the way to the left). Creating a font based on this image would be as follows:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">font <span class="sy0">=</span> love.graphics.newImageFont<span class="br0">&#40;</span><span class="st0">&quot;imagefont.png&quot;</span>,<br />&nbsp; &nbsp; <span class="st0">&quot; abcdefghijklmnopqrstuvwxyz&quot;</span> ..<br />&nbsp; &nbsp; <span class="st0">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ0&quot;</span> ..<br />&nbsp; &nbsp; <span class="st0">&quot;123456789.,!?-+/():;%&amp;`'*#=[]<span class="es0">\&quot;</span>&quot;</span><span class="br0">&#41;</span></div></div>
+<p><b>Warning: Make sure that the image starts and also ends with the separation color or else the last character (in this case " ) won't work.</b>
+</p>
+<h2> <span class="mw-headline" id="Using_the_font_object">Using the font object</span></h2>
+<p>Now that you have created your font object, you need to set it as the current font before it can be used. That is done with the following code:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua"><span class="co1">-- font = the font object you made before</span><br />love.graphics.setFont<span class="br0">&#40;</span>font<span class="br0">&#41;</span></div></div>
+<p>One can also immediately use a TTF-font by calling
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.setNewFont<span class="br0">&#40;</span>filename, size<span class="br0">&#41;</span></div></div>
+<p>Or, in the case of the default font, 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.setNewFont<span class="br0">&#40;</span>size<span class="br0">&#41;</span></div></div>
+<h2> <span class="mw-headline" id="Drawing_and_formatting_text">Drawing and formatting text</span></h2>
+<p>So now that you have your wonderful new font object, you want to use it for something. To draw text, you simply call the <code><a href="love.graphics100.html" title="love.graphics.print">love.graphics.print</a></code> function:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;This is some awesome text&quot;</span>, <span class="nu0">100</span>, <span class="nu0">100</span><span class="br0">&#41;</span></div></div>
+<p>You can easily draw numbers as well:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">num <span class="sy0">=</span> <span class="nu0">15</span><br />love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span>num, <span class="nu0">100</span>, <span class="nu0">150</span><span class="br0">&#41;</span></div></div>
+<p>The default text rendering function can handle line breaks (the '\n' character) and will draw text aligned to the left: 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.<span class="kw1">print</span><span class="br0">&#40;</span><span class="st0">&quot;This is the first line<span class="es0">\n</span>This is the second one.<span class="es0">\n</span>(and a third)<span class="es0">\n</span><span class="es0">\n</span>fifth&quot;</span>, <span class="nu0">100</span>, <span class="nu0">200</span><span class="br0">&#41;</span></div></div>
+<p>The parameters '100' and '200' are the <i>x</i>- and <i>y</i>-locations of the text, respectively. In LÖVE versions prior to 0.6.0, <code><a href="love.graphics32.html" title="love.graphics.draw">love.graphics.draw</a></code> was instead used to draw text.
+</p><p>However, LÖVE can also draw text with word wrapping and alignment by using the more complicated <code><a href="love.graphics59.html" title="love.graphics.printf">love.graphics.printf</a></code> function: 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.printf<span class="br0">&#40;</span><span class="st0">&quot;A really long sentence which will probably be broken into many pieces by my love.&quot;</span>, <span class="nu0">500</span>, <span class="nu0">100</span>, <span class="nu0">250</span>, <span class="st0">'right'</span><span class="br0">&#41;</span></div></div>
+<p>Where, here, the parameters '500' and '100' are <i>x</i>- and <i>y</i>-locations, '250' is the maximum text width, and 'right' is the text alignment.
+</p><p>This way it is relatively easy to draw completely centered text if you pass the width of the window as the word-wrap limit and 0 as the x-position: 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.printf<span class="br0">&#40;</span><span class="st0">&quot;This text will be centered no matter what.<span class="es0">\n</span>(and you LOVE it)&quot;</span>, <span class="nu0">0</span>, <span class="nu0">400</span>, <span class="nu0">800</span>, <span class="st0">'center'</span><span class="br0">&#41;</span></div></div>
+<p>Text will always align to the left by default if you omit the <a href="alignmode.html" title="AlignMode">alignment value</a>: 
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="lua source-lua">love.graphics.printf<span class="br0">&#40;</span><span class="st0">&quot;Aligned to the left, yes very much so.&quot;</span>, <span class="nu0">100</span>, <span class="nu0">500</span>, <span class="nu0">150</span><span class="br0">&#41;</span></div></div>
+<p>That is how to draw text. For more information about the specific functions and their use, please visit the documentation. 
+</p><p><i>Note: All fonts (even the image font) will be affected by the current color, there is no need to set the color mode to 'modulate'.</i>
+</p><p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Other_languages"> Other languages </span></h2>
+<div class="i18n">
+<p><a href="" class="new" title="Fonts and Text (Dansk) (page does not exist)">Dansk</a>&nbsp;&ndash;
+<a href="fonts_and_text_deutsch.html" title="Fonts and Text (Deutsch)">Deutsch</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (page does not exist)">English</a>&nbsp;&ndash; 
+<a href="" class="new" title="Fonts and Text (Español) (page does not exist)">Español</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Français) (page does not exist)">Français</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Indonesia) (page does not exist)">Indonesia</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Italiano) (page does not exist)">Italiano</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Lietuviškai) (page does not exist)">Lietuviškai</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Magyar) (page does not exist)">Magyar</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Nederlands) (page does not exist)">Nederlands</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Polski) (page does not exist)">Polski</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Português) (page does not exist)">Português</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Română) (page does not exist)">Română</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Slovenský) (page does not exist)">Slovenský</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Suomi) (page does not exist)">Suomi</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Svenska) (page does not exist)">Svenska</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Türkçe) (page does not exist)">Türkçe</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Česky) (page does not exist)">Česky</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Ελληνικά) (page does not exist)">Ελληνικά</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Български) (page does not exist)">Български</a>&nbsp;&ndash;
+<a href="fonts_and_text.html" title="Fonts and Text (Русский)">Русский</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Српски) (page does not exist)">Српски</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Українська) (page does not exist)">Українська</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (עברית) (page does not exist)">עברית</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (ไทย) (page does not exist)">ไทย</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (日本語) (page does not exist)">日本語</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (正體中文) (page does not exist)">正體中文</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (简体中文) (page does not exist)">简体中文</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (Tiếng Việt) (page does not exist)">Tiếng Việt</a>&nbsp;&ndash;
+<a href="" class="new" title="Fonts and Text (한국어) (page does not exist)">한국어</a> 
+<br />
+<span style="text-align:right;"><i><a href="help_i18n.html" title="Help:i18n">More info</a></i></span>
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 369/1000000
+Post-expand include size: 3869/2097152 bytes
+Template argument size: 1952/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key love2d_wiki:pcache:idhash:494-0!1!0!!en!2!edit=0 and timestamp 20150125112318 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.love2d.org/wiki/Tutorial:Fonts_and_Text">http://www.love2d.org/wiki/Tutorial:Fonts_and_Text</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="" title="Special:Categories">Category</a>: <span dir='ltr'><a href="category_tutorials.html" title="Category:Tutorials">Tutorials</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(wiki.png);" href="index.html" title="Visit the main page"></a>
+	</div>
+<!--	<div class="portlet" id="p-docs">
+		<h5>Documentation</h5>
+		<div class="pBody">
+			<ul>
+				<li><a href="love.html">love</a></li>
+				<li><a href="love1.html">love.audio</a></li>
+				<li><a href="love2.html">love.event</a></li>
+				<li><a href="love3.html">love.filesystem</a></li>
+				<li><a href="love4.html">love.graphics</a></li>
+				<li><a href="love5.html">love.image</a></li>
+				<li><a href="love6.html">love.joystick</a></li>
+				<li><a href="love7.html">love.keyboard</a></li>
+				<li><a href="love8.html">love.math</a></li>
+				<li><a href="love9.html">love.mouse</a></li>
+				<li><a href="love10.html">love.physics</a></li>
+				<li><a href="love11.html">love.sound</a></li>
+				<li><a href="love12.html">love.system</a></li>
+				<li><a href="love13.html">love.timer</a></li>
+				<li><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div> -->
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-documentation'>
+		<h5>documentation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-love"><a href="love.html">love</a></li>
+				<li id="n-love.audio"><a href="love1.html">love.audio</a></li>
+				<li id="n-love.event"><a href="love2.html">love.event</a></li>
+				<li id="n-love.filesystem"><a href="love3.html">love.filesystem</a></li>
+				<li id="n-love.font"><a href="love15.html">love.font</a></li>
+				<li id="n-love.graphics"><a href="love4.html">love.graphics</a></li>
+				<li id="n-love.image"><a href="love5.html">love.image</a></li>
+				<li id="n-love.joystick"><a href="love6.html">love.joystick</a></li>
+				<li id="n-love.keyboard"><a href="love7.html">love.keyboard</a></li>
+				<li id="n-love.math"><a href="love8.html">love.math</a></li>
+				<li id="n-love.mouse"><a href="love9.html">love.mouse</a></li>
+				<li id="n-love.physics"><a href="love10.html">love.physics</a></li>
+				<li id="n-love.sound"><a href="love11.html">love.sound</a></li>
+				<li id="n-love.system"><a href="love12.html">love.system</a></li>
+				<li id="n-love.thread"><a href="love16.html">love.thread</a></li>
+				<li id="n-love.timer"><a href="love13.html">love.timer</a></li>
+				<li id="n-love.window"><a href="love14.html">love.window</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="love2d1.html">Home</a></li>
+				<li id="n-Forums"><a href="forums.html">Forums</a></li>
+				<li id="n-Issue-tracker"><a href="http://bitbucket.org/rude/love/issues">Issue tracker</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-wiki_navigation'>
+		<h5>wiki navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="index.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="w.html" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search LOVE [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-smwbrowselink"><a href="" title="Special:Browse/Tutorial:Fonts and Text">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="gnu_fdl.png" alt="GNU Free Documentation License 1.3" width="88" height="31" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 24 October 2012, at 01:38.</li>
+					<li id="viewcount">This page has been accessed 30,180 times.</li>
+					<li id="copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class="external ">GNU Free Documentation License 1.3</a>.</li>
+					<li id="privacy"><a href="love_privacy_policy.html" title="LOVE:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="love_about.html" title="LOVE:About">About LOVE</a></li>
+					<li id="disclaimer"><a href="love_general_disclaimer.html" title="LOVE:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.372 secs. --></body></html>
